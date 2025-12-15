@@ -2,11 +2,11 @@ name: Grant Private Repo Access
 
 on:
   issues:
-    types: [labeled]
+    types: [opened]
 
 jobs:
   grant:
-    if: github.event.label.name == 'approved'
+    if: contains(github.event.issue.labels.*.name, 'access-request')
     runs-on: ubuntu-latest
 
     steps:
