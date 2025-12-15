@@ -1,0 +1,36 @@
+name: Request Access to Private Repository
+description: Request access to the private repository
+title: "Access Request: @username"
+labels: ["access-request"]
+body:
+  - type: input
+    id: github_username
+    attributes:
+      label: GitHub Username
+      description: Must match your GitHub account
+      placeholder: octocat
+    validations:
+      required: true
+
+  - type: input
+    id: email
+    attributes:
+      label: Email Address
+      description: Used for access coordination and updates
+    validations:
+      required: true
+
+  - type: textarea
+    id: reason
+    attributes:
+      label: Why do you want access?
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: consent
+    attributes:
+      label: Consent
+      options:
+        - label: I agree to be contacted regarding this project
+          required: true
