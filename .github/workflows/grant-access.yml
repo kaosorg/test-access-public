@@ -6,7 +6,6 @@ on:
 
 jobs:
   grant:
-    if: contains(github.event.issue.labels.*.name, 'access-request')
     runs-on: ubuntu-latest
 
     steps:
