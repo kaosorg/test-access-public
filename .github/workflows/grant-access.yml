@@ -1,0 +1,29 @@
+name: Grant Private Repo Access
+
+on:
+  issues:
+    types: [labeled]
+
+jobs:
+  grant:
+    if: github.event.label.name == 'approved'
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Extract GitHub username
+        id: extract
+        run: |
+          BODY="${{ github.event.issue.body }}"
+          USERNAME=$(echo "$BODY" | grep -A1 "GitHub Username" | tail -n1 | xargs)
+          echo "username=$USERNAME" >> $GITHUB_OUTPUT
+
+      - name: Invite user to private repo
+        env:
+          PAT: ${{ secrets.ACCESS_PAT }}
+          USERNAME: ${{ steps.extract.outputs.username }}
+        run: |
+          curl -X PUT \
+            -H "Authorization: Bearer $PAT" \
+            -H "Accept: application/vnd.github+json" \
+            https://api.github.com/repos/kaosorg/test-access-private/collaborators/$USERNAME \
+            -d '{"permission":"pull"}'
