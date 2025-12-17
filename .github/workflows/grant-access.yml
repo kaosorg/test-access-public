@@ -9,46 +9,39 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      # STEP 0 — extract username
       - name: Extract GitHub username
         id: extract
         run: |
           BODY="${{ github.event.issue.body }}"
-      
-          USERNAME=$(echo "$BODY" \
-            | sed -n 's/.*GitHub Username[: ]*\(.*\)/\1/p' \
-            | head -n1 \
+
+          USERNAME=$(printf "%s\n" "$BODY" \
+            | grep -i "github username" \
+            | sed 's/.*github username[^a-zA-Z0-9_-]*//' \
+            | tr -d '\r' \
             | xargs)
-      
+
           echo "username=$USERNAME" >> $GITHUB_OUTPUT
 
-      # STEP 1 — verify the token itself
-      - name: Debug token identity
-        env:
-          PAT: ${{ secrets.ACCESS_PAT }}
+      # STEP 1 — show the raw issue body
+      - name: Debug issue body
         run: |
-          echo "PAT length: ${#PAT}"
-          curl -i \
-            -H "Authorization: Bearer $PAT" \
-            -H "Accept: application/vnd.github+json" \
-            https://api.github.com/user
+          echo "----- ISSUE BODY START -----"
+          echo "${{ github.event.issue.body }}"
+          echo "----- ISSUE BODY END -----"
 
-      # STEP 2 — verify repo access with the same token
-      - name: Debug repo access
-        env:
-          PAT: ${{ secrets.ACCESS_PAT }}
+      # STEP 2 — show what the extract step produced
+      - name: Debug extracted username
         run: |
-          curl -i \
-            -H "Authorization: Bearer $PAT" \
-            -H "Accept: application/vnd.github+json" \
-            https://api.github.com/repos/kaosorg/test-access-private
+          echo "Extracted output = '${{ steps.extract.outputs.username }}'"
 
-      # FINAL STEP — invite user
+      # STEP 3 — invite user (final step)
       - name: Invite user to private repo
         env:
           PAT: ${{ secrets.ACCESS_PAT }}
           USERNAME: ${{ steps.extract.outputs.username }}
         run: |
-          echo "Inviting user: $USERNAME"
+          echo "Inviting user: '$USERNAME'"
 
           if [ -z "$USERNAME" ]; then
             echo "No username found"
@@ -61,3 +54,4 @@ jobs:
             -H "Content-Type: application/json" \
             https://api.github.com/repos/kaosorg/test-access-private/collaborators/$USERNAME \
             -d '{"permission":"pull"}'
+
