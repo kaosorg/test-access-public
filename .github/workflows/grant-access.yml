@@ -13,7 +13,12 @@ jobs:
         id: extract
         run: |
           BODY="${{ github.event.issue.body }}"
-          USERNAME=$(echo "$BODY" | grep -A1 "GitHub Username" | tail -n1 | xargs)
+      
+          USERNAME=$(echo "$BODY" \
+            | sed -n 's/.*GitHub Username[: ]*\(.*\)/\1/p' \
+            | head -n1 \
+            | xargs)
+      
           echo "username=$USERNAME" >> $GITHUB_OUTPUT
 
       # STEP 1 — verify the token itself
