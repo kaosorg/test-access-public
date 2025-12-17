@@ -9,12 +9,13 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      # STEP 0 — extract username
+      # 1️⃣ Extract GitHub username from issue body
       - name: Extract GitHub username
         id: extract
         run: |
           BODY="${{ github.event.issue.body }}"
-      
+
+          # Handles usernames on the line after "### GitHub Username" and skips blank lines
           USERNAME=$(printf "%s\n" "$BODY" \
             | sed -n '
                 /^### GitHub Username/{
@@ -24,41 +25,35 @@ jobs:
                   p
                 }' \
             | xargs)
-      
+
           echo "username=$USERNAME" >> $GITHUB_OUTPUT
 
-      # STEP 1 — show the raw issue body
-      - name: Debug issue body
-        run: |
-          echo "----- ISSUE BODY START -----"
-          echo "${{ github.event.issue.body }}"
-          echo "----- ISSUE BODY END -----"
-
-      # STEP 2 — show what the extract step produced
+      # 2️⃣ Debug extracted username (optional)
       - name: Debug extracted username
         run: |
-          echo "Extracted output = '${{ steps.extract.outputs.username }}'"
+          echo "Extracted username = '${{ steps.extract.outputs.username }}'"
 
-      # STEP 3 — invite user 
+      # 3️⃣ Invite user to private repo
       - name: Invite user to private repo
         env:
           PAT: ${{ secrets.ACCESS_PAT }}
           USERNAME: ${{ steps.extract.outputs.username }}
         run: |
-          echo "Inviting user: '$USERNAME'"
-
           if [ -z "$USERNAME" ]; then
-            echo "No username found"
+            echo "No username found, stopping workflow."
             exit 1
           fi
+
+          echo "Inviting user: $USERNAME"
 
           curl -i -X PUT \
             -H "Authorization: Bearer $PAT" \
             -H "Accept: application/vnd.github+json" \
             -H "Content-Type: application/json" \
-            https://api.github.com/repos/kaosorg/test-access-private/collaborators/$USERNAME \
+            https://api.github.com/repos/ORG/PRIVATE_REPO/collaborators/$USERNAME \
             -d '{"permission":"pull"}'
-            
+
+      # 4️⃣ Comment confirmation (optional)
       - name: Comment confirmation
         env:
           PAT: ${{ secrets.ACCESS_PAT }}
@@ -68,7 +63,7 @@ jobs:
           curl -X POST \
             -H "Authorization: Bearer $PAT" \
             -H "Accept: application/vnd.github+json" \
-            https://api.github.com/repos/kaosorg/test-access-public/issues/$ISSUE_NUMBER/comments \
+            https://api.github.com/repos/ORG/PUBLIC_REPO/issues/$ISSUE_NUMBER/comments \
             -d "{\"body\":\"✅ @${USERNAME}, your request has been processed and the issue will now be deleted.\"}"
 
       # 5️⃣ Delete the public issue to hide username
@@ -80,4 +75,4 @@ jobs:
           curl -X DELETE \
             -H "Authorization: Bearer $PAT" \
             -H "Accept: application/vnd.github+json" \
-            https://api.github.com/repos/kaosorg/test-access-public/issues/$ISSUE_NUMBER
+            https://api.github.com/repos/ORG/PUBLIC_REPO/issues/$ISSUE_NUMBER
