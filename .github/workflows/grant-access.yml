@@ -16,7 +16,13 @@ jobs:
           BODY="${{ github.event.issue.body }}"
       
           USERNAME=$(printf "%s\n" "$BODY" \
-            | sed -n '/^### GitHub Username/{n;p;}' \
+            | sed -n '
+                /^### GitHub Username/{
+                  :a
+                  n
+                  /^[[:space:]]*$/ba
+                  p
+                }' \
             | xargs)
       
           echo "username=$USERNAME" >> $GITHUB_OUTPUT
