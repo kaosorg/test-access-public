@@ -39,7 +39,7 @@ jobs:
         run: |
           echo "Extracted output = '${{ steps.extract.outputs.username }}'"
 
-      # STEP 3 — invite user (final step)
+      # STEP 3 — invite user 
       - name: Invite user to private repo
         env:
           PAT: ${{ secrets.ACCESS_PAT }}
@@ -58,4 +58,26 @@ jobs:
             -H "Content-Type: application/json" \
             https://api.github.com/repos/kaosorg/test-access-private/collaborators/$USERNAME \
             -d '{"permission":"pull"}'
+            
+      - name: Comment confirmation
+        env:
+          PAT: ${{ secrets.ACCESS_PAT }}
+          ISSUE_NUMBER: ${{ github.event.issue.number }}
+          USERNAME: ${{ steps.extract.outputs.username }}
+        run: |
+          curl -X POST \
+            -H "Authorization: Bearer $PAT" \
+            -H "Accept: application/vnd.github+json" \
+            https://api.github.com/repos/kaosorg/test-access-public/issues/$ISSUE_NUMBER/comments \
+            -d "{\"body\":\"✅ @${USERNAME}, your request has been processed and the issue will now be deleted.\"}"
 
+      # 5️⃣ Delete the public issue to hide username
+      - name: Delete public issue
+        env:
+          PAT: ${{ secrets.ACCESS_PAT }}
+          ISSUE_NUMBER: ${{ github.event.issue.number }}
+        run: |
+          curl -X DELETE \
+            -H "Authorization: Bearer $PAT" \
+            -H "Accept: application/vnd.github+json" \
+            https://api.github.com/repos/kaosorg/test-access-public/issues/$ISSUE_NUMBER
