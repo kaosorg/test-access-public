@@ -50,7 +50,7 @@ jobs:
             -H "Authorization: Bearer $PAT" \
             -H "Accept: application/vnd.github+json" \
             -H "Content-Type: application/json" \
-            https://api.github.com/repos/ORG/PRIVATE_REPO/collaborators/$USERNAME \
+            https://api.github.com/repos/kaosorg/test-access-private/collaborators/$USERNAME \
             -d '{"permission":"pull"}'
 
       # 4️⃣ Comment confirmation (optional)
@@ -63,7 +63,7 @@ jobs:
           curl -X POST \
             -H "Authorization: Bearer $PAT" \
             -H "Accept: application/vnd.github+json" \
-            https://api.github.com/repos/ORG/PUBLIC_REPO/issues/$ISSUE_NUMBER/comments \
+            https://api.github.com/repos/kaosorg/test-access-public/issues/$ISSUE_NUMBER/comments \
             -d "{\"body\":\"✅ @${USERNAME}, your request has been processed and the issue will now be deleted.\"}"
 
       # 5️⃣ Delete the public issue to hide username
@@ -75,4 +75,4 @@ jobs:
           curl -X DELETE \
             -H "Authorization: Bearer $PAT" \
             -H "Accept: application/vnd.github+json" \
-            https://api.github.com/repos/ORG/PUBLIC_REPO/issues/$ISSUE_NUMBER
+            https://api.github.com/repos/test-access-public/issues/$ISSUE_NUMBER
