@@ -16,13 +16,43 @@ jobs:
           USERNAME=$(echo "$BODY" | grep -A1 "GitHub Username" | tail -n1 | xargs)
           echo "username=$USERNAME" >> $GITHUB_OUTPUT
 
+      # STEP 1 — verify the token itself
+      - name: Debug token identity
+        env:
+          PAT: ${{ secrets.ACCESS_PAT }}
+        run: |
+          echo "PAT length: ${#PAT}"
+          curl -i \
+            -H "Authorization: Bearer $PAT" \
+            -H "Accept: application/vnd.github+json" \
+            https://api.github.com/user
+
+      # STEP 2 — verify repo access with the same token
+      - name: Debug repo access
+        env:
+          PAT: ${{ secrets.ACCESS_PAT }}
+        run: |
+          curl -i \
+            -H "Authorization: Bearer $PAT" \
+            -H "Accept: application/vnd.github+json" \
+            https://api.github.com/repos/kaosorg/test-access-private
+
+      # FINAL STEP — invite user
       - name: Invite user to private repo
         env:
           PAT: ${{ secrets.ACCESS_PAT }}
           USERNAME: ${{ steps.extract.outputs.username }}
         run: |
-          curl -X PUT \
+          echo "Inviting user: $USERNAME"
+
+          if [ -z "$USERNAME" ]; then
+            echo "No username found"
+            exit 1
+          fi
+
+          curl -i -X PUT \
             -H "Authorization: Bearer $PAT" \
             -H "Accept: application/vnd.github+json" \
+            -H "Content-Type: application/json" \
             https://api.github.com/repos/kaosorg/test-access-private/collaborators/$USERNAME \
             -d '{"permission":"pull"}'
