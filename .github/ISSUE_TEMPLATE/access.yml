@@ -1,6 +1,6 @@
 name: Request Access to Private Repository
 description: Request access to the private repository
-title: "Access Request: @username"
+title: "Access Request:"
 labels: ["access-request"]
 body:
   - type: input
