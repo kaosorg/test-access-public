@@ -8,14 +8,17 @@ jobs:
   grant:
     runs-on: ubuntu-latest
 
+    permissions:
+      issues: write
+      contents: read
+
     steps:
-      # 1️⃣ Extract GitHub username from issue body
+      # 1️⃣ Extract username (DO NOT LOG IT)
       - name: Extract GitHub username
         id: extract
         run: |
           BODY="${{ github.event.issue.body }}"
 
-          # Handles usernames on the line after "### GitHub Username" and skips blank lines
           USERNAME=$(printf "%s\n" "$BODY" \
             | sed -n '
                 /^### GitHub Username/{
@@ -24,55 +27,52 @@ jobs:
                   /^[[:space:]]*$/ba
                   p
                 }' \
+            | tr -d '`' \
             | xargs)
+
+          if [ -z "$USERNAME" ]; then
+            echo "username=" >> $GITHUB_OUTPUT
+            exit 0
+          fi
 
           echo "username=$USERNAME" >> $GITHUB_OUTPUT
 
-      # 2️⃣ Debug extracted username (optional)
-      - name: Debug extracted username
-        run: |
-          echo "Extracted username = '${{ steps.extract.outputs.username }}'"
-
-      # 3️⃣ Invite user to private repo
-      - name: Invite user to private repo
+      # 2️⃣ Validate username exists on GitHub
+      - name: Validate GitHub user
         env:
-          PAT: ${{ secrets.ACCESS_PAT }}
           USERNAME: ${{ steps.extract.outputs.username }}
         run: |
           if [ -z "$USERNAME" ]; then
-            echo "No username found, stopping workflow."
             exit 1
           fi
 
-          echo "Inviting user: $USERNAME"
+          STATUS=$(curl -s -o /dev/null -w "%{http_code}" \
+            https://api.github.com/users/$USERNAME)
 
-          curl -i -X PUT \
-            -H "Authorization: Bearer $PAT" \
-            -H "Accept: application/vnd.github+json" \
-            -H "Content-Type: application/json" \
-            https://api.github.com/repos/kaosorg/test-access-private/collaborators/$USERNAME \
-            -d '{"permission":"pull"}'
+          if [ "$STATUS" != "200" ]; then
+            exit 1
+          fi
 
-      # 4️⃣ Comment confirmation (optional)
-      - name: Comment confirmation
+      # 3️⃣ Invite user to private repo
+      - name: Invite to private repo
         env:
           PAT: ${{ secrets.ACCESS_PAT }}
-          ISSUE_NUMBER: ${{ github.event.issue.number }}
           USERNAME: ${{ steps.extract.outputs.username }}
         run: |
-          curl -X POST \
+          curl -s -X PUT \
             -H "Authorization: Bearer $PAT" \
             -H "Accept: application/vnd.github+json" \
-            https://api.github.com/repos/kaosorg/test-access-public/issues/$ISSUE_NUMBER/comments \
-            -d "{\"body\":\"✅ @${USERNAME}, your request has been processed and the issue will now be closed.\"}"
+            https://api.github.com/repos/kaosorg/test-access-private/collaborators/$USERNAME \
+            -d '{"permission":"pull"}' \
+            > /dev/null
 
-      # 5️⃣ hide username
-      - name: Delete public issue
+      # 4️⃣ REDACT issue body immediately
+      - name: Redact issue
         env:
           PAT: ${{ secrets.ACCESS_PAT }}
           ISSUE_NUMBER: ${{ github.event.issue.number }}
         run: |
-          curl -X PATCH \
+          curl -s -X PATCH \
             -H "Authorization: Bearer $PAT" \
             -H "Accept: application/vnd.github+json" \
             https://api.github.com/repos/kaosorg/test-access-public/issues/$ISSUE_NUMBER \
@@ -80,4 +80,5 @@ jobs:
               "body": "(redacted — access request processed)",
               "state": "closed",
               "locked": true
-            }'
+            }' \
+            > /dev/null
