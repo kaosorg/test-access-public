@@ -72,7 +72,8 @@ jobs:
           PAT: ${{ secrets.ACCESS_PAT }}
           ISSUE_NUMBER: ${{ github.event.issue.number }}
         run: |
-          curl -X DELETE \
+          curl -X PATCH \
             -H "Authorization: Bearer $PAT" \
             -H "Accept: application/vnd.github+json" \
-            https://api.github.com/repos/test-access-public/issues/$ISSUE_NUMBER
+            https://api.github.com/repos/kaosorg/test-access-public/issues/$ISSUE_NUMBER \
+            -d '{"body":"(redacted — request processed)","state":"closed","locked":true}'
