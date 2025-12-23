@@ -13,7 +13,6 @@ jobs:
       contents: read
 
     steps:
-      # 1️⃣ Extract username (DO NOT LOG IT)
       - name: Extract GitHub username
         id: extract
         run: |
@@ -37,7 +36,6 @@ jobs:
 
           echo "username=$USERNAME" >> $GITHUB_OUTPUT
 
-      # 2️⃣ Validate username exists on GitHub
       - name: Validate GitHub user
         env:
           USERNAME: ${{ steps.extract.outputs.username }}
