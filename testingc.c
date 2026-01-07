@@ -16,6 +16,7 @@ struct Point {
     int y;
 };
 
+
 /**
  * @brief Add two points
  *
