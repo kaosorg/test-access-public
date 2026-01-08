@@ -39,6 +39,8 @@ jobs:
       - name: Validate GitHub user
         env:
           USERNAME: ${{ steps.extract.outputs.username }}
+          PAT: ${{ secrets.ACCESS_PAT }}
+          ISSUE_NUMBER: ${{ github.event.issue.number }}
         run: |
           if [ -z "$USERNAME" ]; then
             exit 1
@@ -48,18 +50,17 @@ jobs:
             https://api.github.com/users/$USERNAME)
 
           if [ "$STATUS" != "200" ]; then
-            echo "::error::Username $USERNAME is not a valid GitHub user"
             curl -s -X PATCH \
               -H "Authorization: Bearer $PAT" \
               -H "Accept: application/vnd.github+json" \
               https://api.github.com/repos/kaosorg/test-access-public/issues/$ISSUE_NUMBER \
               -d '{
-                "body": "(Bad username)",
+                "body": "(bad username)",
                 "state": "closed",
                 "locked": true
               }' \
               > /dev/null
-              exit 1
+            echo "::error::Username $USERNAME is not a valid GitHub user" && exit 1
           fi
 
       # 3️⃣ Invite user to private repo
