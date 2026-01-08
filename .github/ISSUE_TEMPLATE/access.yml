@@ -7,7 +7,7 @@ body:
     id: github_username
     attributes:
       label: GitHub Username
-      description: Must match your GitHub account
+      description: Input the GitHub account you would like to use for access
       placeholder: octocat
     validations:
       required: true
