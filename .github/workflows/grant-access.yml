@@ -48,7 +48,17 @@ jobs:
             https://api.github.com/users/$USERNAME)
 
           if [ "$STATUS" != "200" ]; then
-            echo "::error::Filename $filename doesn't match possible files" && exit 1
+            echo "::error::Username $USERNAME is not a valid GitHub user" && exit 1
+            curl -s -X PATCH \
+              -H "Authorization: Bearer $PAT" \
+              -H "Accept: application/vnd.github+json" \
+              https://api.github.com/repos/kaosorg/test-access-public/issues/$ISSUE_NUMBER \
+              -d '{
+                "body": "(Bad username)",
+                "state": "closed",
+                "locked": true
+              }' \
+              > /dev/null
           fi
 
       # 3️⃣ Invite user to private repo
