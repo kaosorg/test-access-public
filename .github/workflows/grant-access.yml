@@ -55,12 +55,12 @@ jobs:
               -H "Accept: application/vnd.github+json" \
               https://api.github.com/repos/kaosorg/test-access-public/issues/$ISSUE_NUMBER \
               -d '{
-                "body": "(bad username)",
+                "body": "(Username is not a valid GitHub user)",
                 "state": "closed",
                 "locked": true
               }' \
               > /dev/null
-            echo "::error::Username $USERNAME is not a valid GitHub user" && exit 1
+            echo "::error::Username is not a valid GitHub user" && exit 1
           fi
 
       # 3️⃣ Invite user to private repo
