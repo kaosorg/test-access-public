@@ -48,17 +48,7 @@ jobs:
             https://api.github.com/users/$USERNAME)
 
           if [ "$STATUS" != "200" ]; then
-            curl -s -X PATCH \
-              -H "Authorization: Bearer $PAT" \
-              
-              https://api.github.com/repos/kaosorg/test-access-public/issues/$ISSUE_NUMBER \
-              -d '{
-                "body": "(The username could not be found)",
-                "state": "closed",
-                "locked": true
-              }' \
-              > /dev/null
-            exit 1
+            echo "::error::Filename $filename doesn't match possible files" && exit 1
           fi
 
       # 3️⃣ Invite user to private repo
