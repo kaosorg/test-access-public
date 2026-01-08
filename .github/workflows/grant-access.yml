@@ -54,13 +54,13 @@ jobs:
       # 3️⃣ Invite user to private repo
       - name: Invite to private repo
         env:
-          PAT: ${{ secrets.ACCESS_PAT_CROSS_ORG }}
+          PAT: ${{ secrets.ACCESS_PAT }}
           USERNAME: ${{ steps.extract.outputs.username }}
         run: |
           curl -s -X PUT \
             -H "Authorization: Bearer $PAT" \
             -H "Accept: application/vnd.github+json" \
-            https://api.github.com/repos/mchpTestArea/sf-test-gated-access/collaborators/$USERNAME \
+            https://api.github.com/repos/kaosorg/test-access-private/collaborators/$USERNAME \
             -d '{"permission":"pull"}' \
             > /dev/null
 
