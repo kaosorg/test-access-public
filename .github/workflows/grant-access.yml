@@ -48,7 +48,7 @@ jobs:
             https://api.github.com/users/$USERNAME)
 
           if [ "$STATUS" != "200" ]; then
-            echo "::error::Username $USERNAME is not a valid GitHub user" && exit 1
+            echo "::error::Username $USERNAME is not a valid GitHub user"
             curl -s -X PATCH \
               -H "Authorization: Bearer $PAT" \
               -H "Accept: application/vnd.github+json" \
@@ -59,6 +59,7 @@ jobs:
                 "locked": true
               }' \
               > /dev/null
+              exit 1
           fi
 
       # 3️⃣ Invite user to private repo
