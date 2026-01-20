@@ -1,4 +1,13 @@
 # Safety Framework 1.0.0-alpha.1
+
+This is a public repository used to request access to a private repository.
+
+[![](https://github.com/kaosorg/test-access-public/blob/main/access_button1.png)](https://github.com/kaosorg/test-access-public/issues/new?template=access.yml)
+[![](https://github.com/kaosorg/test-access-public/blob/main/api_button.png)](https://kaosorg.github.io/test-access-public/)
+
+Issues submitted to request access are public and may collect contact information
+for access coordination. Do not submit passwords, tokens, or secrets.
+
 This is the 1.0.0-alpha.1 version of the Safety Framework and is only provided for evaluation. This is not a completed product, everything is subject to change. However, no major change to the source code is planned until the full release, except for adding missing features. Refer to the Missing Features section for more information on the planned capabilities, features and collateral of the full 1.0.0 release. 
 
 ## Overview
@@ -75,3 +84,4 @@ The 1.0.0-alpha.1 release does not have all features and collateral planned for 
 - Full unit test bench for regression testing
 - Example applications using the Safety Framework
 - More tips and tricks
+
