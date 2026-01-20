@@ -41,7 +41,7 @@ Each component has been thoroughly unit tested, following principles of Equivale
 ## Architecture
 The Safety Framework is implemented with a layered Task-based architecture:
 
-[![](https://github.com/kaosorg/test-access-public/blob/stackDiagramArch.svg)]
+[![](https://github.com/kaosorg/test-access-public/blob/main/stackDiagramArch.svg)]
 
 - **Task Manager Layer** contains Task Managers that ensure that the correct Task is called at the correct time.
 - **Task Layer** contains Tasks that implement high-level logic, decision-making and error handling.
@@ -84,6 +84,7 @@ The 1.0.0-alpha.1 release does not have all features and collateral planned for 
 - Full unit test bench for regression testing
 - Example applications using the Safety Framework
 - More tips and tricks
+
 
 
 
