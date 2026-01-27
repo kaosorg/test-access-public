@@ -16,7 +16,7 @@ jobs:
       - name: Hide body
         id: hide
         run: |
-          BODY="${{ github.event.issue.body }}"
+          BODY=${{ github.event.issue.body }}
           echo "::add-mask::$BODY"
           
       - name: Extract GitHub username
