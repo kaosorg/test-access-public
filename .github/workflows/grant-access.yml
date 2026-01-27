@@ -18,7 +18,7 @@ jobs:
         run: |
           BODY="${{ github.event.issue.body }}"
 
-          USERNAME=$(printf "%s\n" "$BODY" \
+          USERNAME=$("%s\n" "$BODY" \
             | sed -n '
                 /^### GitHub Username/{
                   :a
@@ -30,11 +30,11 @@ jobs:
             | xargs)
 
           if [ -z "$USERNAME" ]; then
-            echo "::add-mask::username=" >> $GITHUB_OUTPUT
+            echo "username=" >> $GITHUB_OUTPUT
             exit 0
           fi
 
-          echo "::add-mask::username=$USERNAME" >> $GITHUB_OUTPUT
+          echo "username=$USERNAME" >> $GITHUB_OUTPUT
 
       - name: Validate GitHub user
         env:
