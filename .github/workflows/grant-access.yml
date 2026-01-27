@@ -62,16 +62,6 @@ jobs:
               > /dev/null
             echo "::error::Username is not a valid GitHub user" && exit 1
           fi
-  
-      - name: Parse Issue
-        id: parser
-        uses: issue-ops/parser@v5.0.0
-        with:
-          body: ${{ github.event.issue.body }}
-    
-      - name: Output Issue JSON
-        id: output-issue
-        run: echo ${{ steps.parser.outputs.json }}
         
       # 3️⃣ Invite user to private repo
       - name: Invite to private repo
