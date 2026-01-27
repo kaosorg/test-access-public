@@ -18,6 +18,7 @@ jobs:
         env: 
           BODY: ${{ github.event.issue.body }}
         run: |
+          echo "::add-mask::$BODY"
           echo "$BODY"
 
 
