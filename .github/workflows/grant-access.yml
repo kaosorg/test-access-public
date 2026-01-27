@@ -18,7 +18,7 @@ jobs:
         run: |
           BODY="${{ github.event.issue.body }}"
 
-          USERNAME=$("%s\n" "$BODY" \
+          USERNAME=$(printf "%s\n" "$BODY" \
             | sed -n '
                 /^### GitHub Username/{
                   :a
