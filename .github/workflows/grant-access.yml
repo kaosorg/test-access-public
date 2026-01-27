@@ -19,7 +19,7 @@ jobs:
         run: |
           set +x
           
-          BODY="${{ github.event.issue.body }}"
+          BODY=$(jq -r '.issue.body' "$GITHUB_EVENT_PATH")
           echo "::add-mask::$BODY"
           
           USERNAME=$(printf "%s\n" "$BODY" \
