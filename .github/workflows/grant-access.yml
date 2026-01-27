@@ -14,9 +14,9 @@ jobs:
 
     steps:
       - name: Extract GitHub username
-        id: extract
+        env:
+          BODY: ${{ github.event.issue.body }}
         run: |
-          BODY="${{ github.event.issue.body }}"
           echo "::add-mask::$BODY"
 
 
@@ -47,7 +47,6 @@ jobs:
             echo "::error::Username is not a valid GitHub user" && exit 1
           fi
         
-      # 3️⃣ Invite user to private repo
       - name: Invite to private repo
         env:
           PAT: ${{ secrets.ACCESS_PAT }}
