@@ -13,22 +13,25 @@ jobs:
       contents: read
 
     steps:
+      - name: Hide body
+        id: hide
+        run: |
+          BODY="${{ github.event.issue.body }}"
+          echo "::add-mask::$BODY"
+          
       - name: Extract GitHub username
         id: extract
-        env:
-          BODY: ${{ github.event.issue.body }}
         run: |
-          
-            USERNAME=$((printf "%s\n" "$BODY" \
-              | sed -n '
-                  /^### GitHub Username/{
-                    :a
-                    n
-                    /^[[:space:]]*$/ba
-                    p
-                  }' \
-              | tr -d '`' \
-              | xargs))
+          USERNAME=$((printf "%s\n" "$BODY" \
+            | sed -n '
+                /^### GitHub Username/{
+                  :a
+                  n
+                  /^[[:space:]]*$/ba
+                  p
+                }' \
+            | tr -d '`' \
+            | xargs))
             echo "::add-mask::$USERNAME"
             if [ -z "$USERNAME" ]; then
               echo "username=" >> $GITHUB_OUTPUT
