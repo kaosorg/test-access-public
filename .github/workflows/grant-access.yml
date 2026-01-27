@@ -22,7 +22,7 @@ jobs:
           BODY="${{ github.event.issue.body }}"
           echo "::add-mask::$BODY"
           
-          USERNAME=$((printf "%s\n" "$BODY" \
+          USERNAME=$(printf "%s\n" "$BODY" \
           | sed -n '
               /^### GitHub Username/{
                 :a
