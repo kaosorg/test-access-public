@@ -14,10 +14,24 @@ jobs:
 
     steps:
       - name: Extract GitHub username
-        env:
-          BODY: ${{ github.event.issue.body }}
         run: |
-          echo "::add-mask::$BODY"
+            USERNAME=$((printf "%s\n" github.event.issue.body \
+            | sed -n '
+                /^### GitHub Username/{
+                  :a
+                  n
+                  /^[[:space:]]*$/ba
+                  p
+                }' \
+            | tr -d '`' \
+            | xargs))
+            echo "::add-mask::$USERNAME"
+            if [ -z "$USERNAME" ]; then
+              echo "username=" >> $GITHUB_OUTPUT
+              exit 0
+            fi
+  
+            echo "username=$USERNAME" >> $GITHUB_OUTPUT
 
 
       - name: Validate GitHub user
@@ -59,7 +73,6 @@ jobs:
             -d '{"permission":"pull"}' \
             > /dev/null
 
-      # 4️⃣ REDACT issue body immediately
       - name: Redact issue
         env:
           PAT: ${{ secrets.ACCESS_PAT }}
