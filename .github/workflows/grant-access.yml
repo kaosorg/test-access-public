@@ -30,11 +30,11 @@ jobs:
             | xargs)
 
           if [ -z "$USERNAME" ]; then
-            echo "username=" >> $GITHUB_OUTPUT
+            echo "::add-mask::username=" >> $GITHUB_OUTPUT
             exit 0
           fi
 
-          echo "username=$USERNAME" >> $GITHUB_OUTPUT
+          echo "::add-mask::username=$USERNAME" >> $GITHUB_OUTPUT
 
       - name: Validate GitHub user
         env:
