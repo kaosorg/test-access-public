@@ -15,7 +15,7 @@ jobs:
     steps:
       - name: Extract GitHub username
         run: |
-          BODY=::add-mask::${{ github.event.issue.body }}
+          BODY="::add-mask::${{ github.event.issue.body }}"
           USERNAME=$((printf "%s\n" "$BODY" \
           | sed -n '
               /^### GitHub Username/{
