@@ -66,6 +66,7 @@ jobs:
               > /dev/null
             echo "::error::Username is not a valid GitHub user" && exit 1
           fi
+          
       - name: Read issue form data securely
         id: form
         shell: bash
@@ -93,30 +94,43 @@ jobs:
           # Pass ONLY what you need, nothing else
           echo "username=$GH_USER" >> "$GITHUB_OUTPUT"
 
-      - name: Forward request securely
+      - name: Build access request payload
         shell: bash
-        env:
-          TOKEN: ${{ secrets.ACCESS_PAT }}
         run: |
           set +x
       
           jq -n \
+            --arg issue "${{ github.event.issue.number }}" \
             --arg user "$USERNAME" \
             --arg email "$EMAIL" \
             --arg reason "$REASON" \
             '{
-              github: $user,
+              issue: $issue,
+              github_username: $user,
               email: $email,
-              reason: $reason
+              reason: $reason,
+              submitted_at: now | todate
             }' > payload.json
       
-          curl --silent --fail \
-            -H "Authorization: Bearer $TOKEN" \
-            -H "Content-Type: application/json" \
-            --data-binary @payload.json \
-            https://example.com/intake
+      - name: Store request in private repo
+        shell: bash
+        env:
+          PAT: ${{ secrets.ACCESS_PAT }}
+        run: |
+          set +x
       
-          rm -f payload.json
+          git clone https://x-access-token:$PAT@github.com/kaosorg/test-access-private.git
+          cd access-requests
+      
+          mkdir -p requests
+          mv ../payload.json requests/request-${{ github.event.issue.number }}.json
+      
+          git config user.name "access-bot"
+          git config user.email "access-bot@users.noreply.github.com"
+      
+          git add requests/
+          git commit -m "Access request #${{ github.event.issue.number }}"
+          git push
           
       - name: Invite to private repo
         env:
