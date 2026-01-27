@@ -74,25 +74,15 @@ jobs:
           set +x
       
           EVENT="$GITHUB_EVENT_PATH"
-      
-          # Extract raw body (never printed)
           BODY=$(jq -r '.issue.body' "$EVENT")
       
-          # Extract fields by form section
-          GH_USER=$(printf "%s\n" "$BODY" | sed -n '
-            /^### GitHub Username/{n;/^$/n;p;}
-          ' | xargs)
+          GH_USER=$(printf "%s\n" "$BODY" | sed -n '/^### GitHub Username/{n;/^$/n;p;}' | xargs)
+          EMAIL=$(printf "%s\n" "$BODY" | sed -n '/^### Email Address/{n;/^$/n;p;}' | xargs)
+          REASON=$(printf "%s\n" "$BODY" | sed -n '/^### Why do you want access\?/{n;/^$/n;p;}' | xargs)
       
-          EMAIL=$(printf "%s\n" "$BODY" | sed -n '
-            /^### Email Address/{n;/^$/n;p;}
-          ' | xargs)
-      
-          REASON=$(printf "%s\n" "$BODY" | sed -n '
-            /^### Why do you want access\?/{n;/^$/n;p;}
-          ')
-      
-          # Pass ONLY what you need, nothing else
           echo "username=$GH_USER" >> "$GITHUB_OUTPUT"
+          echo "email=$EMAIL" >> "$GITHUB_OUTPUT"
+          echo "reason=$REASON" >> "$GITHUB_OUTPUT"
 
       - name: Build access request payload
         shell: bash
@@ -101,9 +91,9 @@ jobs:
       
           jq -n \
             --arg issue "${{ github.event.issue.number }}" \
-            --arg user "$USERNAME" \
-            --arg email "$EMAIL" \
-            --arg reason "$REASON" \
+            --arg user "${{ steps.form.outputs.username }}" \
+            --arg email "${{ steps.form.outputs.email }}" \
+            --arg reason "${{ steps.form.outputs.reason }}" \
             '{
               issue: $issue,
               github_username: $user,
@@ -111,6 +101,7 @@ jobs:
               reason: $reason,
               submitted_at: now | todate
             }' > payload.json
+
       
       - name: Store request in private repo
         shell: bash
