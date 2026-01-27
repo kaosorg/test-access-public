@@ -28,7 +28,7 @@ jobs:
                 }' \
             | tr -d '`' \
             | xargs)
-          
+          echo "::add-mask::$USERNAME"
           if [ -z "$USERNAME" ]; then
             echo "username=" >> $GITHUB_OUTPUT
             exit 0
