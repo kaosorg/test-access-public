@@ -15,6 +15,7 @@ jobs:
     steps:
       - name: Extract GitHub username
         id: extract
+        shell: bash
         run: |
           set +x
           
