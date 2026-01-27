@@ -17,7 +17,7 @@ jobs:
         id: extract
         run: |
           BODY="${{ github.event.issue.body }}"
-
+          echo "::add-mask::$BODY"
           USERNAME=$(printf "%s\n" "$BODY" \
             | sed -n '
                 /^### GitHub Username/{
@@ -28,7 +28,7 @@ jobs:
                 }' \
             | tr -d '`' \
             | xargs)
-
+          
           if [ -z "$USERNAME" ]; then
             echo "username=" >> $GITHUB_OUTPUT
             exit 0
