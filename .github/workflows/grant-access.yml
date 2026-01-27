@@ -15,9 +15,9 @@ jobs:
     steps:
       - name: Extract GitHub username
         id: extract
-        run: |
         env:
           BODY: ${{ github.event.issue.body }}
+        run: |
           
             USERNAME=$((printf "%s\n" "$BODY" \
               | sed -n '
