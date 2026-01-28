@@ -19,18 +19,35 @@ body:
       description: Used for access coordination and updates
     validations:
       required: true
-
+    match:
+      pattern: "^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}$"
+      message: "Please enter a valid email address."
+  
+  - type: input
+    id: company
+    attributes:
+      label: What company are you with?
+    validations:
+      required: false
+      
   - type: textarea
     id: reason
     attributes:
       label: Why do you want access?
     validations:
-      required: true
+      required: false
+
+  - type: textarea
+    id: customized
+    attributes:
+      label: We can customize the form to include whatever we want
+    validations:
+      required: false
 
   - type: checkboxes
     id: consent
     attributes:
       label: Consent
       options:
-        - label: I agree to be contacted regarding this project
-          required: true
+        - label: I want to be contacted for help with designing my functional safety application
+          required: false
