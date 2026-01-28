@@ -79,17 +79,21 @@ jobs:
           GH_USER=$(printf "%s\n" "$BODY" | sed -n '/^### GitHub Username/{n;/^$/n;p;}' | xargs)
           EMAIL=$(printf "%s\n" "$BODY" | sed -n '/^### Email Address/{n;/^$/n;p;}' | xargs)
           COMPANY=$(printf "%s\n" "$BODY" | sed -n '/^### What company are you with\?/{n;/^$/n;p;}' | xargs)
+          SEGMENT=$(printf "%s\n" "$BODY" | sed -n '/^### What kind of application are you looking to use this for\?/{n;/^$/n;p;}' | xargs)
           REASON=$(printf "%s\n" "$BODY" | sed -n '/^### Why do you want access\?/{n;/^$/n;p;}' | xargs)
+          CONSENT=$(printf "%s\n" "$BODY" | sed -n '/^### I want to be contacted for help with designing my functional safety application/{n;/^$/n;p;}' | xargs)
 
           echo "::add-mask::$GH_USER"
           echo "::add-mask::$EMAIL"
           echo "::add-mask::$COMPANY"
+          echo "::add-mask::$SEGMENT"
           echo "::add-mask::$REASON"
           
           echo "username=$GH_USER" >> "$GITHUB_OUTPUT"
           echo "email=$EMAIL" >> "$GITHUB_OUTPUT"
           echo "company=$COMPANY" >> "$GITHUB_OUTPUT"
           echo "reason=$REASON" >> "$GITHUB_OUTPUT"
+          echo "consent=$CONSENT" >> "$GITHUB_OUTPUT"
           
       - name: Validate email address
         shell: bash
@@ -128,6 +132,7 @@ jobs:
             --arg email "${{ steps.form.outputs.email }}" \
             --arg company "${{ steps.form.outputs.company }}"\
             --arg reason "${{ steps.form.outputs.reason }}" \
+            --arg consent "${{ steps.form.outputs.consent }}" \
             '{
               issue: $issue,
               github_username: $user,
