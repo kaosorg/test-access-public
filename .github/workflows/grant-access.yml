@@ -90,7 +90,33 @@ jobs:
           echo "email=$EMAIL" >> "$GITHUB_OUTPUT"
           echo "company=$COMPANY" >> "$GITHUB_OUTPUT"
           echo "reason=$REASON" >> "$GITHUB_OUTPUT"
+          
+      - name: Validate email address
+        shell: bash
+        env:
+          EMAIL: ${{ steps.form.outputs.email }}
+          PAT: ${{ secrets.ACCESS_PAT }}
+          ISSUE_NUMBER: ${{ github.event.issue.number }}
+        run: |
+          set +x
 
+          EMAIL_REGEX='^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$'
+
+          if [ -z "$EMAIL" ] || ! [[ "$EMAIL" =~ $EMAIL_REGEX ]]; then
+            curl -s -X PATCH \
+              -H "Authorization: Bearer $PAT" \
+              -H "Accept: application/vnd.github+json" \
+              https://api.github.com/repos/kaosorg/test-access-public/issues/$ISSUE_NUMBER \
+              -d '{
+                "body": "(Invalid email address provided)",
+                "state": "closed",
+                "locked": true
+              }' > /dev/null
+
+            echo "::error::Invalid email address"
+            exit 1
+          fi
+        
       - name: Build access request payload
         shell: bash
         run: |
