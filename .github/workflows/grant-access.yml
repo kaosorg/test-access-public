@@ -110,7 +110,7 @@ jobs:
         run: |
           set +x
       
-          git clone https://x-access-token:$PAT@github.com/kaosorg/test-access-private.git
+          git clone https://x-access-token:$PAT@github.com/kaosorg/access-requests.git
           cd test-access-private
       
           mkdir -p requests
