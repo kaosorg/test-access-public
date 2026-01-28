@@ -78,10 +78,17 @@ jobs:
       
           GH_USER=$(printf "%s\n" "$BODY" | sed -n '/^### GitHub Username/{n;/^$/n;p;}' | xargs)
           EMAIL=$(printf "%s\n" "$BODY" | sed -n '/^### Email Address/{n;/^$/n;p;}' | xargs)
+          COMPANY=$(printf "%s\n" "$BODY" | sed -n '/^### What company are you with\?/{n;/^$/n;p;}' | xargs)
           REASON=$(printf "%s\n" "$BODY" | sed -n '/^### Why do you want access\?/{n;/^$/n;p;}' | xargs)
-      
+
+          echo "::add-mask::$GH_USER"
+          echo "::add-mask::$EMAIL"
+          echo "::add-mask::$COMPANY"
+          echo "::add-mask::$REASON"
+          
           echo "username=$GH_USER" >> "$GITHUB_OUTPUT"
           echo "email=$EMAIL" >> "$GITHUB_OUTPUT"
+          echo "company=$COMPANY" >> "$GITHUB_OUTPUT"
           echo "reason=$REASON" >> "$GITHUB_OUTPUT"
 
       - name: Build access request payload
@@ -93,11 +100,13 @@ jobs:
             --arg issue "${{ github.event.issue.number }}" \
             --arg user "${{ steps.form.outputs.username }}" \
             --arg email "${{ steps.form.outputs.email }}" \
+            --arg company "${{ steps.form.outputs.company }}"\
             --arg reason "${{ steps.form.outputs.reason }}" \
             '{
               issue: $issue,
               github_username: $user,
               email: $email,
+              company: $company,
               reason: $reason,
               submitted_at: now | todate
             }' > payload.json
