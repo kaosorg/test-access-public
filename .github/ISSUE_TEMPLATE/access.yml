@@ -19,9 +19,6 @@ body:
       description: Used for access coordination and updates
     validations:
       required: true
-      match:
-        pattern: "^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}$"
-        message: "Please enter a valid email address."
   
   - type: input
     id: company
