@@ -2,8 +2,8 @@
 
 This is a public repository used to request access to a private repository.
 
-[![](https://github.com/kaosorg/test-access-public/blob/main/access_button1.png)](https://github.com/kaosorg/test-access-public/issues/new?template=access.yml)
-[![](https://github.com/kaosorg/test-access-public/blob/main/api_button.png)](https://kaosorg.github.io/test-access-public/)
+[![](https://github.com/kaosorg/test-access-public/blob/main/imgs/access_button1.png)](https://github.com/kaosorg/test-access-public/issues/new?template=access.yml)
+[![](https://github.com/kaosorg/test-access-public/blob/main/imgs/api_button.png)](https://kaosorg.github.io/test-access-public/)
 
 Issues submitted to request access are public and may collect contact information
 for access coordination. Do not submit passwords, tokens, or secrets.
@@ -41,7 +41,7 @@ Each component has been thoroughly unit tested, following principles of Equivale
 ## Architecture
 The project is implemented with a layered Task-based architecture:
 
-![](https://github.com/kaosorg/test-access-public/blob/main/stackDiagramArch.svg)
+![](https://github.com/kaosorg/test-access-public/blob/main/imgs/stackDiagramArch.svg)
 
 - **Task Manager Layer** contains Task Managers that ensure that the correct Task is called at the correct time.
 - **Task Layer** contains Tasks that implement high-level logic, decision-making and error handling.
@@ -84,6 +84,7 @@ The 1.0.0-alpha.1 release does not have all features and collateral planned for 
 - Full unit test bench for regression testing
 - Example applications using the project
 - More tips and tricks
+
 
 
 
