@@ -81,21 +81,21 @@ jobs:
           COMPANY=$(printf "%s\n" "$BODY" | sed -n '/^### What company are you with\?/{n;/^$/n;p;}' | xargs)
           SEGMENT=$(printf "%s\n" "$BODY" | sed -n '/^### What kind of application are you looking to use this for\?/{n;/^$/n;p;}' | xargs)
           REASON=$(printf "%s\n" "$BODY" | sed -n '/^### Why do you want access\?/{n;/^$/n;p;}' | xargs)
-          CONSENT_RAW=$(printf "%s\n" "$BODY" | sed -n '
-            /^### I want to be contacted for help with designing my functional safety application/{
-              :a
-              n
-              /^[[:space:]]*$/ba
-              p
-            }'
-          )
-          
-          if echo "$CONSENT_RAW" | grep -qi '\[x\]'; then
-            CONSENT="true"
+          CONSENT_BLOCK=$(jq -r '.issue.body' "$GITHUB_EVENT_PATH" | awk '
+            /^Consent[[:space:]]*$/ {flag=1; next}
+            /^### / {flag=0}
+            flag {print}
+          ')
+
+          if echo "$CONSENT_BLOCK" | grep -qi '\[x\]'; then
+            CONSENT=true
           else
-            CONSENT="false"
+            CONSENT=false
           fi
-          echo "RAW CONSENT LINE: [$CONSENT_RAW]"
+          
+          echo "RAW CONSENT BLOCK:"
+          echo "$CONSENT_BLOCK"
+          
           echo "::add-mask::$GH_USER"
           echo "::add-mask::$EMAIL"
           echo "::add-mask::$COMPANY"
