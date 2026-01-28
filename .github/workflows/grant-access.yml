@@ -95,7 +95,7 @@ jobs:
           else
             CONSENT="false"
           fi
-
+          echo "RAW CONSENT LINE: [$CONSENT_RAW]"
           echo "::add-mask::$GH_USER"
           echo "::add-mask::$EMAIL"
           echo "::add-mask::$COMPANY"
