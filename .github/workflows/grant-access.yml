@@ -81,10 +81,16 @@ jobs:
           COMPANY=$(printf "%s\n" "$BODY" | sed -n '/^### What company are you with\?/{n;/^$/n;p;}' | xargs)
           SEGMENT=$(printf "%s\n" "$BODY" | sed -n '/^### What kind of application are you looking to use this for\?/{n;/^$/n;p;}' | xargs)
           REASON=$(printf "%s\n" "$BODY" | sed -n '/^### Why do you want access\?/{n;/^$/n;p;}' | xargs)
-          CONSENT_RAW=$(printf "%s\n" "$BODY" \
-            | sed -n '/^### I want to be contacted for help with designing my functional safety application/{n;p;}')
+          CONSENT_RAW=$(printf "%s\n" "$BODY" | sed -n '
+            /^### I want to be contacted for help with designing my functional safety application/{
+              :a
+              n
+              /^[[:space:]]*$/ba
+              p
+            }'
+          )
           
-          if echo "$CONSENT_RAW" | grep -q '\[x\]'; then
+          if echo "$CONSENT_RAW" | grep -qi '\[x\]'; then
             CONSENT="true"
           else
             CONSENT="false"
