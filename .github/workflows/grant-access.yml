@@ -120,7 +120,7 @@ jobs:
           set +x
       
           git clone https://x-access-token:$PAT@github.com/kaosorg/access-requests.git
-          cd test-access-private
+          cd access-requests
       
           mkdir -p requests
           mv ../payload.json requests/request-${{ github.event.issue.number }}.json
