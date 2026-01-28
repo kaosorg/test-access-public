@@ -81,7 +81,14 @@ jobs:
           COMPANY=$(printf "%s\n" "$BODY" | sed -n '/^### What company are you with\?/{n;/^$/n;p;}' | xargs)
           SEGMENT=$(printf "%s\n" "$BODY" | sed -n '/^### What kind of application are you looking to use this for\?/{n;/^$/n;p;}' | xargs)
           REASON=$(printf "%s\n" "$BODY" | sed -n '/^### Why do you want access\?/{n;/^$/n;p;}' | xargs)
-          CONSENT=$(printf "%s\n" "$BODY" | sed -n '/^### I want to be contacted for help with designing my functional safety application/{n;/^$/n;p;}' | xargs)
+          CONSENT_RAW=$(printf "%s\n" "$BODY" \
+            | sed -n '/^### I want to be contacted for help with designing my functional safety application/{n;p;}')
+          
+          if echo "$CONSENT_RAW" | grep -q '\[x\]'; then
+            CONSENT="true"
+          else
+            CONSENT="false"
+          fi
 
           echo "::add-mask::$GH_USER"
           echo "::add-mask::$EMAIL"
