@@ -139,6 +139,7 @@ jobs:
               email: $email,
               company: $company,
               reason: $reason,
+              consent: $consent,
               submitted_at: now | todate
             }' > payload.json
 
