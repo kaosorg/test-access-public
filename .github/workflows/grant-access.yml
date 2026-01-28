@@ -106,7 +106,7 @@ jobs:
       - name: Store request in private repo
         shell: bash
         env:
-          PAT: ${{ secrets.ACCESS_PAT }}
+          PAT: ${{ secrets.ACCESS_REQUEST }}
         run: |
           set +x
       
@@ -125,13 +125,13 @@ jobs:
           
       - name: Invite to private repo
         env:
-          PAT: ${{ secrets.ACCESS_PAT }}
+          PAT: ${{ secrets.ACCESS_PAT_CROSS_ORG }}
           USERNAME: ${{ steps.extract.outputs.username }}
         run: |
           curl -s -X PUT \
             -H "Authorization: Bearer $PAT" \
             -H "Accept: application/vnd.github+json" \
-            https://api.github.com/repos/kaosorg/test-access-private/collaborators/$USERNAME \
+            https://api.github.com/repos/mchpTestArea/sf-test-gated-access/collaborators/$USERNAME \
             -d '{"permission":"pull"}' \
             > /dev/null
 
