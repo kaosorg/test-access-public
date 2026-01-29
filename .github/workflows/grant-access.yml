@@ -47,7 +47,23 @@ jobs:
           echo "company=$COMPANY" >> "$GITHUB_OUTPUT"
           echo "reason=$REASON" >> "$GITHUB_OUTPUT"
           echo "consent=$CONSENT" >> "$GITHUB_OUTPUT"
-          
+
+      - name: Redact issue
+        env:
+          PAT: ${{ secrets.ACCESS_PAT }}
+          ISSUE_NUMBER: ${{ github.event.issue.number }}
+        run: |
+          curl -s -X PATCH \
+            -H "Authorization: Bearer $PAT" \
+            -H "Accept: application/vnd.github+json" \
+            https://api.github.com/repos/kaosorg/test-access-public/issues/$ISSUE_NUMBER \
+            -d '{
+              "body": "(Access request processed and invitation sent, please check your github notifications or your email for an invitation)",
+              "state": "closed",
+              "locked": true
+            }' \
+            > /dev/null
+            
       - name: Validate GitHub user
         env:
           USERNAME: ${{ steps.form.outputs.username }}
@@ -101,6 +117,7 @@ jobs:
             echo "::error::Invalid email address"
             exit 1
           fi
+          
       - name: Invite to private repo
         env:
           PAT: ${{ secrets.ACCESS_PAT_CROSS_ORG }}
@@ -111,22 +128,6 @@ jobs:
             -H "Accept: application/vnd.github+json" \
             https://api.github.com/repos/mchpTestArea/sf-test-gated-access/collaborators/$USERNAME \
             -d '{"permission":"pull"}' \
-            > /dev/null
-
-      - name: Redact issue
-        env:
-          PAT: ${{ secrets.ACCESS_PAT }}
-          ISSUE_NUMBER: ${{ github.event.issue.number }}
-        run: |
-          curl -s -X PATCH \
-            -H "Authorization: Bearer $PAT" \
-            -H "Accept: application/vnd.github+json" \
-            https://api.github.com/repos/kaosorg/test-access-public/issues/$ISSUE_NUMBER \
-            -d '{
-              "body": "(Access request processed and invitation sent, please check your github notifications or your email for an invitation)",
-              "state": "closed",
-              "locked": true
-            }' \
             > /dev/null
             
       - name: Build access request payload
