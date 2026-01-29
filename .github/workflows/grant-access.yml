@@ -35,14 +35,12 @@ jobs:
             CONSENT=false
           fi
           
-          echo "consent=$CONSENT" >> "$GITHUB_OUTPUT"
-          
           echo "::add-mask::$USERNAME"
           echo "::add-mask::$EMAIL"
           echo "::add-mask::$COMPANY"
           echo "::add-mask::$SEGMENT"
           echo "::add-mask::$REASON"
-          echo "::add-mask::$SEGMENT"
+          echo "::add-mask::$CONSENT"
           echo "segment=$SEGMENT" >> "$GITHUB_OUTPUT"
           echo "username=$USERNAME" >> "$GITHUB_OUTPUT"
           echo "email=$EMAIL" >> "$GITHUB_OUTPUT"
@@ -74,7 +72,8 @@ jobs:
                 "locked": true
               }' \
               > /dev/null
-            echo "::error::Username is not a valid GitHub user" && exit 1
+            echo "::error::Username is not a valid GitHub user"
+            exit 1
           fi
           
       - name: Validate email address
