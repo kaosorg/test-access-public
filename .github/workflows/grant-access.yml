@@ -151,7 +151,7 @@ jobs:
       - name: Invite to private repo
         env:
           PAT: ${{ secrets.ACCESS_PAT_CROSS_ORG }}
-          USERNAME: ${{ steps.extract.outputs.username }}
+          USERNAME: ${{ steps.form.outputs.username }}
         run: |
           curl -s -X PUT \
             -H "Authorization: Bearer $PAT" \
