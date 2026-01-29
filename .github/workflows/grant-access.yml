@@ -96,7 +96,8 @@ jobs:
           echo "::add-mask::$COMPANY"
           echo "::add-mask::$SEGMENT"
           echo "::add-mask::$REASON"
-          
+          echo "::add-mask::$SEGMENT"
+          echo "segment=$SEGMENT" >> "$GITHUB_OUTPUT"
           echo "username=$GH_USER" >> "$GITHUB_OUTPUT"
           echo "email=$EMAIL" >> "$GITHUB_OUTPUT"
           echo "company=$COMPANY" >> "$GITHUB_OUTPUT"
@@ -140,12 +141,14 @@ jobs:
             --arg email "${{ steps.form.outputs.email }}" \
             --arg company "${{ steps.form.outputs.company }}"\
             --arg reason "${{ steps.form.outputs.reason }}" \
+            --arg segment "${{ steps.form.outputs.segment }}" \
             --arg consent "${{ steps.form.outputs.consent }}" \
             '{
               issue: $issue,
               github_username: $user,
               email: $email,
               company: $company,
+              segment: $segment,
               reason: $reason,
               consent: $consent,
               submitted_at: now | todate
