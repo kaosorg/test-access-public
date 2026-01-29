@@ -27,6 +27,18 @@ body:
     validations:
       required: false
       
+  - type: dropdown
+    id: segment
+    attributes:
+      label: Market segment
+      description: What kind of application are you looking to use this for?
+      options:
+        - Automotive
+        - Industrial
+        - Consumer
+    validations:
+      required: false
+      
   - type: textarea
     id: reason
     attributes:
