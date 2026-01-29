@@ -67,7 +67,7 @@ jobs:
               -H "Accept: application/vnd.github+json" \
               https://api.github.com/repos/kaosorg/test-access-public/issues/$ISSUE_NUMBER \
               -d '{
-                "body": "(Username is not a valid GitHub user)",
+                "body": "(Username is not a valid GitHub user, please fill out with a valid username)",
                 "state": "closed",
                 "locked": true
               }' \
@@ -93,7 +93,7 @@ jobs:
               -H "Accept: application/vnd.github+json" \
               https://api.github.com/repos/kaosorg/test-access-public/issues/$ISSUE_NUMBER \
               -d '{
-                "body": "(Invalid email address provided)",
+                "body": "(Invalid email address provided, please fill out the form with a valid email address)",
                 "state": "closed",
                 "locked": true
               }' > /dev/null
@@ -169,7 +169,7 @@ jobs:
             -H "Accept: application/vnd.github+json" \
             https://api.github.com/repos/kaosorg/test-access-public/issues/$ISSUE_NUMBER \
             -d '{
-              "body": "(redacted — access request processed)",
+              "body": "(Access request processed and invitation sent, please check your github notifications or your email for an invitation)",
               "state": "closed",
               "locked": true
             }' \
