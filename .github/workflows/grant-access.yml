@@ -67,7 +67,7 @@ jobs:
               -H "Accept: application/vnd.github+json" \
               https://api.github.com/repos/kaosorg/test-access-public/issues/$ISSUE_NUMBER \
               -d '{
-                "body": "(Username is not a valid GitHub user, please fill out with a valid username)",
+                "body": "(Username is not a valid GitHub user, please fill out the form with a valid username)",
                 "state": "closed",
                 "locked": true
               }' \
