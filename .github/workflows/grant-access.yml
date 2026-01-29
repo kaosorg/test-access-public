@@ -79,7 +79,7 @@ jobs:
           GH_USER=$(printf "%s\n" "$BODY" | sed -n '/^### GitHub Username/{n;/^$/n;p;}' | xargs)
           EMAIL=$(printf "%s\n" "$BODY" | sed -n '/^### Email Address/{n;/^$/n;p;}' | xargs)
           COMPANY=$(printf "%s\n" "$BODY" | sed -n '/^### What company are you with\?/{n;/^$/n;p;}' | xargs)
-          SEGMENT=$(printf "%s\n" "$BODY" | sed -n '/^### What kind of application are you looking to use this for\?/{n;/^$/n;p;}' | xargs)
+          SEGMENT=$(printf "%s\n" "$BODY" | sed -n '/^### Market segment/{n;/^$/n;p;}' | xargs)
           REASON=$(printf "%s\n" "$BODY" | sed -n '/^### Why do you want access\?/{n;/^$/n;p;}' | xargs)
           BODY=$(jq -r '.issue.body' "$GITHUB_EVENT_PATH")
           
