@@ -1,0 +1,62 @@
+name: Request Access to Private Repository
+description: Request access to the private repository
+title: "Access Request:"
+labels: ["access-request"]
+body:
+  - type: input
+    id: github_username
+    attributes:
+      label: GitHub Username
+      description: Input the GitHub account you would like to use for access
+      placeholder: octocat
+    validations:
+      required: true
+
+  - type: input
+    id: email
+    attributes:
+      label: Email Address
+      description: Used for access coordination and updates
+    validations:
+      required: true
+  
+  - type: input
+    id: company
+    attributes:
+      label: What company are you with?
+    validations:
+      required: false
+      
+  - type: dropdown
+    id: segment
+    attributes:
+      label: Market segment
+      description: What kind of application are you looking to use this for?
+      options:
+        - Automotive
+        - Industrial
+        - Consumer
+    validations:
+      required: false
+      
+  - type: textarea
+    id: reason
+    attributes:
+      label: Why do you want access?
+    validations:
+      required: false
+
+  - type: textarea
+    id: customized
+    attributes:
+      label: We can customize the form to include whatever we want
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: consent
+    attributes:
+      label: Consent
+      options:
+        - label: I want to be contacted for help with designing my functional safety application
+          required: false

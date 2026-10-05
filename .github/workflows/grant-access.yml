@@ -1,0 +1,175 @@
+name: Grant Private Repo Access
+
+on:
+  issues:
+    types: [opened]
+
+jobs:
+  grant:
+    runs-on: ubuntu-latest
+
+    permissions:
+      issues: write
+      contents: read
+
+    steps:
+      - name: Read issue form data securely
+        id: form
+        shell: bash
+        run: |
+          set +x
+      
+          EVENT="$GITHUB_EVENT_PATH"
+          BODY=$(jq -r '.issue.body' "$EVENT")
+      
+          USERNAME=$(printf "%s\n" "$BODY" | sed -n '/^### GitHub Username/{n;/^$/n;p;}' | xargs)
+          EMAIL=$(printf "%s\n" "$BODY" | sed -n '/^### Email Address/{n;/^$/n;p;}' | xargs)
+          COMPANY=$(printf "%s\n" "$BODY" | sed -n '/^### What company are you with\?/{n;/^$/n;p;}' | xargs)
+          SEGMENT=$(printf "%s\n" "$BODY" | sed -n '/^### Market segment/{n;/^$/n;p;}' | xargs)
+          REASON=$(printf "%s\n" "$BODY" | sed -n '/^### Why do you want access\?/{n;/^$/n;p;}' | xargs)
+          BODY=$(jq -r '.issue.body' "$GITHUB_EVENT_PATH")
+          
+          if echo "$BODY" | grep -qi '^- \[[xX]\] I want to be contacted for help with designing my functional safety application'; then
+            CONSENT=true
+          else
+            CONSENT=false
+          fi
+          
+          echo "::add-mask::$USERNAME"
+          echo "::add-mask::$EMAIL"
+          echo "::add-mask::$COMPANY"
+          echo "::add-mask::$SEGMENT"
+          echo "::add-mask::$REASON"
+          echo "::add-mask::$CONSENT"
+          echo "segment=$SEGMENT" >> "$GITHUB_OUTPUT"
+          echo "username=$USERNAME" >> "$GITHUB_OUTPUT"
+          echo "email=$EMAIL" >> "$GITHUB_OUTPUT"
+          echo "company=$COMPANY" >> "$GITHUB_OUTPUT"
+          echo "reason=$REASON" >> "$GITHUB_OUTPUT"
+          echo "consent=$CONSENT" >> "$GITHUB_OUTPUT"
+            
+      - name: Validate GitHub user
+        env:
+          USERNAME: ${{ steps.form.outputs.username }}
+          PAT: ${{ secrets.ACCESS_PAT }}
+          ISSUE_NUMBER: ${{ github.event.issue.number }}
+        run: |
+          if [ -z "$USERNAME" ]; then
+            exit 1
+          fi
+
+          STATUS=$(curl -s -o /dev/null -w "%{http_code}" \
+            https://api.github.com/users/$USERNAME)
+
+          if [ "$STATUS" != "200" ]; then
+            curl -s -X PATCH \
+              -H "Authorization: Bearer $PAT" \
+              -H "Accept: application/vnd.github+json" \
+              https://api.github.com/repos/kaosorg/test-access-public/issues/$ISSUE_NUMBER \
+              -d '{
+                "body": "(Username is not a valid GitHub user, please fill out the form with a valid username)",
+                "state": "closed",
+                "locked": true
+              }' \
+              > /dev/null
+            echo "::error::Username is not a valid GitHub user"
+            exit 1
+          fi
+          
+      - name: Validate email address
+        shell: bash
+        env:
+          EMAIL: ${{ steps.form.outputs.email }}
+          PAT: ${{ secrets.ACCESS_PAT }}
+          ISSUE_NUMBER: ${{ github.event.issue.number }}
+        run: |
+          set +x
+
+          EMAIL_REGEX='^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$'
+
+          if [ -z "$EMAIL" ] || ! [[ "$EMAIL" =~ $EMAIL_REGEX ]]; then
+            curl -s -X PATCH \
+              -H "Authorization: Bearer $PAT" \
+              -H "Accept: application/vnd.github+json" \
+              https://api.github.com/repos/kaosorg/test-access-public/issues/$ISSUE_NUMBER \
+              -d '{
+                "body": "(Invalid email address provided, please fill out the form with a valid email address)",
+                "state": "closed",
+                "locked": true
+              }' > /dev/null
+
+            echo "::error::Invalid email address"
+            exit 1
+          fi
+          
+      - name: Redact issue
+        env:
+          PAT: ${{ secrets.ACCESS_PAT }}
+          ISSUE_NUMBER: ${{ github.event.issue.number }}
+        run: |
+          curl -s -X PATCH \
+            -H "Authorization: Bearer $PAT" \
+            -H "Accept: application/vnd.github+json" \
+            https://api.github.com/repos/kaosorg/test-access-public/issues/$ISSUE_NUMBER \
+            -d '{
+              "body": "(Access request processed and invitation sent, please check your github notifications or your email for an invitation)",
+              "state": "closed",
+              "locked": true
+            }' \
+            > /dev/null
+      - name: Invite to private repo
+        env:
+          PAT: ${{ secrets.ACCESS_PAT_CROSS_ORG }}
+          USERNAME: ${{ steps.form.outputs.username }}
+        run: |
+          curl -s -X PUT \
+            -H "Authorization: Bearer $PAT" \
+            -H "Accept: application/vnd.github+json" \
+            https://api.github.com/repos/mchpTestArea/sf-test-gated-access/collaborators/$USERNAME \
+            -d '{"permission":"pull"}' \
+            > /dev/null
+            
+      - name: Build access request payload
+        shell: bash
+        run: |
+          set +x
+      
+          jq -n \
+            --arg issue "${{ github.event.issue.number }}" \
+            --arg user "${{ steps.form.outputs.username }}" \
+            --arg email "${{ steps.form.outputs.email }}" \
+            --arg company "${{ steps.form.outputs.company }}"\
+            --arg reason "${{ steps.form.outputs.reason }}" \
+            --arg segment "${{ steps.form.outputs.segment }}" \
+            --arg consent "${{ steps.form.outputs.consent }}" \
+            '{
+              issue: $issue,
+              github_username: $user,
+              email: $email,
+              company: $company,
+              segment: $segment,
+              reason: $reason,
+              consent: $consent,
+              submitted_at: now | todate
+            }' > payload.json
+
+      
+      - name: Store request in private repo
+        shell: bash
+        env:
+          PAT: ${{ secrets.ACCESS_REQUEST }}
+        run: |
+          set +x
+      
+          git clone https://x-access-token:$PAT@github.com/kaosorg/access-requests.git
+          cd access-requests
+      
+          mkdir -p requests
+          mv ../payload.json requests/request-${{ github.event.issue.number }}.json
+      
+          git config user.name "access-bot"
+          git config user.email "access-bot@users.noreply.github.com"
+      
+          git add requests/
+          git commit -m "Access request #${{ github.event.issue.number }}"
+          git push
