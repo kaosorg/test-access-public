@@ -1,0 +1,17 @@
+<map id="Driver Layer" name="Driver Layer">
+<area shape="rect" id="Node000002" href="$group__bodctrl.html" title="Contains API prototypes for the BODCTRL (Brown&#45;out Detector Control) driver." alt="" coords="148,5,272,32"/>
+<area shape="rect" id="Node000003" href="$group__ccp__utility.html" title="Contains assembly API prototypes for the CCP (Configuration Change Protection) utility driver." alt="" coords="146,56,274,83"/>
+<area shape="rect" id="Node000004" href="$group__clkctrl.html" title="Contains API prototypes for the CLKCTRL (Clock Controller) driver." alt="" coords="149,107,270,133"/>
+<area shape="rect" id="Node000005" href="$group__cpuctrl.html" title="Contains API prototypes for the CPUCTRL (CPU Control) driver." alt="" coords="148,157,272,184"/>
+<area shape="rect" id="Node000006" href="$group__cpuint.html" title="Contains API prototypes for the CPUINT (CPU Interrupt Controller) driver." alt="" coords="154,208,266,235"/>
+<area shape="rect" id="Node000007" href="$group__crcscan.html" title="Contains API prototypes for the CRCSCAN (Cyclic Redundancy Check Memory Scan) driver." alt="" coords="146,259,274,285"/>
+<area shape="rect" id="Node000001" title="Contains simple Drivers to specific hardware peripherals and modules for register access." alt="" coords="5,335,98,361"/>
+<area shape="rect" id="Node000008" href="$group__errctrl.html" title="Contains API prototypes for the ERRCTRL (Error Controller) driver." alt="" coords="148,309,272,336"/>
+<area shape="rect" id="Node000009" href="$group__gpr.html" title="Contains API prototypes for the GPR (General Purpose Registers) driver." alt="" coords="165,360,254,387"/>
+<area shape="rect" id="Node000010" href="$group__nvmctrl.html" title="Contains API prototypes for the NVMCTRL (Nonvolatile Memory Controller) driver." alt="" coords="147,411,272,437"/>
+<area shape="rect" id="Node000011" href="$group__ramctrl.html" title="Contains API prototypes for the RAMCTRL (RAM Controller) driver." alt="" coords="147,461,272,488"/>
+<area shape="rect" id="Node000012" href="$group__rstctrl.html" title="Contains API prototypes for the RSTCTRL (Reset Controller) driver." alt="" coords="149,512,271,539"/>
+<area shape="rect" id="Node000013" href="$group__slpctrl.html" title="Contains API prototypes for the SLPCTRL (Sleep Controller) driver." alt="" coords="150,563,270,589"/>
+<area shape="rect" id="Node000014" href="$group__swdt.html" title="Contains API prototypes for the SWDT (Synchronous Watchdog Timer) driver." alt="" coords="160,613,260,640"/>
+<area shape="rect" id="Node000015" href="$group__wdt.html" title="Contains API prototypes for the WDT (Watchdog Timer) driver." alt="" coords="164,664,256,691"/>
+</map>

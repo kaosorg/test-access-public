@@ -1,0 +1,7 @@
+<map id="T_HandleNotificationErrors" name="T_HandleNotificationErrors">
+<area shape="rect" id="Node000001" title="Ensures Error IDs with &#39;NOTIFICATION&#39; criticality are handled." alt="" coords="5,5,184,32"/>
+<area shape="rect" id="Node000002" href="$group__error__handler.html#ga0863f71aabb3ddbb37fbfc57aaa7ca95" title="Processes all Error IDs in the log by calling the configured handler callback." alt="" coords="232,5,414,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="184,16,219,19,213,19,184,21"/>
+<area shape="rect" id="Node000003" href="$group__error__handler.html#ga2505acc92d6561094810d0cf9f296081" title="Pops the last Error ID from the Notification Error Log for error handling." alt="" coords="462,5,619,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="414,16,449,19,444,19,414,21"/>
+</map>

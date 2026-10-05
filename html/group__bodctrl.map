@@ -1,0 +1,4 @@
+<map id="BODCTRL Driver" name="BODCTRL Driver">
+<area shape="rect" id="Node000001" title="Contains API prototypes for the BODCTRL (Brown&#45;out Detector Control) driver." alt="" coords="146,5,270,32"/>
+<area shape="rect" id="Node000002" href="$group__driver__layer.html" title="Contains simple Drivers to specific hardware peripherals and modules for register access." alt="" coords="5,5,98,32"/>
+</map>

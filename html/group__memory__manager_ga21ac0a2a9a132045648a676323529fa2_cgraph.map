@@ -1,0 +1,9 @@
+<map id="MW_ClearPersistentVals" name="MW_ClearPersistentVals">
+<area shape="rect" id="Node000001" title="Clears all stored persistent values in GPR." alt="" coords="5,56,173,83"/>
+<area shape="rect" id="Node000002" href="$group__gpr.html#ga67e9100954cedbbfa88ee1432fc6d689" title="Modifies specific bit field(s) in the GPR2 register." alt="" coords="221,5,373,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="146,53,227,35,222,37,148,58"/>
+<area shape="rect" id="Node000003" href="$group__gpr.html#gabbfdce63e7076fdd98d98fa964ed89ad" title="Overwrites the GPR0 register value." alt="" coords="225,56,368,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="173,67,212,69,207,70,174,72"/>
+<area shape="rect" id="Node000004" href="$group__gpr.html#gaffbaf2e61f98957e364d3c42ef23a09e" title="Overwrites the GPR1 register value." alt="" coords="225,107,368,133"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="147,81,227,102,222,103,147,86"/>
+</map>

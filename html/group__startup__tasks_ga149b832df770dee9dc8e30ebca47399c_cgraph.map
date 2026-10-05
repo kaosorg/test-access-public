@@ -1,0 +1,166 @@
+<map id="T_RunStartupDiagnostics" name="T_RunStartupDiagnostics">
+<area shape="rect" id="Node000001" title="Runs all enabled startup diagnostics and reports any detected faults to the Error Handler." alt="" coords="5,765,177,792"/>
+<area shape="rect" id="Node000002" href="$group__error__handler.html#ga73765998f24e3760a5b8a9212a653b31" title="Handles error based on configured Error ID criticality if the error flag is set." alt="" coords="505,613,621,640"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="99,763,147,706,183,674,224,650,291,627,362,616,431,614,492,617,487,620,431,619,363,622,293,633,226,654,186,679,151,709,104,766"/>
+<area shape="rect" id="Node000017" href="$group__power__manager.html#gaaa0b58f241470e5d172c620d106554f2" title="Starts error injection diagnostic to detect faults in the VMON overvoltage detector." alt="" coords="233,765,407,792"/>
+<area shape="poly" id="edge9_Node000001_Node000017" title=" " alt="" coords="176,776,219,777,215,780,178,781"/>
+<area shape="rect" id="Node000018" href="$group__power__manager.html#ga1f43e0cb407e0e83881aa257b1dbc820" title="Completes error injection diagnostic to detect faults in the VMON overvoltage detector." alt="" coords="238,816,402,843"/>
+<area shape="poly" id="edge10_Node000001_Node000018" title=" " alt="" coords="154,790,244,811,239,813,155,795"/>
+<area shape="rect" id="Node000019" href="$group__power__manager.html#ga093b951980d99df08f9fb7ebf38f140a" title="Starts error injection diagnostic to detect faults in the VMON undervoltage detector." alt="" coords="229,867,410,893"/>
+<area shape="poly" id="edge11_Node000001_Node000019" title=" " alt="" coords="112,790,164,821,226,852,246,861,241,862,224,857,161,826,113,795"/>
+<area shape="rect" id="Node000020" href="$group__power__manager.html#ga63dd5e20d4a744160f74d8504e5f135f" title="Completes error injection diagnostic to detect faults in the VMON undervoltage detector." alt="" coords="234,917,406,944"/>
+<area shape="poly" id="edge12_Node000001_Node000020" title=" " alt="" coords="103,790,153,845,188,877,226,903,239,911,234,911,223,908,184,881,149,849,102,795"/>
+<area shape="rect" id="Node000021" href="$group__power__manager.html#ga768b163e2d0e650ff066fe2a6b906639" title="Checks if the VMON overvoltage error injection has been completed." alt="" coords="228,968,412,995"/>
+<area shape="poly" id="edge13_Node000001_Node000021" title=" " alt="" coords="99,790,118,824,145,869,182,915,226,954,236,961,230,961,223,958,178,918,141,872,113,827,98,795"/>
+<area shape="rect" id="Node000022" href="$group__power__manager.html#gaca1d92331a809951ea5aa34813ba49f6" title="Checks if the VMON undervoltage error injection has been completed." alt="" coords="225,1019,415,1045"/>
+<area shape="poly" id="edge14_Node000001_Node000022" title=" " alt="" coords="97,790,113,833,139,891,176,953,200,980,226,1005,234,1012,229,1011,223,1009,196,984,172,956,134,894,108,835,96,795"/>
+<area shape="rect" id="Node000023" href="$group__startup__tasks.html#gabbcfa89184ff1b231ca026f653fc920a" title="Private function, only exposed for unit testing and should not be called directly." alt="" coords="246,132,394,159"/>
+<area shape="poly" id="edge15_Node000001_Node000023" title=" " alt="" coords="95,764,306,172,311,174,100,766"/>
+<area shape="rect" id="Node000038" href="$group__startup__tasks.html#gab1a357e6b8b152415e328bcd825d7f39" title="Private function, only exposed for unit testing and should not be called directly." alt="" coords="251,715,388,741"/>
+<area shape="poly" id="edge37_Node000001_Node000038" title=" " alt="" coords="153,762,243,743,240,747,156,767"/>
+<area shape="rect" id="Node000050" href="$group__startup__tasks.html#ga417ff18972aee9a35af1825851eaccfc" title="Private function, only exposed for unit testing and should not be called directly." alt="" coords="240,436,400,463"/>
+<area shape="poly" id="edge65_Node000001_Node000050" title=" " alt="" coords="100,764,299,473,302,478,104,766"/>
+<area shape="rect" id="Node000059" href="$group__startup__tasks.html#ga17b1ec3c869cec62261da62811778c3c" title="Private function, only exposed for unit testing and should not be called directly." alt="" coords="246,664,394,691"/>
+<area shape="poly" id="edge99_Node000001_Node000059" title=" " alt="" coords="111,763,161,732,224,700,246,694,241,697,226,705,164,736,114,767"/>
+<area shape="rect" id="Node000003" href="$group__error__handler.html#gafa3d7008a2cea38c0d7c0fd8f5bf40d3" title="Transitions the system into a Safe State and resets the device." alt="" coords="742,563,887,589"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="621,613,732,592,728,594,622,618"/>
+<area shape="rect" id="Node000016" href="$group__error__handler.html#gadb8e7208478e2cdfd4374154518f31b9" title="Pushes Error ID to the Notification Error Log for later handling." alt="" coords="732,613,897,640"/>
+<area shape="poly" id="edge8_Node000002_Node000016" title=" " alt="" coords="621,624,719,626,714,628,622,629"/>
+<area shape="rect" id="Node000004" href="$group__interrupt__manager.html#ga36290cf4ebae7f5cfc4bddc69aae944f" title="Disables global interrupts on the device." alt="" coords="966,461,1154,488"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="838,560,895,529,965,498,989,492,984,494,967,502,897,534,841,564"/>
+<area shape="rect" id="Node000006" href="$group__error__manager.html#gae241ba85bb32c4c6a48527b95fe17af8" title="Enables forced floating (tri&#45;stating) of all I/O pins." alt="" coords="983,512,1137,539"/>
+<area shape="poly" id="edge4_Node000003_Node000006" title=" " alt="" coords="882,559,980,541,975,543,884,565"/>
+<area shape="rect" id="Node000009" href="$group__reset__manager.html#ga8964c4e3b57b5a6693c2ff3a3e1ee17e" title="Issues a software reset request to reset the device." alt="" coords="996,563,1124,589"/>
+<area shape="poly" id="edge5_Node000003_Node000009" title=" " alt="" coords="887,573,983,575,978,577,888,579"/>
+<area shape="rect" id="Node000011" href="$group__error__manager.html#ga16c812d70b1643a0402cc35a70650a78" title="Stops the Heartbeat output signal." alt="" coords="992,613,1128,640"/>
+<area shape="poly" id="edge6_Node000003_Node000011" title=" " alt="" coords="883,587,980,609,974,610,883,593"/>
+<area shape="rect" id="Node000013" href="$group__memory__manager.html#ga288fde0388a5c29a2aeaaa4ae961dd66" title="Stores a value in General Purpose Registers (GPR) for perserving data between resets." alt="" coords="980,664,1140,691"/>
+<area shape="poly" id="edge7_Node000003_Node000013" title=" " alt="" coords="887,585,919,599,935,612,944,625,953,638,967,650,979,658,974,658,964,654,949,641,940,628,931,615,916,604,887,591"/>
+<area shape="poly" id="edge16_Node000023_Node000002" title=" " alt="" coords="326,157,367,267,418,423,427,476,429,520,437,560,447,579,465,599,493,618,487,618,461,603,443,582,432,561,423,521,422,477,412,425,362,269,326,162"/>
+<area shape="rect" id="Node000024" href="$group__clock__manager.html#ga1d7c53e68a97d8e3cc76cc45950772c8" title="Starts error injection diagnostic to detect faults in the Clock Failure Detection 0 (CFD0) monitor." alt="" coords="476,107,650,133"/>
+<area shape="poly" id="edge17_Node000023_Node000024" title=" " alt="" coords="393,135,463,129,458,132,395,140"/>
+<area shape="rect" id="Node000033" href="$group__clock__manager.html#gac1c0792179588d0960f6696196fc9b6b" title="Starts error injection diagnostic to detect faults in the Clock Failure Detection 1 (CFD1) monitor." alt="" coords="476,56,650,83"/>
+<area shape="poly" id="edge22_Node000023_Node000033" title=" " alt="" coords="355,129,462,92,491,85,487,89,464,97,359,134"/>
+<area shape="rect" id="Node000034" href="$group__clock__manager.html#gac0d063cef4101d5f0300aa265abc63ef" title="Performs error injection diagnostic to detect faults in the Clock Frequency Measure 0 (CFM0) monitor." alt="" coords="490,157,636,184"/>
+<area shape="poly" id="edge27_Node000023_Node000034" title=" " alt="" coords="393,151,477,160,473,163,395,155"/>
+<area shape="rect" id="Node000036" href="$group__clock__manager.html#ga5f602f6a69f97263f948f9ae3d17270b" title="Performs error injection diagnostic to detect faults in the Clock Frequency Measure 1 (CFM1) monitor." alt="" coords="490,5,636,32"/>
+<area shape="poly" id="edge32_Node000023_Node000036" title=" " alt="" coords="334,130,389,86,424,62,462,42,481,35,478,39,464,46,427,67,392,90,339,133"/>
+<area shape="rect" id="Node000025" href="$group__shared__middleware__diag.html#ga6f1ac925bac3786a0aa0ae43c81b1a11" title="Restore global interrupts if previously enabled." alt="" coords="750,360,879,387"/>
+<area shape="poly" id="edge18_Node000024_Node000025" title=" " alt="" coords="641,131,665,143,698,179,736,234,801,347,796,346,732,237,694,182,662,147,643,136"/>
+<area shape="rect" id="Node000027" href="$group__shared__middleware__diag.html#ga68b838ba045a40ea39b2f516f3c3bda3" title="Backup and disable global interrupts." alt="" coords="747,411,882,437"/>
+<area shape="poly" id="edge19_Node000024_Node000027" title=" " alt="" coords="648,131,665,144,687,176,695,208,695,240,690,273,685,304,684,335,692,366,713,397,736,414,730,414,709,401,687,368,679,336,680,304,685,272,690,240,690,209,682,178,661,147,649,137"/>
+<area shape="rect" id="Node000029" href="$group__clkctrl.html#gacdc049796b501ec26438271ae5972744" title="Sets specific bits in the MCLKCTRLC register." alt="" coords="720,81,909,108"/>
+<area shape="poly" id="edge20_Node000024_Node000029" title=" " alt="" coords="649,109,707,104,702,107,652,114"/>
+<area shape="rect" id="Node000030" href="$group__shared__middleware__diag.html#ga85c8aa30dd05c181cb258a6a4029630e" title="Check Error Controller state and error channels indicated by the channel mask input." alt="" coords="745,461,884,488"/>
+<area shape="poly" id="edge21_Node000024_Node000030" title=" " alt="" coords="649,131,665,143,680,163,691,182,699,221,697,260,690,298,682,336,680,373,689,411,699,429,713,447,733,463,727,463,709,451,694,432,684,412,675,374,677,335,685,297,692,259,694,222,686,184,676,166,661,147,649,136"/>
+<area shape="poly" id="edge23_Node000033_Node000025" title=" " alt="" coords="644,81,665,93,686,116,696,140,702,165,714,195,800,347,794,347,709,197,697,167,691,141,682,119,662,97,645,86"/>
+<area shape="poly" id="edge24_Node000033_Node000027" title=" " alt="" coords="649,80,665,93,680,112,691,132,699,170,697,209,690,247,682,285,680,323,689,360,699,378,713,397,735,414,730,414,709,401,694,381,684,362,675,323,677,285,685,246,692,208,694,171,686,134,676,115,661,97,649,86"/>
+<area shape="poly" id="edge25_Node000033_Node000029" title=" " alt="" coords="650,76,707,82,702,85,652,81"/>
+<area shape="poly" id="edge26_Node000033_Node000030" title=" " alt="" coords="649,81,665,93,682,116,694,138,701,161,703,184,700,228,690,273,680,317,677,361,679,382,686,404,697,426,713,447,733,464,728,464,709,451,692,429,681,406,674,383,671,361,675,316,685,272,694,227,698,184,695,162,689,140,678,118,661,97,650,86"/>
+<area shape="poly" id="edge28_Node000034_Node000025" title=" " alt="" coords="636,181,665,194,709,229,747,270,778,311,801,347,796,347,774,314,743,273,705,232,662,198,637,186"/>
+<area shape="poly" id="edge29_Node000034_Node000027" title=" " alt="" coords="636,177,665,194,684,220,692,246,693,272,690,298,687,323,688,348,696,373,713,397,736,413,730,414,709,401,691,375,683,349,682,323,685,297,687,272,686,247,679,222,662,198,637,182"/>
+<area shape="poly" id="edge31_Node000034_Node000030" title=" " alt="" coords="636,176,665,194,687,226,695,259,695,291,690,323,685,355,684,386,692,417,713,447,733,463,728,463,709,451,687,419,679,387,680,354,685,322,690,291,690,259,682,229,661,198,637,181"/>
+<area shape="rect" id="Node000035" href="$group__clkctrl.html#ga189cf78092e1a8b16c1519263103a543" title="Clears specific bits in the MCLKCFM0CTRLA register." alt="" coords="713,157,916,184"/>
+<area shape="poly" id="edge30_Node000034_Node000035" title=" " alt="" coords="635,168,700,169,695,172,638,173"/>
+<area shape="poly" id="edge33_Node000036_Node000025" title=" " alt="" coords="635,25,665,42,681,60,691,78,699,114,702,151,714,195,757,278,798,347,793,347,752,281,709,197,696,152,693,114,686,80,677,63,662,46,637,30"/>
+<area shape="poly" id="edge34_Node000036_Node000027" title=" " alt="" coords="635,24,652,31,665,42,682,65,694,88,701,110,703,133,700,178,690,222,680,266,677,310,679,332,686,353,697,375,713,397,736,414,730,414,709,401,692,378,681,355,674,333,671,310,675,265,685,221,694,177,698,133,695,111,689,89,678,68,661,46,649,36,637,29"/>
+<area shape="poly" id="edge36_Node000036_Node000030" title=" " alt="" coords="636,23,652,31,665,42,685,68,697,94,704,120,707,146,702,197,690,247,678,298,673,348,675,373,682,397,695,422,713,447,733,464,728,464,709,451,690,425,677,399,670,374,667,348,672,297,685,246,697,196,702,146,699,121,692,96,680,71,661,46,649,36,637,29"/>
+<area shape="rect" id="Node000037" href="$group__clkctrl.html#ga44924e4700056ca5aa14ee6006a4d672" title="Clears specific bits in the MCLKCFM1CTRLA register." alt="" coords="713,5,916,32"/>
+<area shape="poly" id="edge35_Node000036_Node000037" title=" " alt="" coords="635,16,700,17,695,20,638,21"/>
+<area shape="poly" id="edge38_Node000038_Node000002" title=" " alt="" coords="388,712,414,700,428,688,437,676,446,663,462,650,493,638,488,641,464,654,450,666,441,679,432,692,416,705,391,717"/>
+<area shape="rect" id="Node000039" href="$group__memory__manager.html#ga316edb8ab37fa86911a2f4bdd93b6e6c" title="This function performs error injection diagnostic to detect faults in the NVMCTRL ECC checkers with E..." alt="" coords="476,765,651,792"/>
+<area shape="poly" id="edge39_Node000038_Node000039" title=" " alt="" coords="387,739,483,761,478,762,388,745"/>
+<area shape="rect" id="Node000044" href="$group__memory__manager.html#gae222778066a5db667403e1ed241bca67" title="This function performs error injection diagnostic to detect faults in the NVMCTRL ECC checkers with F..." alt="" coords="482,816,644,843"/>
+<area shape="poly" id="edge47_Node000038_Node000044" title=" " alt="" coords="389,739,416,751,432,764,441,777,450,790,464,802,477,810,471,810,462,806,446,793,437,780,428,768,414,756,389,744"/>
+<area shape="rect" id="Node000047" href="$group__memory__manager.html#ga65d1ed209ac5e5010e929fcfd0f5e5ee" title="This function performs error injection diagnostic to detect faults in the redundant RAMCTRL ECC check..." alt="" coords="498,867,628,893"/>
+<area shape="poly" id="edge56_Node000038_Node000047" title=" " alt="" coords="389,736,417,751,429,764,436,777,442,804,447,829,454,841,465,853,487,867,481,867,461,857,449,844,442,831,436,805,431,779,424,767,413,755,389,741"/>
+<area shape="poly" id="edge40_Node000039_Node000025" title=" " alt="" coords="648,762,661,751,678,730,689,708,695,686,698,664,694,621,685,576,675,532,671,487,674,465,681,442,692,419,709,397,737,381,733,384,713,401,697,422,686,444,679,466,677,487,680,531,690,575,700,620,703,664,701,687,694,710,682,732,665,755,651,767"/>
+<area shape="poly" id="edge41_Node000039_Node000027" title=" " alt="" coords="648,763,661,751,676,733,686,714,694,677,692,640,685,602,677,563,675,525,684,486,694,467,709,447,735,432,731,436,713,451,699,470,689,488,680,525,682,563,690,601,697,639,699,678,691,716,680,736,665,755,650,767"/>
+<area shape="poly" id="edge46_Node000039_Node000030" title=" " alt="" coords="647,762,661,751,680,728,688,704,691,680,690,656,689,605,695,578,709,549,738,518,770,497,775,494,741,522,714,552,700,580,694,606,695,656,696,681,694,705,684,730,665,755,649,767"/>
+<area shape="rect" id="Node000040" href="$group__cpuctrl.html#ga072060db2ba6c28b982eb035236d0ffa" title="Clears specific bits in the CTRLA register." alt="" coords="727,715,902,741"/>
+<area shape="poly" id="edge42_Node000039_Node000040" title=" " alt="" coords="632,762,733,744,728,746,634,767"/>
+<area shape="rect" id="Node000041" href="$group__cpuctrl.html#ga3f32dce54116f2d94354960f48e07eee" title="Sets specific bits in the CTRLA register." alt="" coords="733,765,896,792"/>
+<area shape="poly" id="edge43_Node000039_Node000041" title=" " alt="" coords="651,776,720,778,715,779,652,781"/>
+<area shape="rect" id="Node000042" href="$group__errctrl.html#ga3d3d9a38b1238337205764d4950fea97" title="Reads the ESCBUSERR register value." alt="" coords="715,816,914,843"/>
+<area shape="poly" id="edge44_Node000039_Node000042" title=" " alt="" coords="633,790,733,812,728,813,633,795"/>
+<area shape="rect" id="Node000043" href="$group__errctrl.html#gadaa1510aafa5d7946eca167b7f8af571" title="Reads the ESCEEPROM register value." alt="" coords="711,664,918,691"/>
+<area shape="poly" id="edge45_Node000039_Node000043" title=" " alt="" coords="637,762,662,751,676,739,685,726,694,713,710,700,720,698,725,696,713,705,698,717,690,729,680,743,665,756,639,767"/>
+<area shape="poly" id="edge48_Node000044_Node000025" title=" " alt="" coords="643,816,661,802,680,777,692,752,699,727,702,702,697,652,685,602,672,551,667,500,670,474,677,449,690,423,709,397,738,380,734,383,713,401,695,426,682,451,675,475,673,500,678,550,690,601,702,651,707,702,704,728,697,754,685,780,665,806,646,821"/>
+<area shape="poly" id="edge49_Node000044_Node000027" title=" " alt="" coords="644,816,661,802,678,780,689,759,695,737,698,715,694,671,685,627,675,583,671,538,674,515,681,493,692,470,709,447,735,432,731,435,713,451,697,473,686,495,679,516,677,538,680,582,690,626,700,670,703,715,701,738,694,760,682,783,665,806,646,820"/>
+<area shape="poly" id="edge55_Node000044_Node000030" title=" " alt="" coords="643,815,661,802,683,772,693,742,694,713,691,683,687,652,687,619,693,585,709,549,737,517,769,497,774,494,741,521,714,552,698,587,692,620,693,651,697,682,700,713,698,743,688,774,665,806,646,820"/>
+<area shape="poly" id="edge50_Node000044_Node000040" title=" " alt="" coords="637,813,662,802,676,790,685,777,694,764,710,751,720,749,725,746,713,756,698,767,690,780,680,793,665,806,639,818"/>
+<area shape="poly" id="edge51_Node000044_Node000041" title=" " alt="" coords="632,813,733,795,728,796,634,818"/>
+<area shape="poly" id="edge52_Node000044_Node000042" title=" " alt="" coords="645,827,702,829,696,830,645,832"/>
+<area shape="rect" id="Node000045" href="$group__errctrl.html#ga030c1cea47c189f37c4a43df5269ceea" title="Reads the ESCFLASH1 register value." alt="" coords="714,867,915,893"/>
+<area shape="poly" id="edge53_Node000044_Node000045" title=" " alt="" coords="633,841,733,863,727,863,633,846"/>
+<area shape="rect" id="Node000046" href="$group__errctrl.html#ga5a9db39e1a80fdc0499c38bbe2f44e08" title="Reads the ESCFLASH2 register value." alt="" coords="714,917,915,944"/>
+<area shape="poly" id="edge54_Node000044_Node000046" title=" " alt="" coords="638,841,665,852,680,865,690,879,698,891,713,903,726,912,720,911,710,908,694,895,685,882,676,869,662,857,638,846"/>
+<area shape="poly" id="edge57_Node000047_Node000025" title=" " alt="" coords="628,873,646,865,661,853,682,824,696,796,703,768,706,740,699,684,685,627,670,570,663,513,666,484,674,455,688,426,709,397,738,380,734,383,713,401,693,429,679,457,671,485,669,513,675,569,690,626,704,683,711,740,708,769,701,798,687,827,665,857,649,870,630,878"/>
+<area shape="poly" id="edge58_Node000047_Node000027" title=" " alt="" coords="628,873,646,865,661,853,680,828,692,803,699,778,702,753,697,703,685,652,672,602,667,551,670,525,677,499,690,473,709,447,735,432,731,435,713,451,695,476,682,501,675,526,673,551,678,601,690,651,702,702,707,753,704,779,697,805,685,830,665,857,649,870,630,878"/>
+<area shape="poly" id="edge64_Node000047_Node000030" title=" " alt="" coords="628,872,646,865,661,853,687,816,697,781,698,745,693,709,687,672,684,633,690,592,709,549,737,517,769,498,773,494,740,521,714,552,695,594,690,633,692,671,698,708,703,745,702,781,691,819,665,856,649,869,630,877"/>
+<area shape="poly" id="edge59_Node000047_Node000040" title=" " alt="" coords="628,870,646,863,662,853,673,841,679,829,685,803,690,777,698,764,710,751,714,751,719,748,713,755,702,767,695,779,690,805,684,831,677,844,665,857,648,868,629,875"/>
+<area shape="poly" id="edge60_Node000047_Node000041" title=" " alt="" coords="628,867,662,852,676,841,685,828,694,814,710,802,720,799,725,797,713,806,698,818,690,831,680,844,665,857,630,872"/>
+<area shape="poly" id="edge61_Node000047_Node000042" title=" " alt="" coords="628,864,732,846,727,847,629,870"/>
+<area shape="rect" id="Node000048" href="$group__errctrl.html#gac32c75197e432020938baa85713d233e" title="Reads the ESCRAM1 register value." alt="" coords="716,1019,913,1045"/>
+<area shape="poly" id="edge62_Node000047_Node000048" title=" " alt="" coords="577,891,633,947,671,978,713,1004,728,1013,722,1012,710,1009,668,982,629,951,575,896"/>
+<area shape="rect" id="Node000049" href="$group__errctrl.html#gaf01d0b68736fce989ab7481effe0c45b" title="Reads the ESCRAM2 register value." alt="" coords="716,968,913,995"/>
+<area shape="poly" id="edge63_Node000047_Node000049" title=" " alt="" coords="588,891,644,922,712,954,736,964,730,963,710,958,641,927,587,896"/>
+<area shape="poly" id="edge66_Node000050_Node000002" title=" " alt="" coords="330,460,383,528,421,566,464,599,493,613,488,614,462,604,417,571,379,532,330,466"/>
+<area shape="rect" id="Node000051" href="$group__error__manager.html#gafadfbd939d053cb5cf3a431a637f6917" title="Performs error injection diagnostic to detect faults in the CFD0 error channel." alt="" coords="472,563,655,589"/>
+<area shape="poly" id="edge67_Node000050_Node000051" title=" " alt="" coords="336,461,392,504,427,528,464,548,482,557,477,558,462,553,424,532,389,508,337,466"/>
+<area shape="rect" id="Node000052" href="$group__error__manager.html#ga018e7674b7f5ae7e90e67e6d05138506" title="Performs error injection diagnostic to detect faults in the CFD1 error channel." alt="" coords="472,208,655,235"/>
+<area shape="poly" id="edge71_Node000050_Node000052" title=" " alt="" coords="324,434,342,396,371,345,411,291,435,266,461,244,473,240,469,244,465,249,439,270,415,294,376,348,347,399,329,437"/>
+<area shape="rect" id="Node000053" href="$group__error__manager.html#gab576ac1d17c090709fb4d0ca08b72e67" title="Performs error injection diagnostic to detect faults in the CFM0 error channel." alt="" coords="470,259,657,285"/>
+<area shape="poly" id="edge75_Node000050_Node000053" title=" " alt="" coords="328,434,379,367,417,328,462,295,476,290,472,293,464,300,421,332,383,371,332,437"/>
+<area shape="rect" id="Node000054" href="$group__error__manager.html#ga8e46f364e7e9fc741cc0a2685f274836" title="Performs error injection diagnostic to detect faults in the CFM1 error channel." alt="" coords="470,309,657,336"/>
+<area shape="poly" id="edge79_Node000050_Node000054" title=" " alt="" coords="335,434,389,390,424,366,462,346,482,340,477,343,464,350,427,371,392,394,339,437"/>
+<area shape="rect" id="Node000055" href="$group__error__manager.html#gac8132190cab8f6c95d6e3c227a549909" title="Performs error injection diagnostic to detect faults in the EEPROM error channel." alt="" coords="463,360,663,387"/>
+<area shape="poly" id="edge83_Node000050_Node000055" title=" " alt="" coords="355,433,462,396,491,390,487,393,464,401,359,438"/>
+<area shape="rect" id="Node000056" href="$group__error__manager.html#ga5376a4e6406b7baafa8505b820f8b7f1" title="Performs error injection diagnostic to detect faults in the EVSYS0 error channel." alt="" coords="464,411,663,437"/>
+<area shape="poly" id="edge87_Node000050_Node000056" title=" " alt="" coords="399,439,450,435,446,437,401,443"/>
+<area shape="rect" id="Node000057" href="$group__error__manager.html#gafafe6879b2844c6e28e4e91ba2103122" title="Performs error injection diagnostic to detect faults in the EVSYS1 error channel." alt="" coords="464,461,663,488"/>
+<area shape="poly" id="edge91_Node000050_Node000057" title=" " alt="" coords="399,455,451,461,446,464,401,460"/>
+<area shape="rect" id="Node000058" href="$group__error__manager.html#ga7ed9e9ae9fb78150a2f20292f595b0fb" title="Performs error injection diagnostic to detect faults in the SPLIM error channel." alt="" coords="469,512,657,539"/>
+<area shape="poly" id="edge95_Node000050_Node000058" title=" " alt="" coords="356,461,464,497,491,507,486,508,462,503,358,466"/>
+<area shape="poly" id="edge68_Node000051_Node000025" title=" " alt="" coords="645,560,662,549,676,531,683,513,685,474,687,435,694,416,710,397,737,382,733,385,713,401,699,418,692,437,690,475,688,514,680,533,665,553,648,564"/>
+<area shape="poly" id="edge69_Node000051_Node000027" title=" " alt="" coords="643,560,662,549,673,537,679,525,685,499,690,473,698,460,710,447,735,435,730,438,713,451,702,463,695,475,690,501,684,527,677,540,665,553,646,564"/>
+<area shape="poly" id="edge70_Node000051_Node000030" title=" " alt="" coords="626,560,662,548,723,521,779,494,775,497,725,526,664,553,629,564"/>
+<area shape="poly" id="edge72_Node000052_Node000025" title=" " alt="" coords="634,233,665,244,702,267,738,295,793,348,788,349,734,299,699,272,662,249,636,238"/>
+<area shape="poly" id="edge73_Node000052_Node000027" title=" " alt="" coords="646,232,665,245,680,264,688,284,690,323,692,361,699,379,713,397,735,412,730,413,710,401,694,382,687,362,685,323,683,285,676,267,662,249,647,238"/>
+<area shape="poly" id="edge74_Node000052_Node000030" title=" " alt="" coords="648,233,665,245,684,270,692,297,693,323,690,348,687,374,688,399,696,423,713,447,733,463,728,463,709,451,691,426,683,400,682,374,685,348,687,322,686,297,679,273,661,249,648,238"/>
+<area shape="poly" id="edge76_Node000053_Node000025" title=" " alt="" coords="627,283,664,295,725,322,780,352,774,353,723,327,662,300,628,288"/>
+<area shape="poly" id="edge77_Node000053_Node000027" title=" " alt="" coords="644,283,665,295,677,308,684,321,690,347,695,373,702,385,713,397,735,411,730,412,710,401,698,388,690,375,685,349,679,323,673,311,662,299,645,288"/>
+<area shape="poly" id="edge78_Node000053_Node000030" title=" " alt="" coords="647,283,665,295,680,315,688,334,690,373,692,411,699,430,713,447,733,462,728,462,710,451,694,432,687,413,685,374,683,335,676,317,662,299,647,288"/>
+<area shape="poly" id="edge80_Node000054_Node000025" title=" " alt="" coords="632,334,737,356,732,358,634,339"/>
+<area shape="poly" id="edge81_Node000054_Node000027" title=" " alt="" coords="638,334,665,346,680,359,690,372,698,385,713,396,735,408,730,409,710,401,694,388,685,375,676,362,662,350,639,339"/>
+<area shape="poly" id="edge82_Node000054_Node000030" title=" " alt="" coords="644,334,665,346,677,359,684,372,690,398,695,424,702,436,713,447,733,461,728,461,710,451,698,439,690,426,685,399,679,374,673,362,662,350,645,339"/>
+<area shape="poly" id="edge84_Node000055_Node000025" title=" " alt="" coords="663,371,737,372,732,374,665,376"/>
+<area shape="poly" id="edge85_Node000055_Node000027" title=" " alt="" coords="633,385,735,407,730,408,634,390"/>
+<area shape="poly" id="edge86_Node000055_Node000030" title=" " alt="" coords="638,385,665,396,680,409,690,423,698,435,713,447,733,458,727,459,710,452,694,439,685,426,676,413,662,401,639,390"/>
+<area shape="poly" id="edge88_Node000056_Node000025" title=" " alt="" coords="632,408,737,388,733,391,634,412"/>
+<area shape="poly" id="edge89_Node000056_Node000027" title=" " alt="" coords="663,421,735,423,730,425,664,427"/>
+<area shape="poly" id="edge90_Node000056_Node000030" title=" " alt="" coords="633,435,733,457,728,459,634,441"/>
+<area shape="poly" id="edge92_Node000057_Node000025" title=" " alt="" coords="637,459,662,447,676,435,685,422,694,409,710,396,738,386,733,389,713,401,698,413,690,425,680,439,665,452,640,463"/>
+<area shape="poly" id="edge93_Node000057_Node000027" title=" " alt="" coords="632,458,734,439,730,442,634,463"/>
+<area shape="poly" id="edge94_Node000057_Node000030" title=" " alt="" coords="663,472,732,474,727,476,664,477"/>
+<area shape="poly" id="edge96_Node000058_Node000025" title=" " alt="" coords="643,509,662,498,673,486,679,474,685,449,690,422,698,409,710,397,738,383,733,386,713,401,702,412,695,424,690,450,684,476,677,489,665,502,646,514"/>
+<area shape="poly" id="edge97_Node000058_Node000027" title=" " alt="" coords="637,509,662,498,676,486,685,473,694,460,710,447,735,438,730,441,713,452,698,463,690,476,680,489,665,502,640,514"/>
+<area shape="poly" id="edge98_Node000058_Node000030" title=" " alt="" coords="632,509,733,490,728,493,634,514"/>
+<area shape="poly" id="edge100_Node000059_Node000002" title=" " alt="" coords="386,661,492,640,487,643,389,666"/>
+<area shape="rect" id="Node000060" href="$group__memory__manager.html#gacb06cb6a049400c15f2e544af66ebdfd" title="This function performs error injection diagnostic to detect faults in the CPU and NVM bus parity chec..." alt="" coords="492,664,634,691"/>
+<area shape="poly" id="edge101_Node000059_Node000060" title=" " alt="" coords="393,675,479,676,475,678,395,680"/>
+<area shape="rect" id="Node000062" href="$group__memory__manager.html#ga77d9492dc32a40e0c873e0b84cc222d7" title="This function performs error injection diagnostic to detect faults in the RAM parity checker triggere..." alt="" coords="492,715,634,741"/>
+<area shape="poly" id="edge108_Node000059_Node000062" title=" " alt="" coords="387,689,483,710,478,712,388,694"/>
+<area shape="poly" id="edge102_Node000060_Node000025" title=" " alt="" coords="633,668,649,660,661,650,682,619,690,589,690,557,685,526,680,494,679,461,687,429,709,397,737,381,733,384,713,401,692,431,684,462,685,493,690,525,695,557,695,589,687,622,665,654,651,665,636,672"/>
+<area shape="poly" id="edge103_Node000060_Node000027" title=" " alt="" coords="633,667,649,660,661,650,679,626,686,601,687,576,685,551,682,525,683,499,691,473,709,447,735,433,731,436,713,451,696,475,688,500,687,525,690,550,693,576,692,602,684,628,665,654,651,665,636,672"/>
+<area shape="poly" id="edge107_Node000060_Node000030" title=" " alt="" coords="633,665,662,650,680,627,687,603,693,577,709,549,740,519,773,498,777,495,744,523,713,552,698,579,692,605,685,629,665,654,635,670"/>
+<area shape="poly" id="edge104_Node000060_Node000040" title=" " alt="" coords="633,689,733,711,728,712,633,694"/>
+<area shape="poly" id="edge105_Node000060_Node000041" title=" " alt="" coords="634,687,665,700,680,713,690,727,698,739,713,751,726,759,720,759,710,756,694,743,685,730,676,717,662,705,634,693"/>
+<area shape="poly" id="edge106_Node000060_Node000042" title=" " alt="" coords="634,684,665,701,677,713,684,727,690,753,695,778,702,790,713,802,719,808,714,808,710,806,698,793,690,780,685,754,679,728,673,716,662,705,634,690"/>
+<area shape="poly" id="edge109_Node000062_Node000025" title=" " alt="" coords="633,719,648,711,661,701,676,682,686,664,694,626,692,589,685,551,677,513,675,474,684,436,694,416,710,397,737,381,733,384,713,401,699,419,689,437,680,475,682,512,690,550,697,588,699,627,691,666,680,685,665,705,651,716,635,724"/>
+<area shape="poly" id="edge110_Node000062_Node000027" title=" " alt="" coords="633,718,649,711,661,701,682,670,690,639,690,608,685,576,680,544,679,512,687,480,709,447,735,433,731,436,713,451,692,482,684,513,685,544,690,575,695,608,695,640,687,672,665,704,651,716,635,723"/>
+<area shape="poly" id="edge114_Node000062_Node000030" title=" " alt="" coords="633,717,662,701,676,683,684,666,689,630,691,591,697,571,709,549,738,518,771,498,775,495,742,522,713,552,702,573,696,592,694,630,689,667,681,686,665,705,635,722"/>
+<area shape="poly" id="edge111_Node000062_Node000040" title=" " alt="" coords="634,725,714,727,709,729,635,731"/>
+<area shape="poly" id="edge112_Node000062_Node000041" title=" " alt="" coords="633,739,733,761,728,762,633,745"/>
+<area shape="poly" id="edge113_Node000062_Node000042" title=" " alt="" coords="634,738,665,751,680,764,690,777,698,790,713,802,726,810,720,810,710,806,694,794,685,780,676,767,662,756,634,743"/>
+</map>

@@ -1,0 +1,32 @@
+<map id="MW_DiagNvmFlashEcc" name="MW_DiagNvmFlashEcc">
+<area shape="rect" id="Node000001" title="This function performs error injection diagnostic to detect faults in the NVMCTRL ECC checkers with F..." alt="" coords="5,183,168,209"/>
+<area shape="rect" id="Node000002" href="$group__shared__middleware__diag.html#ga6f1ac925bac3786a0aa0ae43c81b1a11" title="Restore global interrupts if previously enabled." alt="" coords="251,5,380,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="93,181,138,114,173,75,214,42,239,32,235,35,217,46,177,79,142,117,98,184"/>
+<area shape="rect" id="Node000004" href="$group__shared__middleware__diag.html#ga68b838ba045a40ea39b2f516f3c3bda3" title="Backup and disable global interrupts." alt="" coords="249,56,383,83"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="99,181,147,137,180,113,214,92,236,85,232,89,217,97,183,117,151,141,103,184"/>
+<area shape="rect" id="Node000007" href="$group__cpuctrl.html#ga072060db2ba6c28b982eb035236d0ffa" title="Clears specific bits in the CTRLA register." alt="" coords="229,107,403,133"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="118,180,215,143,243,136,239,139,217,148,121,184"/>
+<area shape="rect" id="Node000009" href="$group__cpuctrl.html#ga3f32dce54116f2d94354960f48e07eee" title="Sets specific bits in the CTRLA register." alt="" coords="234,157,398,184"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="167,185,221,180,217,183,169,190"/>
+<area shape="rect" id="Node000010" href="$group__errctrl.html#ga3d3d9a38b1238337205764d4950fea97" title="Reads the ESCBUSERR register value." alt="" coords="216,208,416,235"/>
+<area shape="poly" id="edge10_Node000001_Node000010" title=" " alt="" coords="167,202,203,207,198,210,169,207"/>
+<area shape="rect" id="Node000011" href="$group__errctrl.html#ga030c1cea47c189f37c4a43df5269ceea" title="Reads the ESCFLASH1 register value." alt="" coords="216,259,416,285"/>
+<area shape="poly" id="edge11_Node000001_Node000011" title=" " alt="" coords="119,207,217,244,243,254,238,255,215,249,120,213"/>
+<area shape="rect" id="Node000012" href="$group__errctrl.html#ga5a9db39e1a80fdc0499c38bbe2f44e08" title="Reads the ESCFLASH2 register value." alt="" coords="216,309,416,336"/>
+<area shape="poly" id="edge12_Node000001_Node000012" title=" " alt="" coords="101,207,151,251,183,275,217,295,233,304,228,304,214,300,180,279,147,255,101,212"/>
+<area shape="rect" id="Node000013" href="$group__shared__middleware__diag.html#ga85c8aa30dd05c181cb258a6a4029630e" title="Check Error Controller state and error channels indicated by the channel mask input." alt="" coords="246,360,386,387"/>
+<area shape="poly" id="edge13_Node000001_Node000013" title=" " alt="" coords="96,207,142,275,177,313,217,346,234,356,229,356,214,350,173,317,138,278,95,212"/>
+<area shape="rect" id="Node000003" href="$group__cpuctrl.html#ga4902a90a08e11129de26f48f6b8712a2" title="Sets specific bits in the SREG register." alt="" coords="470,5,669,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="380,16,456,17,452,20,382,21"/>
+<area shape="rect" id="Node000005" href="$group__cpuctrl.html#ga3a436dd72247a70b3e31836004ea0e13" title="Clears specific bits in the SREG register." alt="" coords="464,56,674,83"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="382,67,451,68,446,70,384,72"/>
+<area shape="rect" id="Node000006" href="$group__cpuctrl.html#ga08ed4868ad3ba0ebf4955a852c0893fd" title="Reads the SREG register value." alt="" coords="464,107,674,133"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="383,80,487,102,482,104,383,85"/>
+<area shape="rect" id="Node000008" href="$group__ccp__utility.html#gae87c39ed3ac0f3733e3990e460b62859" title="Writes value to a Configuration Change Protected (CCP) 8&#45;bit register." alt="" coords="510,157,628,184"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="386,131,497,155,492,157,387,137"/>
+<area shape="poly" id="edge9_Node000009_Node000008" title=" " alt="" coords="397,168,497,170,492,172,398,173"/>
+<area shape="rect" id="Node000014" href="$group__errctrl.html#ga49e47a70a09340726f90f2d64af933a9" title="Reads the ESF register value." alt="" coords="464,335,674,361"/>
+<area shape="poly" id="edge14_Node000013_Node000014" title=" " alt="" coords="385,364,452,360,446,360,386,369"/>
+<area shape="rect" id="Node000015" href="$group__errctrl.html#ga1621b555fcd8d31d8457b4d7f16ed37a" title="Reads the CTRLA register value." alt="" coords="482,385,656,412"/>
+<area shape="poly" id="edge15_Node000013_Node000015" title=" " alt="" coords="386,378,469,388,464,388,386,383"/>
+</map>

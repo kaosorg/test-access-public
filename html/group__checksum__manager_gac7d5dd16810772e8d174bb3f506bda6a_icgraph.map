@@ -1,0 +1,9 @@
+<map id="MW_GetClearCrcDoneError" name="MW_GetClearCrcDoneError">
+<area shape="rect" id="Node000001" title="Reads and clears the flag indicating a CRC scan of Flash is done and returns the scan result." alt="" coords="599,5,784,32"/>
+<area shape="rect" id="Node000002" href="$group__interrupt__tasks.html#ga9af53313c2f7f92bb9d0776e7cf7f03e" title="Handles CRC Flash scanning interrupts by clearing the periodic interrupt bit and reporting the Error ..." alt="" coords="405,5,551,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="581,19,552,21,552,16,586,19"/>
+<area shape="rect" id="Node000003" href="$group__interrupts.html#gac4510a802e5da57b4a4a9f2d046ac99f" title="Executes the task responsible for handling a CRC Scan (CRCSCAN) interrupt." alt="" coords="234,5,357,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="387,19,357,21,357,16,392,19"/>
+<area shape="rect" id="Node000004" href="$group__main.html#ga9edc15632ea29388521196511286ddb5" title="Runs the Interrupts Task Manager to handle a CRC Scan (CRCSCAN) interrupt." alt="" coords="5,5,186,32"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="215,19,186,21,186,16,221,19"/>
+</map>

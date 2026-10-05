@@ -1,0 +1,14 @@
+<map id="CRCSCAN_WriteIntFlags" name="CRCSCAN_WriteIntFlags">
+<area shape="rect" id="Node000001" title="Overwrites the INTFLAGS register value." alt="" coords="837,31,1010,57"/>
+<area shape="rect" id="Node000002" href="$group__checksum__manager.html#ga41b0619a6134563f30d4fcc45a7d3561" title="Clears the flag indicating that a CRC scan period is done." alt="" coords="599,5,789,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="819,33,789,32,789,26,824,33"/>
+<area shape="rect" id="Node000006" href="$group__checksum__manager.html#gac7d5dd16810772e8d174bb3f506bda6a" title="Reads and clears the flag indicating a CRC scan of Flash is done and returns the scan result." alt="" coords="602,56,786,83"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="824,55,787,62,787,56,819,55"/>
+<area shape="rect" id="Node000003" href="$group__interrupt__tasks.html#ga9af53313c2f7f92bb9d0776e7cf7f03e" title="Handles CRC Flash scanning interrupts by clearing the periodic interrupt bit and reporting the Error ..." alt="" coords="405,31,551,57"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="587,31,552,38,551,33,582,32"/>
+<area shape="rect" id="Node000004" href="$group__interrupts.html#gac4510a802e5da57b4a4a9f2d046ac99f" title="Executes the task responsible for handling a CRC Scan (CRCSCAN) interrupt." alt="" coords="234,31,357,57"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="387,44,357,47,357,41,392,44"/>
+<area shape="rect" id="Node000005" href="$group__main.html#ga9edc15632ea29388521196511286ddb5" title="Runs the Interrupts Task Manager to handle a CRC Scan (CRCSCAN) interrupt." alt="" coords="5,31,186,57"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="216,44,186,47,186,41,221,44"/>
+<area shape="poly" id="edge6_Node000006_Node000003" title=" " alt="" coords="584,57,551,55,552,50,589,57"/>
+</map>

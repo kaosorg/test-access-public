@@ -1,0 +1,13 @@
+<map id="ERRCTRL_ReadConfigEeprom" name="ERRCTRL_ReadConfigEeprom">
+<area shape="rect" id="Node000001" title="Reads the ESCEEPROM register value." alt="" coords="868,5,1074,32"/>
+<area shape="rect" id="Node000002" href="$group__memory__manager.html#ga316edb8ab37fa86911a2f4bdd93b6e6c" title="This function performs error injection diagnostic to detect faults in the NVMCTRL ECC checkers with E..." alt="" coords="645,5,820,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="850,19,821,21,820,16,855,19"/>
+<area shape="rect" id="Node000003" href="$group__startup__tasks.html#gab1a357e6b8b152415e328bcd825d7f39" title="Private function, only exposed for unit testing and should not be called directly." alt="" coords="459,5,597,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="626,19,597,21,597,16,632,19"/>
+<area shape="rect" id="Node000004" href="$group__startup__tasks.html#ga149b832df770dee9dc8e30ebca47399c" title="Runs all enabled startup diagnostics and reports any detected faults to the Error Handler." alt="" coords="240,5,411,32"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="441,19,412,21,412,16,447,19"/>
+<area shape="rect" id="Node000005" href="$group__startup.html#gaafa77cc706561398012e37761145306f" title="Manages and synchronizes safety system and application startup Tasks." alt="" coords="103,5,192,32"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="222,19,193,21,192,16,227,19"/>
+<area shape="rect" id="Node000006" href="$group__main.html#ga840291bc02cba5474a4cb46a9b9566fe" title="Runs the Startup, Scheduler and optionally Shutdown Task Managers." alt="" coords="5,5,55,32"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="85,20,55,21,55,16,90,18"/>
+</map>

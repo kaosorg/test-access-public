@@ -1,0 +1,13 @@
+<map id="CLKCTRL_ModifyMainControlA" name="CLKCTRL_ModifyMainControlA">
+<area shape="rect" id="Node000001" title="Modifies specific bit field(s) in the MCLKCTRLA register." alt="" coords="797,5,1004,32"/>
+<area shape="rect" id="Node000002" href="$group__clock__manager.html#gaccf94adae033dfb285e7718759544ea1" title="Initializes main clock with internal High Frequency Oscillator (OSCHF) as clock source." alt="" coords="554,5,749,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="779,19,749,21,749,16,784,19"/>
+<area shape="rect" id="Node000003" href="$group__startup__tasks.html#ga601290f5b0368e080d274e29c6e21044" title="Private function, only exposed for unit testing and should not be called directly." alt="" coords="425,5,506,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="535,19,506,21,506,16,541,19"/>
+<area shape="rect" id="Node000004" href="$group__startup__tasks.html#gac902915cd75f58629df86b87887dbd64" title="Initializes the Safety System according to Assumptions of Use and user configurations." alt="" coords="240,5,377,32"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="407,19,378,21,378,16,412,19"/>
+<area shape="rect" id="Node000005" href="$group__startup.html#gaafa77cc706561398012e37761145306f" title="Manages and synchronizes safety system and application startup Tasks." alt="" coords="103,5,192,32"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="222,19,192,21,192,16,227,19"/>
+<area shape="rect" id="Node000006" href="$group__main.html#ga840291bc02cba5474a4cb46a9b9566fe" title="Runs the Startup, Scheduler and optionally Shutdown Task Managers." alt="" coords="5,5,55,32"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="85,20,55,21,55,16,90,18"/>
+</map>

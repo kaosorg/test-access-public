@@ -1,0 +1,27 @@
+<map id="RAMCTRL_WriteIntFlags" name="RAMCTRL_WriteIntFlags">
+<area shape="rect" id="Node000001" title="Overwrites the INTFLAGS register value." alt="" coords="926,81,1096,108"/>
+<area shape="rect" id="Node000002" href="$group__memory__manager.html#gaefb65d6cd7e957648b5ab3c4db24b1e7" title="Reads and clears the flag indicating an ECC single&#45;bit error in SRAM." alt="" coords="673,5,864,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="960,75,877,47,836,35,836,30,878,41,966,75"/>
+<area shape="rect" id="Node000007" href="$group__memory__manager.html#gafc03be8c13617d3d6c9a49255cf17693" title="Reads and clears the flag indicating an ECC multi&#45;bit error in SRAM." alt="" coords="673,56,864,83"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="907,84,864,82,864,77,913,84"/>
+<area shape="rect" id="Node000009" href="$group__memory__manager.html#gae41207756bb030ccb2162ee50c9065b3" title="Reads and clears the flag indicating a ECC comparator error in the RAM controller." alt="" coords="659,107,878,133"/>
+<area shape="poly" id="edge9_Node000001_Node000009" title=" " alt="" coords="912,105,878,111,878,106,907,105"/>
+<area shape="rect" id="Node000010" href="$group__memory__manager.html#ga405dbbcc5a47e9f6bdead008c40e8082" title="Reads and clears the flag indicating a bus parity error detected in the RAM controller." alt="" coords="671,157,866,184"/>
+<area shape="poly" id="edge12_Node000001_Node000010" title=" " alt="" coords="966,114,878,148,836,159,835,154,877,143,960,115"/>
+<area shape="rect" id="Node000003" href="$group__shared__tasks.html#ga64abeb191507578a6f7cdbd87c5cf68d" title="Private function, only exposed for unit testing and should not be called directly." alt="" coords="409,5,611,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="655,19,612,21,611,16,660,18"/>
+<area shape="rect" id="Node000004" href="$group__interrupt__tasks.html#gaf4e6160e44dcc18f321b19ccd160e5d8" title="Handles RAM interrupts by reporting the Error ID of any detected faults." alt="" coords="434,56,587,83"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="679,36,582,58,581,53,684,35"/>
+<area shape="rect" id="Node000005" href="$group__interrupts.html#gac69afebb3b0c5bcac0bb573c03fa7923" title="Executes the task responsible for handling a RAM Controller (RAMCTRL) error interrupt." alt="" coords="231,56,361,83"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="415,70,362,72,361,67,421,69"/>
+<area shape="rect" id="Node000006" href="$group__main.html#gab4167838dad5f27447692b6d2133cc6a" title="Runs the Interrupts Task Manager to handle a RAM Controller (RAMCTRL) error interrupt." alt="" coords="5,56,183,83"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="213,70,184,72,183,67,218,68"/>
+<area shape="poly" id="edge8_Node000007_Node000004" title=" " alt="" coords="655,70,587,72,587,67,660,69"/>
+<area shape="rect" id="Node000008" href="$group__shared__tasks.html#ga19dd107d63aba8d6f9661342fabe1bf2" title="Private function, only exposed for unit testing and should not be called directly." alt="" coords="409,107,611,133"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="684,86,582,109,581,103,679,87"/>
+<area shape="poly" id="edge11_Node000009_Node000004" title=" " alt="" coords="679,103,582,86,582,81,684,103"/>
+<area shape="poly" id="edge10_Node000009_Node000008" title=" " alt="" coords="641,120,612,123,612,117,646,120"/>
+<area shape="poly" id="edge14_Node000010_Node000004" title=" " alt="" coords="668,151,658,148,642,135,633,122,624,109,610,97,586,86,586,81,613,92,628,105,637,119,646,131,661,143,674,152"/>
+<area shape="rect" id="Node000011" href="$group__shared__tasks.html#ga750e10737bfee1caa46c3d79c872de66" title="Private function, only exposed for unit testing and should not be called directly." alt="" coords="422,157,599,200"/>
+<area shape="poly" id="edge13_Node000010_Node000011" title=" " alt="" coords="653,174,599,179,599,173,658,174"/>
+</map>
