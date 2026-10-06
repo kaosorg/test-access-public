@@ -1,5 +1,0 @@
-<map id="MW_GetClearCpuDataParityError" name="MW_GetClearCpuDataParityError">
-<area shape="rect" id="Node000001" title="Reads and clears the flag indicating a data bus parity error in the CPU." alt="" coords="231,5,421,48"/>
-<area shape="rect" id="Node000002" href="$group__shared__tasks.html#ga750e10737bfee1caa46c3d79c872de66" title="Private function, only exposed for unit testing and should not be called directly." alt="" coords="5,5,183,48"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="213,27,183,29,183,24,218,26"/>
-</map>

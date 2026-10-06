@@ -1,7 +1,0 @@
-<map id="MW_GetClearVmonSleepEntryError" name="MW_GetClearVmonSleepEntryError">
-<area shape="rect" id="Node000001" title="Reads and clears the flag indicating a sleep mode entry error in the Voltage Monitor." alt="" coords="5,23,208,65"/>
-<area shape="rect" id="Node000002" href="$group__slpctrl.html#gafa9212c4a3a2bfb57253eff18ed228b9" title="Reads the INTFLAGS register value." alt="" coords="256,5,422,32"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="208,30,243,29,237,30,209,36"/>
-<area shape="rect" id="Node000003" href="$group__slpctrl.html#ga6561e59c74228d99af2d0510c18e7dab" title="Overwrites the INTFLAGS register value." alt="" coords="256,56,422,83"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="208,52,243,59,238,59,208,58"/>
-</map>

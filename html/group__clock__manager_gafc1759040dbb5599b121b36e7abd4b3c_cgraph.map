@@ -1,9 +1,0 @@
-<map id="MW_GetClearClockCfd1Error" name="MW_GetClearClockCfd1Error">
-<area shape="rect" id="Node000001" title="Reads and clears the flag indicating a clock failure detected by CFD1." alt="" coords="5,31,200,57"/>
-<area shape="rect" id="Node000002" href="$group__clkctrl.html#gaa12b17b33a60d05ca6249c858a0a9d9b" title="Reads the MCLKINTFLAGS register value." alt="" coords="248,5,415,32"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="199,31,235,29,230,30,200,36"/>
-<area shape="rect" id="Node000003" href="$group__clkctrl.html#gafcb1e604535697a733c63f4c07697749" title="Overwrites the MCLKINTFLAGS register value." alt="" coords="248,56,414,83"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="200,52,235,58,230,59,200,57"/>
-<area shape="rect" id="Node000004" href="$group__ccp__utility.html#gae87c39ed3ac0f3733e3990e460b62859" title="Writes value to a Configuration Change Protected (CCP) 8&#45;bit register." alt="" coords="463,56,581,83"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="415,67,450,69,445,69,415,72"/>
-</map>
