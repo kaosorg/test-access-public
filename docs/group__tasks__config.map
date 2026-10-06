@@ -1,0 +1,5 @@
+<map id="Tasks Config" name="Tasks Config">
+<area shape="rect" id="Node000002" href="$group__task__layer.html" title="Contains Tasks that implement high&#45;level logic, decision&#45;making and error handling." alt="" coords="5,5,91,32"/>
+<area shape="rect" id="Node000001" title="Defines and declares configurations for Tasks." alt="" coords="139,5,237,32"/>
+<area shape="rect" id="Node000003" href="$group__tasks__defines.html" title="Defines macros used to configure Tasks in the tasks_config.h file." alt="" coords="285,5,390,32"/>
+</map>

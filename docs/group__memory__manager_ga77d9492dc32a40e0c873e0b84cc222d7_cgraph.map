@@ -1,0 +1,28 @@
+<map id="MW_DiagRamParity" name="MW_DiagRamParity">
+<area shape="rect" id="Node000001" title="This function performs error injection diagnostic to detect faults in the RAM parity checker triggere..." alt="" coords="5,132,147,159"/>
+<area shape="rect" id="Node000002" href="$group__shared__middleware__diag.html#ga6f1ac925bac3786a0aa0ae43c81b1a11" title="Restore global interrupts if previously enabled." alt="" coords="230,5,359,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="87,130,131,86,161,62,193,42,217,33,213,37,196,46,164,67,135,90,91,133"/>
+<area shape="rect" id="Node000004" href="$group__shared__middleware__diag.html#ga68b838ba045a40ea39b2f516f3c3bda3" title="Backup and disable global interrupts." alt="" coords="227,56,362,83"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="105,129,194,92,221,86,216,89,196,97,108,134"/>
+<area shape="rect" id="Node000007" href="$group__cpuctrl.html#ga072060db2ba6c28b982eb035236d0ffa" title="Clears specific bits in the CTRLA register." alt="" coords="207,107,382,133"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="146,135,194,130,189,133,148,140"/>
+<area shape="rect" id="Node000009" href="$group__cpuctrl.html#ga3f32dce54116f2d94354960f48e07eee" title="Sets specific bits in the CTRLA register." alt="" coords="213,157,376,184"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="146,151,200,158,195,161,147,156"/>
+<area shape="rect" id="Node000010" href="$group__errctrl.html#ga3d3d9a38b1238337205764d4950fea97" title="Reads the ESCBUSERR register value." alt="" coords="195,208,394,235"/>
+<area shape="poly" id="edge10_Node000001_Node000010" title=" " alt="" coords="106,157,196,193,221,203,216,204,194,199,106,162"/>
+<area shape="rect" id="Node000011" href="$group__shared__middleware__diag.html#ga85c8aa30dd05c181cb258a6a4029630e" title="Check Error Controller state and error channels indicated by the channel mask input." alt="" coords="225,259,364,285"/>
+<area shape="poly" id="edge11_Node000001_Node000011" title=" " alt="" coords="90,156,135,200,164,224,196,244,213,254,207,254,193,249,161,228,131,204,89,162"/>
+<area shape="rect" id="Node000003" href="$group__cpuctrl.html#ga4902a90a08e11129de26f48f6b8712a2" title="Sets specific bits in the SREG register." alt="" coords="448,5,647,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="359,16,435,18,430,20,360,21"/>
+<area shape="rect" id="Node000005" href="$group__cpuctrl.html#ga3a436dd72247a70b3e31836004ea0e13" title="Clears specific bits in the SREG register." alt="" coords="442,56,652,83"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="361,67,429,68,424,70,363,72"/>
+<area shape="rect" id="Node000006" href="$group__cpuctrl.html#ga08ed4868ad3ba0ebf4955a852c0893fd" title="Reads the SREG register value." alt="" coords="442,107,652,133"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="362,80,465,102,460,104,362,85"/>
+<area shape="rect" id="Node000008" href="$group__ccp__utility.html#gae87c39ed3ac0f3733e3990e460b62859" title="Writes value to a Configuration Change Protected (CCP) 8&#45;bit register." alt="" coords="488,157,606,184"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="365,131,476,155,470,157,365,137"/>
+<area shape="poly" id="edge9_Node000009_Node000008" title=" " alt="" coords="376,168,475,170,470,171,377,173"/>
+<area shape="rect" id="Node000012" href="$group__errctrl.html#ga49e47a70a09340726f90f2d64af933a9" title="Reads the ESF register value." alt="" coords="442,233,652,260"/>
+<area shape="poly" id="edge12_Node000011_Node000012" title=" " alt="" coords="364,262,430,258,424,259,364,268"/>
+<area shape="rect" id="Node000013" href="$group__errctrl.html#ga1621b555fcd8d31d8457b4d7f16ed37a" title="Reads the CTRLA register value." alt="" coords="460,284,634,311"/>
+<area shape="poly" id="edge13_Node000011_Node000013" title=" " alt="" coords="364,276,447,287,442,287,364,282"/>
+</map>

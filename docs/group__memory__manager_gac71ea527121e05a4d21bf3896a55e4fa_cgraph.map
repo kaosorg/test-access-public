@@ -1,0 +1,9 @@
+<map id="MW_GetClearCpuOpcodeError" name="MW_GetClearCpuOpcodeError">
+<area shape="rect" id="Node000001" title="Reads and clears the flag indicating an illegal opcode error in the CPU." alt="" coords="5,31,207,57"/>
+<area shape="rect" id="Node000002" href="$group__cpuctrl.html#gad00d23ccb1b52fc677659ff8051382bc" title="Reads the INTFLAGS register value." alt="" coords="255,5,425,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="207,30,242,29,237,30,207,36"/>
+<area shape="rect" id="Node000003" href="$group__cpuctrl.html#gaebf883e85b87f59b699b5d0092d32c1e" title="Overwrites the INTFLAGS register value." alt="" coords="255,56,424,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="207,52,242,58,237,59,207,58"/>
+<area shape="rect" id="Node000004" href="$group__ccp__utility.html#gae87c39ed3ac0f3733e3990e460b62859" title="Writes value to a Configuration Change Protected (CCP) 8&#45;bit register." alt="" coords="473,56,591,83"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="425,67,460,69,455,69,425,72"/>
+</map>

@@ -1,0 +1,28 @@
+<map id="CLKCTRL_ReadIntFlags" name="CLKCTRL_ReadIntFlags">
+<area shape="rect" id="Node000001" title="Reads the MCLKINTFLAGS register value." alt="" coords="905,107,1072,133"/>
+<area shape="rect" id="Node000002" href="$group__clock__manager.html#ga25eebf47e75b8945bce67366ae1dccf7" title="Reads and clears the flag indicating a clock failure detected by CFD0." alt="" coords="660,31,855,57"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="937,100,856,72,817,61,817,55,858,67,943,100"/>
+<area shape="rect" id="Node000007" href="$group__clock__manager.html#gafc1759040dbb5599b121b36e7abd4b3c" title="Reads and clears the flag indicating a clock failure detected by CFD1." alt="" coords="660,81,855,108"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="887,109,855,108,855,103,892,109"/>
+<area shape="rect" id="Node000009" href="$group__clock__manager.html#gafd7a19b02167e10225f88155ae7c6638" title="Reads and clears the flag indicating a clock frequency error measured by CFM0." alt="" coords="658,132,857,159"/>
+<area shape="poly" id="edge9_Node000001_Node000009" title=" " alt="" coords="887,131,857,137,857,132,892,131"/>
+<area shape="rect" id="Node000011" href="$group__clock__manager.html#gaa35595fe763929636825b4a1c845a672" title="Reads and clears the flag indicating a clock frequency error measured by CFM1." alt="" coords="658,183,857,209"/>
+<area shape="poly" id="edge12_Node000001_Node000011" title=" " alt="" coords="943,139,858,173,818,185,817,179,856,168,937,140"/>
+<area shape="rect" id="Node000003" href="$group__shared__tasks.html#ga5589ac6e077c6724e985c35bd2fe76ef" title="Private function, only exposed for unit testing and should not be called directly." alt="" coords="413,5,608,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="642,33,609,31,609,26,648,32"/>
+<area shape="rect" id="Node000004" href="$group__interrupt__tasks.html#ga6bf1d72aa560322ee6981351fc2c7a5d" title="Handles Clock interrupts by reporting the Error ID of any detected faults and clearing CFM done flags..." alt="" coords="431,107,590,133"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="681,61,659,72,636,84,611,97,576,109,574,104,609,92,633,80,657,67,676,63"/>
+<area shape="rect" id="Node000005" href="$group__interrupts.html#gaadd39b4e2eec8ae583e6332d94ac7fbd" title="Executes the task responsible for handling a Clock Controller (CLKCTRL) interrupt." alt="" coords="227,107,363,133"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="413,120,364,123,363,117,418,120"/>
+<area shape="rect" id="Node000006" href="$group__main.html#gae02a1cd46f285ee1127d965bfb76c5ff" title="Runs the Interrupts Task Manager to handle a Clock Controller (CLKCTRL) interrupt." alt="" coords="5,107,179,133"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="209,121,180,123,179,117,214,119"/>
+<area shape="poly" id="edge8_Node000007_Node000004" title=" " alt="" coords="642,107,591,114,590,109,647,106"/>
+<area shape="rect" id="Node000008" href="$group__shared__tasks.html#gaa76de776541e6f6f8a635b1462c28846" title="Private function, only exposed for unit testing and should not be called directly." alt="" coords="413,56,608,83"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="642,83,609,82,609,77,648,83"/>
+<area shape="poly" id="edge11_Node000009_Node000004" title=" " alt="" coords="640,134,591,131,591,126,645,133"/>
+<area shape="rect" id="Node000010" href="$group__shared__tasks.html#gaa0293b3d33676b57ecb92fe06c4edd19" title="Private function, only exposed for unit testing and should not be called directly." alt="" coords="411,157,610,184"/>
+<area shape="poly" id="edge10_Node000009_Node000010" title=" " alt="" coords="640,157,611,163,611,158,646,157"/>
+<area shape="poly" id="edge14_Node000011_Node000004" title=" " alt="" coords="676,178,657,173,633,160,609,148,575,137,575,131,611,143,636,156,659,168,682,178"/>
+<area shape="rect" id="Node000012" href="$group__shared__tasks.html#gadd7f8c916cf7fe26a012cd22b752a34e" title="Private function, only exposed for unit testing and should not be called directly." alt="" coords="411,208,610,235"/>
+<area shape="poly" id="edge13_Node000011_Node000012" title=" " alt="" coords="646,208,611,214,611,208,640,208"/>
+</map>

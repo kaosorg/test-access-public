@@ -1,0 +1,15 @@
+<map id="MW_DiagSwdtCount" name="MW_DiagSwdtCount">
+<area shape="rect" id="Node000001" title="Performs diagnostic to detect faults in the Synchronous Watchdog Timer (SWDT) Counter mechanism." alt="" coords="5,56,150,83"/>
+<area shape="rect" id="Node000002" href="$group__shared__middleware__diag.html#ga6f1ac925bac3786a0aa0ae43c81b1a11" title="Restore global interrupts if previously enabled." alt="" coords="216,5,346,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="133,53,212,35,207,38,135,58"/>
+<area shape="rect" id="Node000004" href="$group__shared__middleware__diag.html#ga68b838ba045a40ea39b2f516f3c3bda3" title="Backup and disable global interrupts." alt="" coords="214,56,348,83"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="150,67,201,69,196,70,150,72"/>
+<area shape="rect" id="Node000007" href="$group__swdt.html#gaceda92305a21c16a5133b1f734224042" title="Reads the CNT0 register value." alt="" coords="198,107,364,133"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="134,81,212,102,207,103,134,86"/>
+<area shape="rect" id="Node000003" href="$group__cpuctrl.html#ga4902a90a08e11129de26f48f6b8712a2" title="Sets specific bits in the SREG register." alt="" coords="418,5,617,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="346,16,404,18,399,19,346,21"/>
+<area shape="rect" id="Node000005" href="$group__cpuctrl.html#ga3a436dd72247a70b3e31836004ea0e13" title="Clears specific bits in the SREG register." alt="" coords="412,56,622,83"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="348,67,399,69,394,70,349,72"/>
+<area shape="rect" id="Node000006" href="$group__cpuctrl.html#ga08ed4868ad3ba0ebf4955a852c0893fd" title="Reads the SREG register value." alt="" coords="412,107,622,133"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="347,81,439,103,434,103,346,86"/>
+</map>

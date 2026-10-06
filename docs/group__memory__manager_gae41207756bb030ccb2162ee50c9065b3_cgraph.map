@@ -1,0 +1,9 @@
+<map id="MW_GetClearRamEccCompError" name="MW_GetClearRamEccCompError">
+<area shape="rect" id="Node000001" title="Reads and clears the flag indicating a ECC comparator error in the RAM controller." alt="" coords="5,31,224,57"/>
+<area shape="rect" id="Node000002" href="$group__ramctrl.html#ga3c8c513122ab954f524439dcc9437db9" title="Reads the INTFLAGS register value." alt="" coords="272,5,443,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="224,30,259,29,253,30,225,35"/>
+<area shape="rect" id="Node000003" href="$group__ramctrl.html#gaef543f6b3abc79bb31f7688b7fa57a50" title="Overwrites the INTFLAGS register value." alt="" coords="272,56,442,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="224,53,259,59,254,59,224,58"/>
+<area shape="rect" id="Node000004" href="$group__ccp__utility.html#gae87c39ed3ac0f3733e3990e460b62859" title="Writes value to a Configuration Change Protected (CCP) 8&#45;bit register." alt="" coords="491,56,609,83"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="443,67,478,69,472,69,443,72"/>
+</map>

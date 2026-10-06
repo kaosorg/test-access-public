@@ -1,0 +1,16 @@
+<map id="CLKCTRL_SetMainControlC" name="CLKCTRL_SetMainControlC">
+<area shape="rect" id="Node000001" title="Sets specific bits in the MCLKCTRLC register." alt="" coords="878,31,1067,57"/>
+<area shape="rect" id="Node000002" href="$group__clock__manager.html#ga1d7c53e68a97d8e3cc76cc45950772c8" title="Starts error injection diagnostic to detect faults in the Clock Failure Detection 0 (CFD0) monitor." alt="" coords="656,5,830,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="860,32,830,31,830,26,865,32"/>
+<area shape="rect" id="Node000007" href="$group__clock__manager.html#gac1c0792179588d0960f6696196fc9b6b" title="Starts error injection diagnostic to detect faults in the Clock Failure Detection 1 (CFD1) monitor." alt="" coords="656,56,830,83"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="865,56,831,62,830,57,860,56"/>
+<area shape="rect" id="Node000003" href="$group__startup__tasks.html#gabbcfa89184ff1b231ca026f653fc920a" title="Private function, only exposed for unit testing and should not be called directly." alt="" coords="459,31,608,57"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="642,31,608,38,608,32,637,31"/>
+<area shape="rect" id="Node000004" href="$group__startup__tasks.html#ga149b832df770dee9dc8e30ebca47399c" title="Runs all enabled startup diagnostics and reports any detected faults to the Error Handler." alt="" coords="240,31,411,57"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="441,44,412,47,412,41,446,44"/>
+<area shape="rect" id="Node000005" href="$group__startup.html#gaafa77cc706561398012e37761145306f" title="Manages and synchronizes safety system and application startup Tasks." alt="" coords="103,31,192,57"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="222,44,193,47,192,41,227,44"/>
+<area shape="rect" id="Node000006" href="$group__main.html#ga840291bc02cba5474a4cb46a9b9566fe" title="Runs the Startup, Scheduler and optionally Shutdown Task Managers." alt="" coords="5,31,55,57"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="85,45,55,47,54,41,90,43"/>
+<area shape="poly" id="edge7_Node000007_Node000003" title=" " alt="" coords="637,57,608,56,608,50,643,57"/>
+</map>
