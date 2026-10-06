@@ -1,9 +1,0 @@
-<map id="MW_GetClearCrcDoneError" name="MW_GetClearCrcDoneError">
-<area shape="rect" id="Node000001" title="Reads and clears the flag indicating a CRC scan of Flash is done and returns the scan result." alt="" coords="5,56,190,83"/>
-<area shape="rect" id="Node000002" href="$group__crcscan.html#gaac4483335640b101fe2624a6e25dbbbc" title="Reads the INTFLAGS register value." alt="" coords="238,5,412,32"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="160,53,249,35,245,37,162,58"/>
-<area shape="rect" id="Node000003" href="$group__crcscan.html#ga0d491cd3521e5119aba713e17be27fa7" title="Reads the STATUSA register value." alt="" coords="242,56,408,83"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="190,67,229,69,224,70,191,72"/>
-<area shape="rect" id="Node000004" href="$group__crcscan.html#ga156c880d12fc049cfe1ba7ff63c8d761" title="Overwrites the INTFLAGS register value." alt="" coords="238,107,412,133"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="161,81,250,102,244,103,161,86"/>
-</map>

@@ -1,5 +1,0 @@
-<map id="MW_GetClearVmonSleepEntryError" name="MW_GetClearVmonSleepEntryError">
-<area shape="rect" id="Node000001" title="Reads and clears the flag indicating a sleep mode entry error in the Voltage Monitor." alt="" coords="247,5,449,48"/>
-<area shape="rect" id="Node000002" href="$group__shared__tasks.html#ga682dff97f19c7585ff48a0cb2addefc1" title="Private function, only exposed for unit testing and should not be called directly." alt="" coords="5,5,199,48"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="228,27,199,29,199,24,234,26"/>
-</map>

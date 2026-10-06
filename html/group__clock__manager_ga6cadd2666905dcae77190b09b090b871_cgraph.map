@@ -1,7 +1,0 @@
-<map id="MW_StartCfd1" name="MW_StartCfd1">
-<area shape="rect" id="Node000001" title="Starts Clock Failure Detect 1 (CFD1) to monitor the configured clock source with the configured refer..." alt="" coords="5,5,114,32"/>
-<area shape="rect" id="Node000002" href="$group__clkctrl.html#ga75083c475fc33922b240d1308232d4b1" title="Overwrites the MCLKCFD1CTRLA register value." alt="" coords="162,5,360,32"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="114,16,149,18,143,19,114,21"/>
-<area shape="rect" id="Node000003" href="$group__ccp__utility.html#gae87c39ed3ac0f3733e3990e460b62859" title="Writes value to a Configuration Change Protected (CCP) 8&#45;bit register." alt="" coords="408,5,526,32"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="360,16,395,19,389,19,360,21"/>
-</map>

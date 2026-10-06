@@ -1,5 +1,0 @@
-<map id="MW_SetSleepMode" name="MW_SetSleepMode">
-<area shape="rect" id="Node000001" title="Sets the sleep mode to be used when entering Sleep." alt="" coords="5,5,143,32"/>
-<area shape="rect" id="Node000002" href="$group__slpctrl.html#ga4770ab4605fcecefc5bf2728fec52a88" title="Modifies specific bit field(s) in the CTRLA register." alt="" coords="191,5,369,32"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="143,16,178,18,172,19,143,21"/>
-</map>

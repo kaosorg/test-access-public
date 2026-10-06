@@ -1,7 +1,0 @@
-<map id="MW_GetClearResetReason" name="MW_GetClearResetReason">
-<area shape="rect" id="Node000001" title="Reads and clears the reset flag registers." alt="" coords="387,5,571,32"/>
-<area shape="rect" id="Node000002" href="$group__pre__startup__tasks.html#gaa1b797fd1df421755cf044a4623a81b3" title="Determines the reason for the last device reset and stores it for later handling." alt="" coords="163,5,339,32"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="369,19,340,21,340,16,374,19"/>
-<area shape="rect" id="Node000003" href="$group__pre__startup.html#ga701184f0da98991964444f4558e9456e" title="Manages safety system Pre&#45;startup Tasks." alt="" coords="5,5,115,32"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="144,19,115,21,115,16,149,18"/>
-</map>

@@ -1,7 +1,0 @@
-<map id="MW_StopHeartbeat" name="MW_StopHeartbeat">
-<area shape="rect" id="Node000001" title="Stops the Heartbeat output signal." alt="" coords="5,5,142,32"/>
-<area shape="rect" id="Node000002" href="$group__errctrl.html#ga299f71cdc72837fb4c4aa71db63668b3" title="Clears specific bits in the CTRLA register." alt="" coords="190,5,364,32"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="142,16,177,18,171,19,142,21"/>
-<area shape="rect" id="Node000003" href="$group__ccp__utility.html#gae87c39ed3ac0f3733e3990e460b62859" title="Writes value to a Configuration Change Protected (CCP) 8&#45;bit register." alt="" coords="412,5,530,32"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="364,16,399,19,394,19,365,21"/>
-</map>

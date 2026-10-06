@@ -1,9 +1,0 @@
-<map id="MW_DisableForceFloat" name="MW_DisableForceFloat">
-<area shape="rect" id="Node000001" title="Disables forced floating (tri&#45;stating) of all I/O pins." alt="" coords="5,31,164,57"/>
-<area shape="rect" id="Node000002" href="$group__errctrl.html#ga299f71cdc72837fb4c4aa71db63668b3" title="Clears specific bits in the CTRLA register." alt="" coords="212,5,386,32"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="164,32,199,30,193,31,165,37"/>
-<area shape="rect" id="Node000004" href="$group__errctrl.html#ga1621b555fcd8d31d8457b4d7f16ed37a" title="Reads the CTRLA register value." alt="" coords="212,56,386,83"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="164,51,199,57,193,57,164,56"/>
-<area shape="rect" id="Node000003" href="$group__ccp__utility.html#gae87c39ed3ac0f3733e3990e460b62859" title="Writes value to a Configuration Change Protected (CCP) 8&#45;bit register." alt="" coords="434,5,552,32"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="386,16,421,18,416,19,387,21"/>
-</map>
