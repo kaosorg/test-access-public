@@ -1,0 +1,562 @@
+name: Cleanup Temporary Outside Collaborators
+
+on:
+  schedule:
+    - cron: "*/5 * * * *"
+
+  workflow_dispatch:
+
+# The built-in GITHUB_TOKEN is deliberately not used for GitHub API
+# administration. The fine-grained PAT below is stored as a secret.
+permissions:
+  contents: read
+
+env:
+  # Maximum number of days an outside collaborator may remain after
+  # their first successful detection.
+  ACCESS_DURATION_DAYS: "0"
+
+  # Repository-level Actions variable containing the registry.
+  REGISTRY_VARIABLE: "OUTSIDE_COLLABORATOR_REGISTRY"
+
+jobs:
+  cleanup:
+    name: Cleanup outside collaborators
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Cleanup expired outside collaborators
+        shell: bash
+        env:
+          GITHUB_TOKEN: ${{ secrets.OUTSIDE_COLLAB_CLEANUP_TOKEN }}
+          REPOSITORY: ${{ github.repository }}
+          ACCESS_DURATION_DAYS: ${{ env.ACCESS_DURATION_DAYS }}
+          REGISTRY_VARIABLE: ${{ env.REGISTRY_VARIABLE }}
+        run: |
+          set -euo pipefail
+
+          API_URL="https://api.github.com"
+          API_VERSION="2026-03-10"
+
+          COLLABORATORS_FILE="$(mktemp)"
+          REGISTRY_FILE="$(mktemp)"
+          UPDATED_REGISTRY_FILE="$(mktemp)"
+          EXPIRED_FILE="$(mktemp)"
+          STALE_FILE="$(mktemp)"
+
+          cleanup() {
+            rm -f \
+              "$COLLABORATORS_FILE" \
+              "$REGISTRY_FILE" \
+              "$UPDATED_REGISTRY_FILE" \
+              "$EXPIRED_FILE" \
+              "$STALE_FILE"
+          }
+
+          trap cleanup EXIT
+
+          fail() {
+            echo "::error::Outside collaborator cleanup failed during $1."
+            exit 1 
+          }
+
+          api_get() {
+            curl \
+              --fail-with-body \
+              --silent \
+              --show-error \
+              --location \
+              --header "Accept: application/vnd.github+json" \
+              --header "Authorization: Bearer ${GITHUB_TOKEN}" \
+              --header "X-GitHub-Api-Version: ${API_VERSION}" \
+              "$@"
+          }
+
+          api_get_quiet() {
+            curl \
+              --fail \
+              --silent \
+              --location \
+              --header "Accept: application/vnd.github+json" \
+              --header "Authorization: Bearer ${GITHUB_TOKEN}" \
+              --header "X-GitHub-Api-Version: ${API_VERSION}" \
+              "$@"
+          }
+
+          api_delete_quiet() {
+            curl \
+              --fail \
+              --silent \
+              --location \
+              --request DELETE \
+              --header "Accept: application/vnd.github+json" \
+              --header "Authorization: Bearer ${GITHUB_TOKEN}" \
+              --header "X-GitHub-Api-Version: ${API_VERSION}" \
+              "$@" \
+              >/dev/null
+          }
+
+          # ---------------------------------------------------------------
+          # Validate configuration
+          # ---------------------------------------------------------------
+
+          if [[ ! "$ACCESS_DURATION_DAYS" =~ ^[0-9]+$ ]]; then
+            fail "validating ACCESS_DURATION_DAYS"
+          fi
+
+          if [[ ! "$REGISTRY_VARIABLE" =~ ^[A-Za-z_][A-Za-z0-9_]*$ ]]; then
+            fail "validating REGISTRY_VARIABLE"
+          fi
+
+          if [[ -z "${GITHUB_TOKEN:-}" ]]; then
+            fail "reading the cleanup credential"
+          fi
+
+          # ---------------------------------------------------------------
+          # 1. Retrieve ALL outside collaborators.
+          #
+          # GitHub supports affiliation=outside and up to 100 results per
+          # page. We explicitly follow every page.
+          #
+          # No collaborator names are written to the workflow log.
+          # ---------------------------------------------------------------
+
+          collaborators_url="${API_URL}/repos/${REPOSITORY}/collaborators?affiliation=outside&per_page=100"
+
+          page=1
+
+          while true; do
+            page_file="$(mktemp)"
+
+            if ! api_get_quiet \
+              "${collaborators_url}&page=${page}" \
+              > "$page_file"
+            then
+              rm -f "$page_file"
+              fail "retrieving outside collaborators"
+            fi
+
+            if ! jq -e 'type == "array"' "$page_file" >/dev/null 2>&1; then
+              rm -f "$page_file"
+              fail "validating the collaborator response"
+            fi
+
+            page_count="$(jq 'length' "$page_file")"
+
+            if ! jq -r '.[].login' "$page_file" >> "$COLLABORATORS_FILE" 2>/dev/null; then
+              rm -f "$page_file"
+              fail "processing the collaborator response"
+            fi
+
+            rm -f "$page_file"
+
+            if (( page_count < 100 )); then
+              break
+            fi
+
+            page=$((page + 1))
+          done
+
+          # Validate every identifier without printing it.
+          if ! awk '
+            NF == 0 {
+              next
+            }
+
+            $0 !~ /^[A-Za-z0-9][A-Za-z0-9-]*$/ {
+              exit 1
+            }
+          ' "$COLLABORATORS_FILE"
+          then
+            fail "validating collaborator identifiers"
+          fi
+
+          # Remove accidental duplicates without exposing the values.
+          sort -u "$COLLABORATORS_FILE" -o "$COLLABORATORS_FILE"
+
+          processed_count="$(
+            awk 'NF { count++ } END { print count + 0 }' \
+              "$COLLABORATORS_FILE"
+          )"
+
+          # ---------------------------------------------------------------
+          # 2. Read the repository-level registry.
+          #
+          # A missing variable is valid on the first run and means {}.
+          #
+          # Any other API failure is fatal.
+          # ---------------------------------------------------------------
+
+          registry_url="${API_URL}/repos/${REPOSITORY}/actions/variables/${REGISTRY_VARIABLE}"
+
+          registry_status="$(
+            curl \
+              --silent \
+              --location \
+              --output "$REGISTRY_FILE" \
+              --write-out "%{http_code}" \
+              --header "Accept: application/vnd.github+json" \
+              --header "Authorization: Bearer ${GITHUB_TOKEN}" \
+              --header "X-GitHub-Api-Version: ${API_VERSION}" \
+              "$registry_url" \
+              || true
+          )"
+
+          case "$registry_status" in
+            200)
+              if ! jq -e '.value | type == "string"' \
+                "$REGISTRY_FILE" >/dev/null 2>&1
+              then
+                fail "reading the registry variable"
+              fi
+
+              if ! jq -r '.value' "$REGISTRY_FILE" > "${REGISTRY_FILE}.value"; then
+                fail "reading the registry value"
+              fi
+
+              mv "${REGISTRY_FILE}.value" "$REGISTRY_FILE"
+              ;;
+
+            404)
+              # First execution: initialize an empty registry.
+              printf '%s\n' '{}' > "$REGISTRY_FILE"
+              ;;
+
+            *)
+              # Do not expose the HTTP response body.
+              fail "reading the registry variable"
+              ;;
+          esac
+
+          # ---------------------------------------------------------------
+          # 3. Parse and validate the registry.
+          #
+          # Expected representation:
+          #
+          # {
+          #   "alice": "2026-07-10",
+          #   "bob":   "2026-07-15"
+          # }
+          #
+          # No registry data is printed.
+          # ---------------------------------------------------------------
+
+          if ! jq -e '
+            type == "object"
+            and all(
+              to_entries[];
+              (
+                (.key | type == "string")
+                and
+                (.key | test("^[A-Za-z0-9][A-Za-z0-9-]*$"))
+                and
+                (.value | type == "string")
+                and
+                (.value | test("^[0-9]{4}-[0-9]{2}-[0-9]{2}$"))
+                and
+                (
+                  try
+                    (.value | strptime("%Y-%m-%d") | mktime)
+                    catch false
+                ) != false
+              )
+            )
+          ' "$REGISTRY_FILE" >/dev/null 2>&1
+          then
+            fail "parsing the registry"
+          fi
+
+          # ---------------------------------------------------------------
+          # 4. Determine current date.
+          # ---------------------------------------------------------------
+
+          TODAY="$(date -u '+%Y-%m-%d')"
+
+          if ! TODAY_EPOCH="$(date -u -d "$TODAY" '+%s' 2>/dev/null)"; then
+            fail "calculating the current date"
+          fi
+
+          # ---------------------------------------------------------------
+          # 5. Start the updated registry from the existing registry.
+          #
+          # Existing first-seen dates are NEVER reset.
+          # ---------------------------------------------------------------
+
+          cp "$REGISTRY_FILE" "$UPDATED_REGISTRY_FILE"
+
+          new_count=0
+          stale_count=0
+          expired_count=0
+
+          # ---------------------------------------------------------------
+          # 6. Add newly discovered outside collaborators.
+          #
+          # The first-seen date is the date of this successful execution.
+          # ---------------------------------------------------------------
+
+          while IFS= read -r username; do
+            [[ -z "$username" ]] && continue
+
+            if jq -e \
+              --arg username "$username" \
+              'has($username)' \
+              "$REGISTRY_FILE" \
+              >/dev/null 2>&1
+            then
+              continue
+            fi
+
+            tmp="$(mktemp)"
+
+            if ! jq \
+              --arg username "$username" \
+              --arg first_seen "$TODAY" \
+              '. + {($username): $first_seen}' \
+              "$UPDATED_REGISTRY_FILE" \
+              > "$tmp" 2>/dev/null
+            then
+              rm -f "$tmp"
+              fail "adding a registry entry"
+            fi
+
+            mv "$tmp" "$UPDATED_REGISTRY_FILE"
+
+            new_count=$((new_count + 1))
+
+          done < "$COLLABORATORS_FILE"
+
+          # ---------------------------------------------------------------
+          # 7. Determine stale and expired registry entries.
+          #
+          # An entry is stale when the user is no longer an outside
+          # collaborator.
+          #
+          # An expired entry is removed from GitHub first. Its registry
+          # entry is removed only after successful deletion.
+          # ---------------------------------------------------------------
+
+          while IFS=$'\t' read -r username first_seen; do
+            [[ -z "$username" ]] && continue
+
+            if ! grep -Fxq "$username" "$COLLABORATORS_FILE"; then
+              printf '%s\n' "$username" >> "$STALE_FILE"
+              stale_count=$((stale_count + 1))
+              continue
+            fi
+
+            if ! first_seen_epoch="$(
+              date -u -d "$first_seen" '+%s' 2>/dev/null
+            )"; then
+              fail "validating a registry date"
+            fi
+
+            expiry_epoch="$(
+              date -u \
+                -d "@$((first_seen_epoch + ACCESS_DURATION_DAYS * 86400))" \
+                '+%s'
+            )"
+
+            if (( TODAY_EPOCH >= expiry_epoch )); then
+              printf '%s\n' "$username" >> "$EXPIRED_FILE"
+              expired_count=$((expired_count + 1))
+            fi
+
+          done < <(
+            jq -r '
+              to_entries[]
+              | [.key, .value]
+              | @tsv
+            ' "$REGISTRY_FILE"
+          )
+
+          # ---------------------------------------------------------------
+          # 8. Remove expired outside collaborators.
+          #
+          # IMPORTANT:
+          # This deliberately uses:
+          #
+          # DELETE /repos/{owner}/{repo}/collaborators/{username}
+          #
+          # and NOT:
+          #
+          # DELETE /orgs/{org}/outside_collaborators/{username}
+          #
+          # Therefore the operation is scoped to this repository.
+          #
+          # API failures are suppressed from logs because the URL contains
+          # the affected username.
+          # ---------------------------------------------------------------
+
+          removal_failed=0
+
+          while IFS= read -r username; do
+            [[ -z "$username" ]] && continue
+
+            if ! api_delete_quiet \
+              "${API_URL}/repos/${REPOSITORY}/collaborators/${username}"
+            then
+              removal_failed=1
+              break
+            fi
+
+          done < "$EXPIRED_FILE"
+
+          if (( removal_failed != 0 )); then
+            echo "::error::One or more expired collaborator removals failed. The registry was not updated and the failed removal will be retried on the next execution."
+            exit 1
+          fi
+
+          # ---------------------------------------------------------------
+          # 9. Remove stale entries.
+          #
+          # Stale entries do not require a GitHub DELETE because the user
+          # has already disappeared from the outside-collaborator list.
+          # ---------------------------------------------------------------
+
+          while IFS= read -r username; do
+            [[ -z "$username" ]] && continue
+
+            tmp="$(mktemp)"
+
+            if ! jq \
+              --arg username "$username" \
+              'del(.[$username])' \
+              "$UPDATED_REGISTRY_FILE" \
+              > "$tmp" 2>/dev/null
+            then
+              rm -f "$tmp"
+              fail "removing a stale registry entry"
+            fi
+
+            mv "$tmp" "$UPDATED_REGISTRY_FILE"
+
+          done < "$STALE_FILE"
+
+          # Successfully removed expired collaborators must also disappear
+          # from the registry.
+          while IFS= read -r username; do
+            [[ -z "$username" ]] && continue
+
+            tmp="$(mktemp)"
+
+            if ! jq \
+              --arg username "$username" \
+              'del(.[$username])' \
+              "$UPDATED_REGISTRY_FILE" \
+              > "$tmp" 2>/dev/null
+            then
+              rm -f "$tmp"
+              fail "finalizing the registry"
+            fi
+
+            mv "$tmp" "$UPDATED_REGISTRY_FILE"
+
+          done < "$EXPIRED_FILE"
+
+          # ---------------------------------------------------------------
+          # 10. Validate the final registry one more time.
+          # ---------------------------------------------------------------
+
+          if ! jq -e '
+            type == "object"
+            and all(
+              to_entries[];
+              (
+                (.key | type == "string")
+                and
+                (.key | test("^[A-Za-z0-9][A-Za-z0-9-]*$"))
+                and
+                (.value | type == "string")
+                and
+                (.value | test("^[0-9]{4}-[0-9]{2}-[0-9]{2}$"))
+                and
+                (
+                  try
+                    (.value | strptime("%Y-%m-%d") | mktime)
+                    catch false
+                ) != false
+              )
+            )
+          ' "$UPDATED_REGISTRY_FILE" >/dev/null 2>&1
+          then
+            fail "validating the final registry"
+          fi
+
+          # Compact + deterministic representation.
+          REGISTRY_JSON="$(
+            jq -cS '.' "$UPDATED_REGISTRY_FILE"
+          )"
+
+          # ---------------------------------------------------------------
+          # 11. Save the repository Actions variable.
+          #
+          # PATCH is used when the variable exists.
+          # POST is used when the variable was absent.
+          #
+          # The registry itself is never printed.
+          # ---------------------------------------------------------------
+
+          payload="$(
+            jq -cn \
+              --arg name "$REGISTRY_VARIABLE" \
+              --arg value "$REGISTRY_JSON" \
+              '{
+                name: $name,
+                value: $value
+              }'
+          )"
+
+          update_status="$(
+            curl \
+              --silent \
+              --location \
+              --output /dev/null \
+              --write-out "%{http_code}" \
+              --request PATCH \
+              --header "Accept: application/vnd.github+json" \
+              --header "Authorization: Bearer ${GITHUB_TOKEN}" \
+              --header "X-GitHub-Api-Version: ${API_VERSION}" \
+              --header "Content-Type: application/json" \
+              --data "$payload" \
+              "$registry_url" \
+              || true
+          )"
+
+          if [[ "$update_status" != "204" ]]; then
+
+            create_status="$(
+              curl \
+                --silent \
+                --location \
+                --output /dev/null \
+                --write-out "%{http_code}" \
+                --request POST \
+                --header "Accept: application/vnd.github+json" \
+                --header "Authorization: Bearer ${GITHUB_TOKEN}" \
+                --header "X-GitHub-Api-Version: ${API_VERSION}" \
+                --header "Content-Type: application/json" \
+                --data "$payload" \
+                "${API_URL}/repos/${REPOSITORY}/actions/variables" \
+                || true
+            )"
+
+            if [[ "$create_status" != "201" ]]; then
+              fail "saving the registry variable"
+            fi
+          fi
+
+          # ---------------------------------------------------------------
+          # 12. Aggregate-only logging.
+          #
+          # No username.
+          # No first-seen date.
+          # No expiry date.
+          # No registry.
+          # No secret.
+          # ---------------------------------------------------------------
+
+          echo "Outside collaborator cleanup completed successfully."
+          echo "Outside collaborators processed: ${processed_count}"
+          echo "New registry entries: ${new_count}"
+          echo "Expired collaborators removed: ${expired_count}"
+          echo "Stale registry entries removed: ${stale_count}"
