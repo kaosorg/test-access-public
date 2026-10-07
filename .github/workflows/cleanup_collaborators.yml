@@ -1,9 +1,6 @@
 name: Cleanup Temporary Outside Collaborators
 
 on:
-  schedule:
-    - cron: "48 * * * *"
-
   workflow_dispatch:
 
 # The built-in GITHUB_TOKEN is deliberately not used for GitHub API
