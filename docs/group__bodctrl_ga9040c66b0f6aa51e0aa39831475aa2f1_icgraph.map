@@ -1,5 +1,0 @@
-<map id="BODCTRL_SetIntControl" name="BODCTRL_SetIntControl">
-<area shape="rect" id="Node000001" title="Sets specific bits in the INTCTRL register." alt="" coords="238,5,407,32"/>
-<area shape="rect" id="Node000002" href="$group__power__manager.html#gacf0784f3721b15ccc444929ab3740aaa" title="Enables power related interrupts, including VMON, VLM and sleep error related interrupts." alt="" coords="5,5,190,32"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="219,19,190,21,190,16,224,19"/>
-</map>

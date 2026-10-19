@@ -1,5 +1,0 @@
-<map id="T_HandleBadInterrupt" name="T_HandleBadInterrupt">
-<area shape="rect" id="Node000001" title="Handles bad interrupt requests that do not have a corresponding ISR for handling it." alt="" coords="198,5,346,32"/>
-<area shape="rect" id="Node000002" href="$group__interrupts.html#gac190367695126c2feb12f4aae7c96f9b" title="Executes the default task responsible for handling accidental (bad) interrupts." alt="" coords="5,5,150,32"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="180,19,150,21,150,16,185,19"/>
-</map>

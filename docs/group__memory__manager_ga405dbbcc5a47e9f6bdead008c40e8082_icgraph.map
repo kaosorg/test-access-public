@@ -1,7 +1,0 @@
-<map id="MW_GetClearRamParityError" name="MW_GetClearRamParityError">
-<area shape="rect" id="Node000001" title="Reads and clears the flag indicating a bus parity error detected in the RAM controller." alt="" coords="231,43,425,69"/>
-<area shape="rect" id="Node000002" href="$group__shared__tasks.html#ga750e10737bfee1caa46c3d79c872de66" title="Private function, only exposed for unit testing and should not be called directly." alt="" coords="5,5,183,48"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="212,42,183,40,183,35,218,41"/>
-<area shape="rect" id="Node000003" href="$group__interrupt__tasks.html#gaf4e6160e44dcc18f321b19ccd160e5d8" title="Handles RAM interrupts by reporting the Error ID of any detected faults." alt="" coords="17,72,171,99"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="213,70,171,78,171,73,218,70"/>
-</map>

@@ -1,9 +1,0 @@
-<map id="ERRCTRL_WriteChannelStatus" name="ERRCTRL_WriteChannelStatus">
-<area shape="rect" id="Node000001" title="Overwrites the ESF register value." alt="" coords="218,56,426,83"/>
-<area shape="rect" id="Node000002" href="$group__error__manager.html#ga0f46e6936a413fab0a9dd8742635ce8d" title="Clears the specified error channel and confirms that the channel is cleared." alt="" coords="8,5,167,32"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="239,53,153,35,153,30,244,51"/>
-<area shape="rect" id="Node000035" href="$group__clock__manager.html#ga49c6f85eafdc204a1e8df718606215a2" title="Completes error injection diagnostic to detect faults in the CFD0 monitor." alt="" coords="5,56,170,83"/>
-<area shape="poly" id="edge2_Node000001_Node000035" title=" " alt="" coords="199,70,170,72,170,67,205,69"/>
-<area shape="rect" id="Node000036" href="$group__clock__manager.html#ga22b91c5b0dd88b61fa195da4e82a81f4" title="Completes error injection diagnostic to detect faults in the CFD1 monitor." alt="" coords="5,107,170,133"/>
-<area shape="poly" id="edge3_Node000001_Node000036" title=" " alt="" coords="244,86,153,109,152,103,239,87"/>
-</map>

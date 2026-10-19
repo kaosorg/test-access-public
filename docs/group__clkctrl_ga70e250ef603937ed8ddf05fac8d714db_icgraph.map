@@ -1,5 +1,0 @@
-<map id="CLKCTRL_ModifyOscHfControlA" name="CLKCTRL_ModifyOscHfControlA">
-<area shape="rect" id="Node000001" title="Modifies specific bit field(s) in the OSCHFCTRLA register." alt="" coords="249,5,466,32"/>
-<area shape="rect" id="Node000002" href="$group__clock__manager.html#gaccf94adae033dfb285e7718759544ea1" title="Initializes main clock with internal High Frequency Oscillator (OSCHF) as clock source." alt="" coords="5,5,201,32"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="230,19,201,21,201,16,236,19"/>
-</map>

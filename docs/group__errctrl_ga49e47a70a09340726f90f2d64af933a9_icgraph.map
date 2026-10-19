@@ -1,7 +1,0 @@
-<map id="ERRCTRL_ReadChannelStatus" name="ERRCTRL_ReadChannelStatus">
-<area shape="rect" id="Node000001" title="Reads the ESF register value." alt="" coords="213,31,422,57"/>
-<area shape="rect" id="Node000002" href="$group__error__manager.html#ga0f46e6936a413fab0a9dd8742635ce8d" title="Clears the specified error channel and confirms that the channel is cleared." alt="" coords="5,5,165,32"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="194,31,165,30,165,25,200,30"/>
-<area shape="rect" id="Node000035" href="$group__error__manager.html#ga607ff4ceda3dc4dd433aee396c76c737" title="Reads the status of the specified error channel." alt="" coords="10,56,160,83"/>
-<area shape="poly" id="edge2_Node000001_Node000035" title=" " alt="" coords="195,57,160,64,160,59,200,57"/>
-</map>

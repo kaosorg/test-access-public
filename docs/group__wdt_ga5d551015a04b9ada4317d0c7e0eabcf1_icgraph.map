@@ -1,9 +1,0 @@
-<map id="WDT_ReadCounter" name="WDT_ReadCounter">
-<area shape="rect" id="Node000001" title="Reads the CNT register value." alt="" coords="225,56,361,83"/>
-<area shape="rect" id="Node000002" href="$group__watchdog__manager.html#ga583967c17ffc5fc118d1bd19973a92c5" title="Begins diagnostic to detect faults in the Watchdog Timer (WDT) Counter mechanism." alt="" coords="5,5,177,32"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="219,53,147,35,147,30,224,51"/>
-<area shape="rect" id="Node000003" href="$group__watchdog__manager.html#gae3f9158018a391e4f6cae8a03ba9e93d" title="Completes diagnostic to detect faults in the Watchdog Timer (WDT) Counter mechanism." alt="" coords="10,56,172,83"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="206,70,172,72,172,67,211,69"/>
-<area shape="rect" id="Node000007" href="$group__watchdog__manager.html#ga29086743d0787e05dd075815b96d1469" title="Performs error injection diagnostic to detect faults in the Watchdog Timer (WDT) Expire mechanism." alt="" coords="21,107,161,133"/>
-<area shape="poly" id="edge3_Node000001_Node000007" title=" " alt="" coords="224,87,148,109,146,103,219,88"/>
-</map>

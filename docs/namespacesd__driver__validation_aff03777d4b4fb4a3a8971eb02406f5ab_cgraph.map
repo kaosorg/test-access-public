@@ -1,8 +1,0 @@
-<map id="validate_drivers" name="validate_drivers">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,31,118,57"/>
-<area shape="poly" id="edge2_Node000001_Node000001" title=" " alt="" coords="34,30,30,22,33,12,44,6,62,4,80,7,92,15,86,16,79,12,61,9,45,11,37,16,35,21,39,30"/>
-<area shape="rect" id="Node000002" href="$namespacesd__driver__validation.html#a9ec950044f75d62d7712cb720218261b" title=" " alt="" coords="166,5,270,32"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="118,32,153,29,148,30,119,37"/>
-<area shape="rect" id="Node000003" href="$namespacesd__driver__validation.html#a9a62d73fa2d409e0fc9118186b96b947" title=" " alt="" coords="166,56,270,83"/>
-<area shape="poly" id="edge3_Node000001_Node000003" title=" " alt="" coords="118,50,153,58,148,59,118,56"/>
-</map>

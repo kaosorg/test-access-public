@@ -1,5 +1,0 @@
-<map id="CLKCTRL_WriteIntControl" name="CLKCTRL_WriteIntControl">
-<area shape="rect" id="Node000001" title="Overwrites the MCLKINTCTRL register value." alt="" coords="235,5,411,32"/>
-<area shape="rect" id="Node000002" href="$group__clock__manager.html#ga480fd74e01fe4bcf03cf76fc139496b0" title="Enables all Clock Failure Detect (CFD) and Clock Frequency Measure (CFM) interrupts." alt="" coords="5,5,187,32"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="216,19,187,21,187,16,222,19"/>
-</map>

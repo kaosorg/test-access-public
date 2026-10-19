@@ -1,9 +1,0 @@
-<map id="MW_DiagSwdtExpire" name="MW_DiagSwdtExpire">
-<area shape="rect" id="Node000001" title="Performs error injection diagnostic to detect faults in the Synchronous Watchdog Timer (SWDT) Expire ..." alt="" coords="5,56,152,83"/>
-<area shape="rect" id="Node000002" href="$group__errctrl.html#ga18187e2644630eda2bf4b1fa2f27b783" title="Reads the ESCSWDT register value." alt="" coords="200,5,391,32"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="138,53,223,35,218,37,140,58"/>
-<area shape="rect" id="Node000003" href="$group__swdt.html#ga6434de7f815510e78eef15bf611774d4" title="Sets specific bits in the CTRLA register." alt="" coords="226,56,365,83"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="151,67,213,69,207,70,152,72"/>
-<area shape="rect" id="Node000005" href="$group__swdt.html#ga48bf7c20c0f981240ff25a9e4130bcb2" title="Overwrites the RESET register value." alt="" coords="213,107,378,133"/>
-<area shape="poly" id="edge3_Node000001_Node000005" title=" " alt="" coords="139,81,223,102,218,103,139,86"/>
-</map>

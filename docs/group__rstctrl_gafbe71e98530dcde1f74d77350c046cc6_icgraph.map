@@ -1,5 +1,0 @@
-<map id="RSTCTRL_WriteSoftwareResetRegister" name="RSTCTRL_WriteSoftwareResetRegister">
-<area shape="rect" id="Node000001" title="Overwrites the SWRR register value." alt="" coords="182,5,389,48"/>
-<area shape="rect" id="Node000002" href="$group__reset__manager.html#ga8964c4e3b57b5a6693c2ff3a3e1ee17e" title="Issues a software reset request to reset the device." alt="" coords="5,13,134,40"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="163,27,134,29,134,24,169,26"/>
-</map>

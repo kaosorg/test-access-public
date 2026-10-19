@@ -1,5 +1,0 @@
-<map id="CLKCTRL_ClearCfm1ControlA" name="CLKCTRL_ClearCfm1ControlA">
-<area shape="rect" id="Node000001" title="Clears specific bits in the MCLKCFM1CTRLA register." alt="" coords="199,5,402,32"/>
-<area shape="rect" id="Node000002" href="$group__clock__manager.html#ga5f602f6a69f97263f948f9ae3d17270b" title="Performs error injection diagnostic to detect faults in the Clock Frequency Measure 1 (CFM1) monitor." alt="" coords="5,5,151,32"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="180,19,151,21,151,16,186,19"/>
-</map>

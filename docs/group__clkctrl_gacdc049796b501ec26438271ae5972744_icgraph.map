@@ -1,7 +1,0 @@
-<map id="CLKCTRL_SetMainControlC" name="CLKCTRL_SetMainControlC">
-<area shape="rect" id="Node000001" title="Sets specific bits in the MCLKCTRLC register." alt="" coords="228,31,417,57"/>
-<area shape="rect" id="Node000002" href="$group__clock__manager.html#ga1d7c53e68a97d8e3cc76cc45950772c8" title="Starts error injection diagnostic to detect faults in the Clock Failure Detection 0 (CFD0) monitor." alt="" coords="5,5,180,32"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="209,32,180,31,180,26,215,31"/>
-<area shape="rect" id="Node000007" href="$group__clock__manager.html#gac1c0792179588d0960f6696196fc9b6b" title="Starts error injection diagnostic to detect faults in the Clock Failure Detection 1 (CFD1) monitor." alt="" coords="5,56,180,83"/>
-<area shape="poly" id="edge2_Node000001_Node000007" title=" " alt="" coords="209,56,180,62,180,57,215,56"/>
-</map>

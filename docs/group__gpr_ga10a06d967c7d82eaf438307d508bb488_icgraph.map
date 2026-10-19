@@ -1,5 +1,0 @@
-<map id="GPR_ModifyRegister1" name="GPR_ModifyRegister1">
-<area shape="rect" id="Node000001" title="Modifies specific bit field(s) in the GPR1 register." alt="" coords="214,5,366,32"/>
-<area shape="rect" id="Node000002" href="$group__memory__manager.html#ga288fde0388a5c29a2aeaaa4ae961dd66" title="Stores a value in General Purpose Registers (GPR) for perserving data between resets." alt="" coords="5,5,166,32"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="196,19,166,21,166,16,201,19"/>
-</map>

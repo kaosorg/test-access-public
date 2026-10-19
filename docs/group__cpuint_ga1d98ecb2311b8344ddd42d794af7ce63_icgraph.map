@@ -1,7 +1,0 @@
-<map id="CPUINT_SetControlA" name="CPUINT_SetControlA">
-<area shape="rect" id="Node000001" title="Sets specific bits in the CTRLA register." alt="" coords="227,31,377,57"/>
-<area shape="rect" id="Node000002" href="$group__interrupt__manager.html#ga7d21344257d8a7d4879fc17fd8bdd0d5" title="Configures interrupt scheduling and priority scheme." alt="" coords="28,5,156,32"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="209,34,157,29,157,24,214,32"/>
-<area shape="rect" id="Node000007" href="$group__interrupt__manager.html#ga9f5747450521342b04927cd22ec50e6f" title="Configures whether the device should expect an alternative interrupt vector table location (see IVSEL..." alt="" coords="5,56,179,83"/>
-<area shape="poly" id="edge2_Node000001_Node000007" title=" " alt="" coords="209,55,179,62,179,56,214,55"/>
-</map>

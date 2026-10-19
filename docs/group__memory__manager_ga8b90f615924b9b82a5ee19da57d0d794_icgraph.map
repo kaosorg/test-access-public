@@ -1,5 +1,0 @@
-<map id="MW_ClearPersistentFlags" name="MW_ClearPersistentFlags">
-<area shape="rect" id="Node000001" title="Clears all stored persistent flags in GPR." alt="" coords="228,5,402,32"/>
-<area shape="rect" id="Node000002" href="$group__startup__tasks.html#ga2c15d6926184e0acda5ec85d8ce99af1" title="Retrieves and validates stored Pre&#45;startup error flags from persistent memory and reports them to the..." alt="" coords="5,5,180,32"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="210,19,180,21,180,16,215,19"/>
-</map>

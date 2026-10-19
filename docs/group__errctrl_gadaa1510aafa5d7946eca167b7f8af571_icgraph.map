@@ -1,5 +1,0 @@
-<map id="ERRCTRL_ReadConfigEeprom" name="ERRCTRL_ReadConfigEeprom">
-<area shape="rect" id="Node000001" title="Reads the ESCEEPROM register value." alt="" coords="229,5,435,32"/>
-<area shape="rect" id="Node000002" href="$group__memory__manager.html#ga316edb8ab37fa86911a2f4bdd93b6e6c" title="This function performs error injection diagnostic to detect faults in the NVMCTRL ECC checkers with E..." alt="" coords="5,5,181,32"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="210,19,181,21,181,16,216,19"/>
-</map>

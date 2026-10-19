@@ -1,5 +1,0 @@
-<map id="SWDT_WriteIntFlags" name="SWDT_WriteIntFlags">
-<area shape="rect" id="Node000001" title="Overwrites the INTFLAGS register value." alt="" coords="202,5,347,32"/>
-<area shape="rect" id="Node000002" href="$group__watchdog__manager.html#gaf6029cc629b36b42c83cd84ab37eeb90" title="Clears all the error flags in the Synchronous Watchdog." alt="" coords="5,5,154,32"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="184,19,154,21,154,16,189,19"/>
-</map>

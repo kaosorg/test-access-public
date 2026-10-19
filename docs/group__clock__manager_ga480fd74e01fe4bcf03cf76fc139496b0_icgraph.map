@@ -1,5 +1,0 @@
-<map id="MW_EnableClockInterrupts" name="MW_EnableClockInterrupts">
-<area shape="rect" id="Node000001" title="Enables all Clock Failure Detect (CFD) and Clock Frequency Measure (CFM) interrupts." alt="" coords="148,5,329,32"/>
-<area shape="rect" id="Node000002" href="$group__startup__tasks.html#ga672a9aa45c8cc288a585a3b40eb44a63" title="Private function, only exposed for unit testing and should not be called directly." alt="" coords="5,5,100,32"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="129,19,100,21,100,16,134,18"/>
-</map>

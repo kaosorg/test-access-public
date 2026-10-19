@@ -1,7 +1,0 @@
-<map id="CPUCTRL_ClearStatusRegister" name="CPUCTRL_ClearStatusRegister">
-<area shape="rect" id="Node000001" title="Clears specific bits in the SREG register." alt="" coords="242,31,452,57"/>
-<area shape="rect" id="Node000002" href="$group__error__manager.html#ga297fd245072aac904e53cf9a9c94564f" title="Sets the error controller timeout duration and configures all error channels with the provided settin..." alt="" coords="13,5,186,32"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="223,32,187,30,186,25,229,31"/>
-<area shape="rect" id="Node000007" href="$group__interrupt__manager.html#ga36290cf4ebae7f5cfc4bddc69aae944f" title="Disables global interrupts on the device." alt="" coords="5,56,194,83"/>
-<area shape="poly" id="edge2_Node000001_Node000007" title=" " alt="" coords="223,57,194,62,194,57,229,56"/>
-</map>

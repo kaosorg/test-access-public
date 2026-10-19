@@ -1,7 +1,0 @@
-<map id="MW_SetSwdtResetValue" name="MW_SetSwdtResetValue">
-<area shape="rect" id="Node000001" title="Sets the Synchronous Watchdog Timer countdown reset value." alt="" coords="219,31,388,57"/>
-<area shape="rect" id="Node000002" href="$group__startup__tasks.html#ga76a9474fdd36764d43bdb854d1bfcfd1" title="Private function, only exposed for unit testing and should not be called directly." alt="" coords="36,5,140,32"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="201,33,141,27,141,22,206,31"/>
-<area shape="rect" id="Node000006" href="$group__shared__tasks.html#ga30a606f4a3c8ae160671307c60c3b304" title="Waits until the current Synchronous Watchdog timeout is completed before clearing and setting the nex..." alt="" coords="5,56,171,83"/>
-<area shape="poly" id="edge2_Node000001_Node000006" title=" " alt="" coords="201,56,171,62,171,57,206,55"/>
-</map>

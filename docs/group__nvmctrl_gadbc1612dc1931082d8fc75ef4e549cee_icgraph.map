@@ -1,5 +1,0 @@
-<map id="NVMCTRL_ModifyControlC" name="NVMCTRL_ModifyControlC">
-<area shape="rect" id="Node000001" title="Modifies specific bit field(s) in the CTRLC register." alt="" coords="223,5,407,32"/>
-<area shape="rect" id="Node000002" href="$group__memory__manager.html#ga7b4b8073e4325c35b3f9ca4022354742" title="Sets ECC all Ones (ECCALL1) scheme." alt="" coords="5,5,175,32"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="205,19,175,21,175,16,210,19"/>
-</map>

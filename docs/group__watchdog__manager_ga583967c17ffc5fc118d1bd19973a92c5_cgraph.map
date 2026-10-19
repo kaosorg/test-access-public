@@ -1,5 +1,0 @@
-<map id="MW_DiagWdtCountBegin" name="MW_DiagWdtCountBegin">
-<area shape="rect" id="Node000001" title="Begins diagnostic to detect faults in the Watchdog Timer (WDT) Counter mechanism." alt="" coords="5,5,177,32"/>
-<area shape="rect" id="Node000002" href="$group__wdt.html#ga5d551015a04b9ada4317d0c7e0eabcf1" title="Reads the CNT register value." alt="" coords="225,5,361,32"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="177,16,212,19,207,19,177,21"/>
-</map>

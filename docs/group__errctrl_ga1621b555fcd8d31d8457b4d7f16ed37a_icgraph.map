@@ -1,7 +1,0 @@
-<map id="ERRCTRL_ReadControlA" name="ERRCTRL_ReadControlA">
-<area shape="rect" id="Node000001" title="Reads the CTRLA register value." alt="" coords="227,31,401,57"/>
-<area shape="rect" id="Node000002" href="$group__error__manager.html#ga297fd245072aac904e53cf9a9c94564f" title="Sets the error controller timeout duration and configures all error channels with the provided settin..." alt="" coords="5,5,179,32"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="209,33,179,31,179,26,214,32"/>
-<area shape="rect" id="Node000007" href="$group__error__manager.html#ga7bc04ada35f0e54bc64ac46a09a34daa" title="Disables forced floating (tri&#45;stating) of all I/O pins." alt="" coords="13,56,171,83"/>
-<area shape="poly" id="edge2_Node000001_Node000007" title=" " alt="" coords="209,56,172,63,171,58,214,55"/>
-</map>

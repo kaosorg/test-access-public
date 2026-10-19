@@ -1,5 +1,0 @@
-<map id="MW_DiagSwdtCount" name="MW_DiagSwdtCount">
-<area shape="rect" id="Node000001" title="Performs diagnostic to detect faults in the Synchronous Watchdog Timer (SWDT) Counter mechanism." alt="" coords="5,5,150,32"/>
-<area shape="rect" id="Node000002" href="$group__swdt.html#gaceda92305a21c16a5133b1f734224042" title="Reads the CNT0 register value." alt="" coords="198,5,364,32"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="150,16,185,19,179,19,150,21"/>
-</map>

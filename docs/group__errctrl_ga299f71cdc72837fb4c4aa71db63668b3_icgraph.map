@@ -1,7 +1,0 @@
-<map id="ERRCTRL_ClearControlA" name="ERRCTRL_ClearControlA">
-<area shape="rect" id="Node000001" title="Clears specific bits in the CTRLA register." alt="" coords="212,31,386,57"/>
-<area shape="rect" id="Node000002" href="$group__error__manager.html#ga7bc04ada35f0e54bc64ac46a09a34daa" title="Disables forced floating (tri&#45;stating) of all I/O pins." alt="" coords="5,5,164,32"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="194,32,164,31,164,25,199,31"/>
-<area shape="rect" id="Node000006" href="$group__error__manager.html#ga16c812d70b1643a0402cc35a70650a78" title="Stops the Heartbeat output signal." alt="" coords="16,56,153,83"/>
-<area shape="poly" id="edge2_Node000001_Node000006" title=" " alt="" coords="194,56,153,64,153,59,199,56"/>
-</map>

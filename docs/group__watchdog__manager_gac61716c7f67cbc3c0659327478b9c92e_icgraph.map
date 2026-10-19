@@ -1,7 +1,0 @@
-<map id="MW_GetSwdtPreclearError" name="MW_GetSwdtPreclearError">
-<area shape="rect" id="Node000001" title="Reads the error flag indicating a non&#45;preclear command received while expecting a preclear command in..." alt="" coords="251,31,430,57"/>
-<area shape="rect" id="Node000002" href="$group__shared__tasks.html#ga40767a464b76824800e0f407d8691462" title="Private function, only exposed for unit testing and should not be called directly." alt="" coords="5,5,203,32"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="233,33,203,32,203,27,238,32"/>
-<area shape="rect" id="Node000003" href="$group__interrupt__tasks.html#gac24623cbad6f695cd281b0128707a8ad" title="Handles SWDT interrupts by reporting the Error ID of any detected faults." alt="" coords="26,56,182,83"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="233,56,183,64,182,58,238,55"/>
-</map>

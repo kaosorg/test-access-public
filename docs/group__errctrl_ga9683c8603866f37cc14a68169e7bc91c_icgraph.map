@@ -1,5 +1,0 @@
-<map id="ERRCTRL_ReadConfigOpc" name="ERRCTRL_ReadConfigOpc">
-<area shape="rect" id="Node000001" title="Reads the ESCOPC register value." alt="" coords="195,5,380,32"/>
-<area shape="rect" id="Node000002" href="$group__memory__manager.html#gacb06cb6a049400c15f2e544af66ebdfd" title="This function performs error injection diagnostic to detect faults in the CPU and NVM bus parity chec..." alt="" coords="5,5,147,32"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="177,19,147,21,147,16,182,19"/>
-</map>

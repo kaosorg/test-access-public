@@ -1,7 +1,0 @@
-<map id="ERRCTRL_SetControlA" name="ERRCTRL_SetControlA">
-<area shape="rect" id="Node000001" title="Sets specific bits in the CTRLA register." alt="" coords="208,31,371,57"/>
-<area shape="rect" id="Node000002" href="$group__error__manager.html#gae241ba85bb32c4c6a48527b95fe17af8" title="Enables forced floating (tri&#45;stating) of all I/O pins." alt="" coords="5,5,160,32"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="190,33,160,31,160,25,195,32"/>
-<area shape="rect" id="Node000063" href="$group__error__manager.html#ga9f700c458a9e34cd10a9d037c09391bb" title="Starts the Heartbeat output signal." alt="" coords="14,56,151,83"/>
-<area shape="poly" id="edge2_Node000001_Node000063" title=" " alt="" coords="190,56,152,64,151,58,195,55"/>
-</map>
