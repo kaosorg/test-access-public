@@ -1,0 +1,5 @@
+<map id="SWDT_ReadCounterLsb" name="SWDT_ReadCounterLsb">
+<area shape="rect" id="Node000001" title="Reads the CNT0 register value." alt="" coords="198,5,364,32"/>
+<area shape="rect" id="Node000002" href="$group__watchdog__manager.html#ga6323b2f240ca10cf6f292c77dcb7526e" title="Performs diagnostic to detect faults in the Synchronous Watchdog Timer (SWDT) Counter mechanism." alt="" coords="5,5,150,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="180,19,150,21,150,16,185,19"/>
+</map>

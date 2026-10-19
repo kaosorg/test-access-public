@@ -1,0 +1,5 @@
+<map id="MW_StartHeartbeat" name="MW_StartHeartbeat">
+<area shape="rect" id="Node000001" title="Starts the Heartbeat output signal." alt="" coords="195,5,332,32"/>
+<area shape="rect" id="Node000002" href="$group__startup__tasks.html#ga6b125179dc33633c2334c1a647f6a30d" title="Transitions the device from Safe State into Mission Mode." alt="" coords="5,5,147,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="177,19,147,21,147,16,182,19"/>
+</map>

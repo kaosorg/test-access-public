@@ -1,0 +1,5 @@
+<map id="SWDT_WriteIntControl" name="SWDT_WriteIntControl">
+<area shape="rect" id="Node000001" title="Overwrites the INTCTRL register value." alt="" coords="231,5,386,32"/>
+<area shape="rect" id="Node000002" href="$group__watchdog__manager.html#gabfdc747df904650ef5a109757a5e637d" title="Enables all Synchronous Watchdog error interrupts." alt="" coords="5,5,183,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="213,19,183,21,183,16,218,19"/>
+</map>

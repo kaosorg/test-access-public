@@ -1,0 +1,7 @@
+<map id="MW_EnterSleepMode" name="MW_EnterSleepMode">
+<area shape="rect" id="Node000001" title="Enters the selected device sleep mode." alt="" coords="5,31,154,57"/>
+<area shape="rect" id="Node000002" href="$group__power__manager.html#ga8d0b0ded1bbc3be20f4c4c1763b424ae" title="Issues a SLEEP instruction to enter the configured device sleep mode." alt="" coords="202,5,385,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="154,33,188,31,183,32,155,38"/>
+<area shape="rect" id="Node000003" href="$group__slpctrl.html#gab03f9515a73a7fb8c2ddaafaf3ddddb3" title="Overwrites the CTRLA register value." alt="" coords="209,56,378,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="154,50,195,57,190,58,154,55"/>
+</map>

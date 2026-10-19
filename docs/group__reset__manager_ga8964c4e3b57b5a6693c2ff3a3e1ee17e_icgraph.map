@@ -1,0 +1,5 @@
+<map id="MW_ResetDevice" name="MW_ResetDevice">
+<area shape="rect" id="Node000001" title="Issues a software reset request to reset the device." alt="" coords="198,5,326,32"/>
+<area shape="rect" id="Node000002" href="$group__error__handler.html#gafa3d7008a2cea38c0d7c0fd8f5bf40d3" title="Transitions the system into a Safe State and resets the device." alt="" coords="5,5,150,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="180,19,150,21,150,16,185,19"/>
+</map>

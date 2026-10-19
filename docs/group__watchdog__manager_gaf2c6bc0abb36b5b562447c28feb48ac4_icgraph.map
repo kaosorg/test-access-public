@@ -1,0 +1,5 @@
+<map id="MW_SetSwdtWindowValue" name="MW_SetSwdtWindowValue">
+<area shape="rect" id="Node000001" title="Sets the Synchronous Watchdog Timer open window value." alt="" coords="158,5,339,32"/>
+<area shape="rect" id="Node000002" href="$group__startup__tasks.html#ga76a9474fdd36764d43bdb854d1bfcfd1" title="Private function, only exposed for unit testing and should not be called directly." alt="" coords="5,5,110,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="139,19,110,21,110,16,145,18"/>
+</map>

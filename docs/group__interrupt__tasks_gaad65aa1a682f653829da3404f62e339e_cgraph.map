@@ -1,0 +1,9 @@
+<map id="T_HandlePowerInterrupt" name="T_HandlePowerInterrupt">
+<area shape="rect" id="Node000001" title="Handles power related interrupts by reporting the Error ID of any detected faults." alt="" coords="5,56,168,83"/>
+<area shape="rect" id="Node000002" href="$group__error__manager.html#ga0f46e6936a413fab0a9dd8742635ce8d" title="Clears the specified error channel and confirms that the channel is cleared." alt="" coords="231,5,390,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="148,53,236,35,231,37,150,58"/>
+<area shape="rect" id="Node000005" href="$group__power__manager.html#ga768b163e2d0e650ff066fe2a6b906639" title="Checks if the VMON overvoltage error injection has been completed." alt="" coords="219,56,402,83"/>
+<area shape="poly" id="edge2_Node000001_Node000005" title=" " alt="" coords="168,67,206,69,201,70,168,72"/>
+<area shape="rect" id="Node000006" href="$group__power__manager.html#gaca1d92331a809951ea5aa34813ba49f6" title="Checks if the VMON undervoltage error injection has been completed." alt="" coords="216,107,406,133"/>
+<area shape="poly" id="edge3_Node000001_Node000006" title=" " alt="" coords="149,81,236,102,231,103,149,86"/>
+</map>

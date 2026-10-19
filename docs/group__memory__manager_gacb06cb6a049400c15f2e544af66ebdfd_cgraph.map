@@ -1,0 +1,11 @@
+<map id="MW_DiagNvmParity" name="MW_DiagNvmParity">
+<area shape="rect" id="Node000001" title="This function performs error injection diagnostic to detect faults in the CPU and NVM bus parity chec..." alt="" coords="5,81,147,108"/>
+<area shape="rect" id="Node000002" href="$group__cpuctrl.html#ga072060db2ba6c28b982eb035236d0ffa" title="Clears specific bits in the CTRLA register." alt="" coords="207,5,382,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="105,78,194,41,221,35,216,38,196,47,107,83"/>
+<area shape="rect" id="Node000004" href="$group__cpuctrl.html#ga3f32dce54116f2d94354960f48e07eee" title="Sets specific bits in the CTRLA register." alt="" coords="213,56,376,83"/>
+<area shape="poly" id="edge2_Node000001_Node000004" title=" " alt="" coords="146,84,200,79,195,82,147,89"/>
+<area shape="rect" id="Node000005" href="$group__errctrl.html#ga3d3d9a38b1238337205764d4950fea97" title="Reads the ESCBUSERR register value." alt="" coords="195,107,394,133"/>
+<area shape="poly" id="edge3_Node000001_Node000005" title=" " alt="" coords="146,100,182,106,177,107,147,105"/>
+<area shape="rect" id="Node000006" href="$group__errctrl.html#ga9683c8603866f37cc14a68169e7bc91c" title="Reads the ESCOPC register value." alt="" coords="202,157,387,184"/>
+<area shape="poly" id="edge4_Node000001_Node000006" title=" " alt="" coords="107,106,196,143,221,153,216,153,194,148,106,111"/>
+</map>

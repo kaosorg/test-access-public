@@ -1,0 +1,7 @@
+<map id="MW_SetWdtTimeout" name="MW_SetWdtTimeout">
+<area shape="rect" id="Node000001" title="Configures and enables the Watchdog Timer in either Normal or Window mode." alt="" coords="195,31,338,57"/>
+<area shape="rect" id="Node000002" href="$group__startup__tasks.html#ga76a9474fdd36764d43bdb854d1bfcfd1" title="Private function, only exposed for unit testing and should not be called directly." alt="" coords="24,5,128,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="176,33,129,28,128,23,182,32"/>
+<area shape="rect" id="Node000006" href="$group__startup__tasks.html#ga6b125179dc33633c2334c1a647f6a30d" title="Transitions the device from Safe State into Mission Mode." alt="" coords="5,56,147,83"/>
+<area shape="poly" id="edge2_Node000001_Node000006" title=" " alt="" coords="176,56,148,63,147,57,182,55"/>
+</map>
