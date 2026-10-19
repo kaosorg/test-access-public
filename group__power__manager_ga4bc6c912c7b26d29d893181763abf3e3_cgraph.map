@@ -1,7 +1,0 @@
-<map id="MW_GetClearVmonDiagExitError" name="MW_GetClearVmonDiagExitError">
-<area shape="rect" id="Node000001" title="Reads and clears the flag indicating an Diagnostic Mode exit error in the Voltage Monitor." alt="" coords="5,31,222,57"/>
-<area shape="rect" id="Node000002" href="$group__slpctrl.html#gafa9212c4a3a2bfb57253eff18ed228b9" title="Reads the INTFLAGS register value." alt="" coords="270,5,436,32"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="222,30,257,29,251,30,222,35"/>
-<area shape="rect" id="Node000003" href="$group__slpctrl.html#ga6561e59c74228d99af2d0510c18e7dab" title="Overwrites the INTFLAGS register value." alt="" coords="270,56,436,83"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="222,53,257,59,252,59,222,58"/>
-</map>

@@ -1,7 +1,0 @@
-<map id="MW_DiagCpuLockstep" name="MW_DiagCpuLockstep">
-<area shape="rect" id="Node000001" title="Performs error injection diagnostic to detect faults in the CPU lockstep mechanism." alt="" coords="5,5,162,32"/>
-<area shape="rect" id="Node000002" href="$group__cpuctrl.html#ga3f32dce54116f2d94354960f48e07eee" title="Sets specific bits in the CTRLA register." alt="" coords="210,5,373,32"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="162,16,197,19,191,19,162,21"/>
-<area shape="rect" id="Node000003" href="$group__ccp__utility.html#gae87c39ed3ac0f3733e3990e460b62859" title="Writes value to a Configuration Change Protected (CCP) 8&#45;bit register." alt="" coords="421,5,539,32"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="373,16,408,19,403,19,373,21"/>
-</map>

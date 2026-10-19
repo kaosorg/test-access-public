@@ -1,4 +1,0 @@
-<map id="Interrupts" name="Interrupts">
-<area shape="rect" id="Node000001" title="Contains API prototypes for the Interrupts Task Manager and ISR vector definitions." alt="" coords="193,5,269,32"/>
-<area shape="rect" id="Node000002" href="$group__task__manager__layer.html" title="Contains Task Managers that ensure that the correct Task is called at the correct time." alt="" coords="5,5,145,32"/>
-</map>

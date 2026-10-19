@@ -1,7 +1,0 @@
-<map id="MW_ClearPersistentFlags" name="MW_ClearPersistentFlags">
-<area shape="rect" id="Node000001" title="Clears all stored persistent flags in GPR." alt="" coords="5,31,180,57"/>
-<area shape="rect" id="Node000002" href="$group__gpr.html#ga67e9100954cedbbfa88ee1432fc6d689" title="Modifies specific bit field(s) in the GPR2 register." alt="" coords="228,5,380,32"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="179,31,215,29,210,30,180,36"/>
-<area shape="rect" id="Node000003" href="$group__gpr.html#gac7800b53adfb6acc221212acd490904f" title="Overwrites the GPR3 register value." alt="" coords="232,56,376,83"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="180,52,219,59,214,59,180,57"/>
-</map>

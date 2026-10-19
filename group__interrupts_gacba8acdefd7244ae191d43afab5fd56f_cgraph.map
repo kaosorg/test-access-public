@@ -1,5 +1,0 @@
-<map id="TM_InterruptsErrorCh" name="TM_InterruptsErrorCh">
-<area shape="rect" id="Node000001" title="Executes the task responsible for handling a Error Controller (ERRCTRL) channel interrupt." alt="" coords="5,5,153,32"/>
-<area shape="rect" id="Node000002" href="$group__interrupt__tasks.html#ga421bfe98d58360ab83cc1edac972735f" title="Handles Error Channel interrupts by reporting the sources of the first set Error Channel." alt="" coords="201,5,371,32"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="153,16,188,19,182,19,153,21"/>
-</map>

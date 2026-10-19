@@ -1,7 +1,0 @@
-<map id="MW_PreClearSwdt" name="MW_PreClearSwdt">
-<area shape="rect" id="Node000001" title="Sends a PRECLEAR command to the Synchronous Watchdog." alt="" coords="5,5,139,32"/>
-<area shape="rect" id="Node000002" href="$group__swdt.html#gab011115ce5a40eddca6f6866bad4028b" title="Overwrites the COMMAND register value." alt="" coords="187,5,345,32"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="139,16,174,18,168,19,139,21"/>
-<area shape="rect" id="Node000003" href="$group__ccp__utility.html#gae87c39ed3ac0f3733e3990e460b62859" title="Writes value to a Configuration Change Protected (CCP) 8&#45;bit register." alt="" coords="393,5,511,32"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="346,16,380,19,375,19,346,21"/>
-</map>

@@ -1,7 +1,0 @@
-<map id="GPR_WriteRegister1" name="GPR_WriteRegister1">
-<area shape="rect" id="Node000001" title="Overwrites the GPR1 register value." alt="" coords="426,5,569,32"/>
-<area shape="rect" id="Node000002" href="$group__memory__manager.html#ga21ac0a2a9a132045648a676323529fa2" title="Clears all stored persistent values in GPR." alt="" coords="211,5,378,32"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="408,19,379,21,378,16,413,19"/>
-<area shape="rect" id="Node000003" href="$group__startup__tasks.html#gaa2dc2ecc3f324cd398116dc6280d9628" title="Retrieves and validates stored reset info from persistent memory and issues configurable callback for..." alt="" coords="5,5,163,32"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="193,19,163,21,163,16,198,19"/>
-</map>

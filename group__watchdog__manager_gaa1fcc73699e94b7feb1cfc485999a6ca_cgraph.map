@@ -1,7 +1,0 @@
-<map id="MW_SetSwdtResetValue" name="MW_SetSwdtResetValue">
-<area shape="rect" id="Node000001" title="Sets the Synchronous Watchdog Timer countdown reset value." alt="" coords="5,5,175,32"/>
-<area shape="rect" id="Node000002" href="$group__swdt.html#ga48bf7c20c0f981240ff25a9e4130bcb2" title="Overwrites the RESET register value." alt="" coords="223,5,388,32"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="175,16,210,19,204,19,175,21"/>
-<area shape="rect" id="Node000003" href="$group__ccp__utility.html#ga92d6424b66eac0568185eb9dc5e62e5d" title="Writes value to a Configuration Change Protected (CCP) 24&#45;bit register." alt="" coords="436,5,561,32"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="389,16,423,19,418,19,389,21"/>
-</map>

@@ -1,7 +1,0 @@
-<map id="MW_SetVmonSleep" name="MW_SetVmonSleep">
-<area shape="rect" id="Node000001" title="Configures Voltage Monitor (VMON) operation during Standby or Power&#45;Down sleep." alt="" coords="5,5,145,32"/>
-<area shape="rect" id="Node000002" href="$group__slpctrl.html#ga4c7e3fe25d0a81d9e41ecb2a32ee5c43" title="Overwrites the VREGCTRL register value." alt="" coords="193,5,379,32"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="145,16,179,19,174,19,145,21"/>
-<area shape="rect" id="Node000003" href="$group__ccp__utility.html#gae87c39ed3ac0f3733e3990e460b62859" title="Writes value to a Configuration Change Protected (CCP) 8&#45;bit register." alt="" coords="427,5,545,32"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="380,16,414,19,409,19,380,21"/>
-</map>
