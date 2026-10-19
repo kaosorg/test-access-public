@@ -1,0 +1,13 @@
+<map id="SWDT_ReadIntFlags" name="SWDT_ReadIntFlags">
+<area shape="rect" id="Node000001" title="Reads the INTFLAGS register value." alt="" coords="283,115,429,141"/>
+<area shape="rect" id="Node000002" href="$group__watchdog__manager.html#ga325ac419d201f82a89df04926f6865ce" title="Sends a CLEAR command to the Synchronous Watchdog." alt="" coords="63,5,177,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="325,104,284,75,234,46,177,29,177,24,236,42,287,71,330,104"/>
+<area shape="rect" id="Node000007" href="$group__watchdog__manager.html#ga70d406dafd80efd8170a429fa34b94fa" title="Reads the error flag indicating a non&#45;clear command received while expecting a clear command in the S..." alt="" coords="39,56,201,83"/>
+<area shape="poly" id="edge2_Node000001_Node000007" title=" " alt="" coords="290,111,234,97,187,86,186,81,235,92,295,109"/>
+<area shape="rect" id="Node000012" href="$group__watchdog__manager.html#ga9225369d8a6a3c2ede5750467902886d" title="Reads the error flag indicating that the Synchronous Watchdog counter expired." alt="" coords="23,107,217,149"/>
+<area shape="poly" id="edge3_Node000001_Node000012" title=" " alt="" coords="264,129,217,131,216,125,269,127"/>
+<area shape="rect" id="Node000013" href="$group__watchdog__manager.html#gac61716c7f67cbc3c0659327478b9c92e" title="Reads the error flag indicating a non&#45;preclear command received while expecting a preclear command in..." alt="" coords="30,173,210,200"/>
+<area shape="poly" id="edge4_Node000001_Node000013" title=" " alt="" coords="290,147,235,164,187,175,185,170,234,159,295,145"/>
+<area shape="rect" id="Node000014" href="$group__watchdog__manager.html#gaff93c4436fddc61000b321fa2dc0d67c" title="Reads the error flag indicating a clear command received in the closed window after a preclear comman..." alt="" coords="5,224,235,251"/>
+<area shape="poly" id="edge5_Node000001_Node000014" title=" " alt="" coords="330,151,287,185,236,214,203,226,201,221,234,210,284,181,325,153"/>
+</map>

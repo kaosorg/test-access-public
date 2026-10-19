@@ -1,0 +1,9 @@
+<map id="T_HandleCrcInterrupt" name="T_HandleCrcInterrupt">
+<area shape="rect" id="Node000001" title="Handles CRC Flash scanning interrupts by clearing the periodic interrupt bit and reporting the Error ..." alt="" coords="5,56,152,83"/>
+<area shape="rect" id="Node000002" href="$group__error__handler.html#ga73765998f24e3760a5b8a9212a653b31" title="Handles error based on configured Error ID criticality if the error flag is set." alt="" coords="236,5,352,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="138,53,223,34,219,37,139,58"/>
+<area shape="rect" id="Node000017" href="$group__checksum__manager.html#ga41b0619a6134563f30d4fcc45a7d3561" title="Clears the flag indicating that a CRC Scan period is done." alt="" coords="200,56,389,83"/>
+<area shape="poly" id="edge2_Node000001_Node000017" title=" " alt="" coords="152,67,187,69,181,70,152,72"/>
+<area shape="rect" id="Node000019" href="$group__checksum__manager.html#gac7d5dd16810772e8d174bb3f506bda6a" title="Reads and clears the flag indicating a CRC Scan of Flash is done and returns the scan result." alt="" coords="202,107,386,133"/>
+<area shape="poly" id="edge3_Node000001_Node000019" title=" " alt="" coords="139,81,222,102,217,103,138,86"/>
+</map>

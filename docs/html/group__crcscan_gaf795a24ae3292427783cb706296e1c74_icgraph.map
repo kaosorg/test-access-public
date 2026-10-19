@@ -1,0 +1,5 @@
+<map id="CRCSCAN_ModifyControlA" name="CRCSCAN_ModifyControlA">
+<area shape="rect" id="Node000001" title="Modifies specific bit field(s) in the CTRLA register." alt="" coords="232,5,418,32"/>
+<area shape="rect" id="Node000002" href="$group__checksum__manager.html#gad4b332927379b6ccad260901aaa25070" title="Configures the interrupt settings for the next CRC Scan of a Flash section." alt="" coords="5,5,184,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="214,19,184,21,184,16,219,19"/>
+</map>

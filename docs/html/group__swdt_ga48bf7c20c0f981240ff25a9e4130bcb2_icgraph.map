@@ -1,0 +1,7 @@
+<map id="SWDT_WriteResetValue" name="SWDT_WriteResetValue">
+<area shape="rect" id="Node000001" title="Overwrites the RESET register value." alt="" coords="223,31,388,57"/>
+<area shape="rect" id="Node000002" href="$group__watchdog__manager.html#ga2cc21416c89836787d6dbde1a515394f" title="Performs error injection diagnostic to detect faults in the Synchronous Watchdog Timer (SWDT) Expire ..." alt="" coords="17,5,163,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="205,33,164,30,164,25,210,32"/>
+<area shape="rect" id="Node000003" href="$group__watchdog__manager.html#gaa1fcc73699e94b7feb1cfc485999a6ca" title="Sets the Synchronous Watchdog Timer countdown reset value." alt="" coords="5,56,175,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="205,56,176,62,175,57,210,55"/>
+</map>

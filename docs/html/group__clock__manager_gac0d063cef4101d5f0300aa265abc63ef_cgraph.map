@@ -1,0 +1,5 @@
+<map id="MW_DiagClockCfm0" name="MW_DiagClockCfm0">
+<area shape="rect" id="Node000001" title="Performs error injection diagnostic to detect faults in the Clock Frequency Measure 0 (CFM0) monitor." alt="" coords="5,5,151,32"/>
+<area shape="rect" id="Node000002" href="$group__clkctrl.html#ga189cf78092e1a8b16c1519263103a543" title="Clears specific bits in the MCLKCFM0CTRLA register." alt="" coords="199,5,402,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="151,16,186,19,180,19,151,21"/>
+</map>
