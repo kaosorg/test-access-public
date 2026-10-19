@@ -1,0 +1,40 @@
+<map id="CPUCTRL_SetControlA" name="CPUCTRL_SetControlA">
+<area shape="rect" id="Node000001" title="Sets specific bits in the CTRLA register." alt="" coords="914,157,1077,184"/>
+<area shape="rect" id="Node000002" href="$group__cpu__manager.html#gac4298d440524be03e036d4cdac06e335" title="Performs error injection diagnostic to detect faults in the CPU lockstep mechanism." alt="" coords="700,5,856,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="972,145,927,96,897,69,865,46,841,35,841,30,867,42,901,65,931,92,978,146"/>
+<area shape="rect" id="Node000005" href="$group__memory__manager.html#ga316edb8ab37fa86911a2f4bdd93b6e6c" title="This function performs error injection diagnostic to detect faults in the NVMCTRL ECC checkers with E..." alt="" coords="691,56,866,83"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="960,148,916,123,865,97,835,86,835,81,867,92,919,119,965,149"/>
+<area shape="rect" id="Node000010" href="$group__memory__manager.html#gae222778066a5db667403e1ed241bca67" title="This function performs error injection diagnostic to detect faults in the NVMCTRL ECC checkers with F..." alt="" coords="697,107,860,133"/>
+<area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="918,153,839,137,839,131,923,153"/>
+<area shape="rect" id="Node000011" href="$group__memory__manager.html#gacb06cb6a049400c15f2e544af66ebdfd" title="This function performs error injection diagnostic to detect faults in the CPU and NVM bus parity chec..." alt="" coords="708,208,849,235"/>
+<area shape="poly" id="edge11_Node000001_Node000011" title=" " alt="" coords="923,188,839,210,838,205,918,189"/>
+<area shape="rect" id="Node000013" href="$group__memory__manager.html#ga65d1ed209ac5e5010e929fcfd0f5e5ee" title="This function performs error injection diagnostic to detect faults in the redundant RAMCTRL ECC check..." alt="" coords="713,157,844,184"/>
+<area shape="poly" id="edge14_Node000001_Node000013" title=" " alt="" coords="896,171,844,173,844,168,901,170"/>
+<area shape="rect" id="Node000014" href="$group__memory__manager.html#ga77d9492dc32a40e0c873e0b84cc222d7" title="This function performs error injection diagnostic to detect faults in the RAM parity checker triggere..." alt="" coords="708,259,849,285"/>
+<area shape="poly" id="edge16_Node000001_Node000014" title=" " alt="" coords="965,192,919,223,867,249,835,261,834,255,865,244,916,218,960,194"/>
+<area shape="rect" id="Node000015" href="$group__memory__manager.html#ga32055217e20ee25aa0c9c420a850776c" title="Sets the Stack Pointer Limit value and optionally locks the value to prevent modification." alt="" coords="697,309,860,336"/>
+<area shape="poly" id="edge18_Node000001_Node000015" title=" " alt="" coords="977,195,931,249,901,276,867,300,842,311,841,306,865,295,897,272,927,246,973,197"/>
+<area shape="rect" id="Node000003" href="$group__pre__startup__tasks.html#gabd553af9305ae2dcef9313f09845285d" title="Implements an FSM for performing error injection diagnostics leading to device resets." alt="" coords="459,5,643,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="682,19,643,21,642,16,687,18"/>
+<area shape="rect" id="Node000004" href="$group__pre__startup.html#ga701184f0da98991964444f4558e9456e" title="Manages safety system Pre&#45;startup Tasks." alt="" coords="271,5,380,32"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="441,20,381,21,380,16,446,18"/>
+<area shape="rect" id="Node000006" href="$group__startup__tasks.html#gab1a357e6b8b152415e328bcd825d7f39" title="Private function, only exposed for unit testing and should not be called directly." alt="" coords="482,132,620,159"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="711,88,692,97,589,134,588,129,690,92,716,87"/>
+<area shape="rect" id="Node000007" href="$group__startup__tasks.html#ga149b832df770dee9dc8e30ebca47399c" title="Runs all enabled startup diagnostics and reports any detected faults to the Error Handler." alt="" coords="240,220,411,247"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="503,164,363,222,361,217,498,166"/>
+<area shape="rect" id="Node000008" href="$group__startup.html#gaafa77cc706561398012e37761145306f" title="Manages and synchronizes safety system and application startup Tasks." alt="" coords="103,257,192,284"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="242,251,193,264,192,259,247,250"/>
+<area shape="rect" id="Node000009" href="$group__main.html#ga840291bc02cba5474a4cb46a9b9566fe" title="Runs the Startup, Scheduler and optionally Shutdown Task Managers." alt="" coords="5,257,55,284"/>
+<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="85,272,55,273,54,268,90,269"/>
+<area shape="poly" id="edge10_Node000010_Node000006" title=" " alt="" coords="679,131,621,140,619,135,684,130"/>
+<area shape="rect" id="Node000012" href="$group__startup__tasks.html#ga17b1ec3c869cec62261da62811778c3c" title="Private function, only exposed for unit testing and should not be called directly." alt="" coords="477,220,625,247"/>
+<area shape="poly" id="edge12_Node000011_Node000012" title=" " alt="" coords="690,226,626,232,625,227,695,226"/>
+<area shape="poly" id="edge13_Node000012_Node000007" title=" " alt="" coords="459,234,412,236,411,231,464,233"/>
+<area shape="poly" id="edge15_Node000013_Node000006" title=" " alt="" coords="695,162,620,156,620,150,700,161"/>
+<area shape="poly" id="edge17_Node000014_Node000012" title=" " alt="" coords="690,257,626,249,626,243,695,257"/>
+<area shape="rect" id="Node000016" href="$group__startup__tasks.html#gafa9512cf79e8d5aa2e195bdbbc07fdc9" title="Private function, only exposed for unit testing and should not be called directly." alt="" coords="503,296,599,323"/>
+<area shape="poly" id="edge19_Node000015_Node000016" title=" " alt="" coords="679,317,600,315,600,309,684,317"/>
+<area shape="rect" id="Node000017" href="$group__startup__tasks.html#gac902915cd75f58629df86b87887dbd64" title="Initializes the Safety System according to Assumptions of Use and user configurations." alt="" coords="257,283,394,309"/>
+<area shape="poly" id="edge20_Node000016_Node000017" title=" " alt="" coords="485,306,395,303,395,297,490,306"/>
+<area shape="poly" id="edge21_Node000017_Node000008" title=" " alt="" coords="239,284,193,280,193,274,244,284"/>
+</map>

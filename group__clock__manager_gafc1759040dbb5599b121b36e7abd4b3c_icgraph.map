@@ -1,0 +1,11 @@
+<map id="MW_GetClearClockCfd1Error" name="MW_GetClearClockCfd1Error">
+<area shape="rect" id="Node000001" title="Reads and clears the flag indicating a clock failure detected by CFD1." alt="" coords="654,31,849,57"/>
+<area shape="rect" id="Node000002" href="$group__shared__tasks.html#gaa76de776541e6f6f8a635b1462c28846" title="Private function, only exposed for unit testing and should not be called directly." alt="" coords="411,5,606,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="636,32,607,32,607,26,641,32"/>
+<area shape="rect" id="Node000003" href="$group__interrupt__tasks.html#ga6bf1d72aa560322ee6981351fc2c7a5d" title="Handles Clock interrupts by reporting the Error ID of any detected faults and clearing CFM done flags..." alt="" coords="429,56,588,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="642,56,589,64,588,58,636,56"/>
+<area shape="rect" id="Node000004" href="$group__interrupts.html#gaadd39b4e2eec8ae583e6332d94ac7fbd" title="Executes the task responsible for handling a Clock Controller (CLKCTRL) interrupt." alt="" coords="227,56,363,83"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="411,69,363,72,363,67,416,69"/>
+<area shape="rect" id="Node000005" href="$group__main.html#gae02a1cd46f285ee1127d965bfb76c5ff" title="Runs the Interrupts Task Manager to handle a Clock Controller (CLKCTRL) interrupt." alt="" coords="5,56,179,83"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="208,69,179,72,179,67,214,69"/>
+</map>

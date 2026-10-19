@@ -1,0 +1,4 @@
+<map id="Interrupt Manager" name="Interrupt Manager">
+<area shape="rect" id="Node000001" title="Contains API prototypes for the Interrupt Manager." alt="" coords="177,5,300,32"/>
+<area shape="rect" id="Node000002" href="$group__middleware__layer.html" title="Contains hardware resource managers that provide services to Tasks." alt="" coords="5,5,129,32"/>
+</map>

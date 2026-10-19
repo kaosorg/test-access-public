@@ -1,0 +1,36 @@
+<map id="SWDT_ReadIntFlags" name="SWDT_ReadIntFlags">
+<area shape="rect" id="Node000001" title="Reads the INTFLAGS register value." alt="" coords="909,132,1055,159"/>
+<area shape="rect" id="Node000002" href="$group__watchdog__manager.html#ga325ac419d201f82a89df04926f6865ce" title="Sends a CLEAR command to the Synchronous Watchdog." alt="" coords="689,31,803,57"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="948,122,908,97,860,72,803,55,803,50,862,67,911,92,954,123"/>
+<area shape="rect" id="Node000007" href="$group__watchdog__manager.html#ga70d406dafd80efd8170a429fa34b94fa" title="Reads the error flag indicating a non&#45;clear command received while expecting a clear command in the S..." alt="" coords="665,132,827,159"/>
+<area shape="poly" id="edge7_Node000001_Node000007" title=" " alt="" coords="890,146,828,148,827,143,895,145"/>
+<area shape="rect" id="Node000012" href="$group__watchdog__manager.html#ga9225369d8a6a3c2ede5750467902886d" title="Reads the error flag indicating that the Synchronous Watchdog counter expired." alt="" coords="649,183,843,225"/>
+<area shape="poly" id="edge12_Node000001_Node000012" title=" " alt="" coords="913,163,835,185,834,179,908,163"/>
+<area shape="rect" id="Node000013" href="$group__watchdog__manager.html#gac61716c7f67cbc3c0659327478b9c92e" title="Reads the error flag indicating a non&#45;preclear command received while expecting a preclear command in..." alt="" coords="656,249,836,276"/>
+<area shape="poly" id="edge15_Node000001_Node000013" title=" " alt="" coords="959,168,915,207,862,240,830,251,829,246,860,235,912,203,954,170"/>
+<area shape="rect" id="Node000014" href="$group__watchdog__manager.html#gaff93c4436fddc61000b321fa2dc0d67c" title="Reads the error flag indicating a clear command received in the closed window after a preclear comman..." alt="" coords="631,81,861,108"/>
+<area shape="poly" id="edge18_Node000001_Node000014" title=" " alt="" coords="899,128,811,111,812,106,904,128"/>
+<area shape="rect" id="Node000003" href="$group__shared__tasks.html#ga30a606f4a3c8ae160671307c60c3b304" title="Waits until the current Synchronous Watchdog timeout is completed before clearing and setting the nex..." alt="" coords="402,31,567,57"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="672,45,568,47,568,41,677,43"/>
+<area shape="rect" id="Node000004" href="$group__scheduler.html#ga6b38c1babeec44d857f14f3c38c88e72" title="Manages and synchronizes safety system and application Tasks from a user defined schedule." alt="" coords="219,5,324,32"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="384,33,325,28,324,22,389,31"/>
+<area shape="rect" id="Node000006" href="$group__startup.html#gaafa77cc706561398012e37761145306f" title="Manages and synchronizes safety system and application startup Tasks." alt="" coords="227,56,316,83"/>
+<area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="384,57,318,67,316,62,389,55"/>
+<area shape="rect" id="Node000005" href="$group__main.html#ga840291bc02cba5474a4cb46a9b9566fe" title="Runs the Startup, Scheduler and optionally Shutdown Task Managers." alt="" coords="57,31,106,57"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="202,30,108,43,105,38,205,26"/>
+<area shape="poly" id="edge6_Node000006_Node000005" title=" " alt="" coords="209,63,107,50,106,45,213,60"/>
+<area shape="rect" id="Node000008" href="$group__shared__tasks.html#ga40767a464b76824800e0f407d8691462" title="Private function, only exposed for unit testing and should not be called directly." alt="" coords="386,189,583,216"/>
+<area shape="poly" id="edge8_Node000007_Node000008" title=" " alt="" coords="670,162,549,191,548,186,665,163"/>
+<area shape="rect" id="Node000009" href="$group__interrupt__tasks.html#gac24623cbad6f695cd281b0128707a8ad" title="Handles SWDT interrupts by reporting the Error ID of any detected faults." alt="" coords="407,136,562,163"/>
+<area shape="poly" id="edge9_Node000007_Node000009" title=" " alt="" coords="647,147,563,151,563,145,652,146"/>
+<area shape="rect" id="Node000010" href="$group__interrupts.html#ga5662eb8016cb7855e8efee8f0228cb61" title="Executes the task responsible for handling a Synchronous Watchdog Timer (SWDT) interrupt." alt="" coords="206,136,338,163"/>
+<area shape="poly" id="edge10_Node000009_Node000010" title=" " alt="" coords="389,150,339,152,338,147,395,149"/>
+<area shape="rect" id="Node000011" href="$group__main.html#ga11e88e491ff86923dca544842bcb307b" title="Runs the Interrupts Task Manager to handle a Synchronous Watchdog Timer (SWDT) interrupt." alt="" coords="5,136,158,163"/>
+<area shape="poly" id="edge11_Node000010_Node000011" title=" " alt="" coords="188,150,159,152,157,147,193,148"/>
+<area shape="poly" id="edge13_Node000012_Node000008" title=" " alt="" coords="631,204,584,206,584,201,636,203"/>
+<area shape="poly" id="edge14_Node000012_Node000009" title=" " alt="" coords="631,181,552,166,552,161,636,180"/>
+<area shape="poly" id="edge16_Node000013_Node000008" title=" " alt="" coords="664,245,631,240,543,219,544,214,632,235,669,246"/>
+<area shape="poly" id="edge17_Node000013_Node000009" title=" " alt="" coords="639,242,630,240,614,225,605,209,597,194,582,180,554,166,555,161,585,175,601,191,609,206,618,221,633,235,644,244"/>
+<area shape="poly" id="edge19_Node000014_Node000008" title=" " alt="" coords="645,113,633,122,618,135,609,148,600,163,585,177,554,191,553,186,582,172,596,159,605,146,614,131,630,118,640,115"/>
+<area shape="poly" id="edge20_Node000014_Node000009" title=" " alt="" coords="662,112,552,138,551,133,667,111"/>
+</map>

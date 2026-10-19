@@ -1,0 +1,103 @@
+<map id="ASM_WriteCcp8" name="ASM_WriteCcp8">
+<area shape="rect" id="Node000001" title="Writes value to a Configuration Change Protected (CCP) 8&#45;bit register." alt="" coords="514,1044,632,1071"/>
+<area shape="rect" id="Node000002" href="$group__clkctrl.html#gac77e39ce857abe056500c81642910ee9" title="Clears specific bits in the MCLKCFD0CTRLA register." alt="" coords="258,5,457,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="568,1028,559,819,539,506,524,347,507,208,487,102,476,67,464,46,453,35,452,30,468,42,481,65,492,101,512,207,530,347,544,505,564,818,573,1029"/>
+<area shape="rect" id="Node000003" href="$group__clkctrl.html#ga178561d7a2ab8b1b0f1058442bffd992" title="Clears specific bits in the MCLKCFD1CTRLA register." alt="" coords="258,56,457,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="568,1028,558,828,537,531,523,382,506,250,486,150,475,116,464,96,453,86,451,81,468,93,480,114,491,148,511,249,528,381,542,531,563,828,573,1029"/>
+<area shape="rect" id="Node000004" href="$group__clkctrl.html#ga189cf78092e1a8b16c1519263103a543" title="Clears specific bits in the MCLKCFM0CTRLA register." alt="" coords="256,107,459,133"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="568,1028,557,838,535,557,521,416,504,292,485,197,475,166,464,147,453,136,451,131,468,144,479,164,490,196,509,291,526,415,541,557,562,837,573,1029"/>
+<area shape="rect" id="Node000010" href="$group__clkctrl.html#ga44924e4700056ca5aa14ee6006a4d672" title="Clears specific bits in the MCLKCFM1CTRLA register." alt="" coords="256,157,459,184"/>
+<area shape="poly" id="edge5_Node000001_Node000010" title=" " alt="" coords="568,1028,556,847,534,583,519,450,503,333,484,245,474,215,464,198,453,187,451,182,468,194,479,213,489,243,508,332,524,449,539,582,561,847,573,1029"/>
+<area shape="rect" id="Node000012" href="$group__clkctrl.html#gab891c43c54de060b148389d860071c32" title="Clears specific bits in the MCLKINTCTRL register." alt="" coords="269,208,446,235"/>
+<area shape="poly" id="edge7_Node000001_Node000012" title=" " alt="" coords="570,1028,569,868,557,634,544,512,525,401,499,310,482,275,464,249,447,235,446,230,468,245,487,272,504,308,530,400,550,511,562,633,574,868,575,1029"/>
+<area shape="rect" id="Node000013" href="$group__clkctrl.html#gac3f5035e364d59a03da9f08387c383ad" title="Modifies specific bit field(s) in the MCLKCTRLA register." alt="" coords="254,259,461,285"/>
+<area shape="poly" id="edge8_Node000001_Node000013" title=" " alt="" coords="569,1028,567,876,554,657,541,544,522,441,497,356,481,324,464,299,453,288,451,283,468,296,486,321,502,354,527,440,546,543,559,657,572,876,575,1029"/>
+<area shape="rect" id="Node000017" href="$group__clkctrl.html#ga70e250ef603937ed8ddf05fac8d714db" title="Modifies specific bit field(s) in the OSCHFCTRLA register." alt="" coords="249,309,466,336"/>
+<area shape="poly" id="edge10_Node000001_Node000017" title=" " alt="" coords="569,1028,565,886,551,682,538,577,519,481,495,403,480,372,464,350,453,339,451,334,468,346,485,370,500,401,524,480,543,576,556,681,570,886,574,1029"/>
+<area shape="rect" id="Node000018" href="$group__clkctrl.html#ga8419becbf454d5f6771e9360450e0157" title="Sets specific bits in the MCLKCFD0CTRLA register." alt="" coords="263,360,452,387"/>
+<area shape="poly" id="edge12_Node000001_Node000018" title=" " alt="" coords="569,1028,563,895,548,706,534,609,516,521,493,449,479,421,464,401,453,390,451,385,468,397,484,419,498,447,521,520,539,608,553,705,569,895,574,1029"/>
+<area shape="rect" id="Node000019" href="$group__clkctrl.html#ga05731042d6a707e8dd06c27b2cac420c" title="Sets specific bits in the MCLKCFD1CTRLA register." alt="" coords="263,411,452,437"/>
+<area shape="poly" id="edge13_Node000001_Node000019" title=" " alt="" coords="568,1028,561,904,544,730,531,642,513,561,491,495,478,470,464,451,452,440,450,435,468,447,483,467,496,493,518,560,536,641,550,730,567,904,574,1029"/>
+<area shape="rect" id="Node000020" href="$group__clkctrl.html#gaf3222551abd27936b7877e7ea1aeb48f" title="Sets specific bits in the MCLKINTCTRL register." alt="" coords="274,461,440,488"/>
+<area shape="poly" id="edge14_Node000001_Node000020" title=" " alt="" coords="568,1029,559,914,541,756,528,675,510,602,489,542,477,519,464,502,442,486,440,481,468,498,482,516,494,540,515,600,533,674,547,755,565,914,573,1030"/>
+<area shape="rect" id="Node000021" href="$group__clkctrl.html#gacdc049796b501ec26438271ae5972744" title="Sets specific bits in the MCLKCTRLC register." alt="" coords="263,563,452,589"/>
+<area shape="poly" id="edge15_Node000001_Node000021" title=" " alt="" coords="566,1028,555,933,534,805,520,740,504,682,485,635,464,603,452,593,450,587,468,600,490,632,509,680,526,739,540,804,560,932,572,1029"/>
+<area shape="rect" id="Node000024" href="$group__clkctrl.html#ga18dd90fa727146ac17e307d43377e6af" title="Overwrites the MCLKCFD0CTRLA register value." alt="" coords="258,613,456,640"/>
+<area shape="poly" id="edge18_Node000001_Node000024" title=" " alt="" coords="566,1028,553,942,531,830,501,723,483,681,464,654,451,643,449,638,468,650,488,679,506,721,536,828,558,942,571,1029"/>
+<area shape="rect" id="Node000026" href="$group__clkctrl.html#ga75083c475fc33922b240d1308232d4b1" title="Overwrites the MCLKCFD1CTRLA register value." alt="" coords="258,968,456,995"/>
+<area shape="poly" id="edge20_Node000001_Node000026" title=" " alt="" coords="531,1038,465,1009,429,998,426,993,467,1004,536,1035"/>
+<area shape="rect" id="Node000028" href="$group__clkctrl.html#gaf876efbf378f544f95e526ac3ef3c650" title="Overwrites the MCLKCFM0CTRLA register value." alt="" coords="256,664,458,691"/>
+<area shape="poly" id="edge22_Node000001_Node000028" title=" " alt="" coords="570,1028,566,962,552,874,538,828,520,783,495,741,464,705,450,694,449,689,468,701,500,738,525,780,543,826,557,873,571,961,575,1029"/>
+<area shape="rect" id="Node000030" href="$group__clkctrl.html#ga3ca39e32990e88155dce728111ead38b" title="Overwrites the MCLKCFM0CTRLB register value." alt="" coords="256,715,458,741"/>
+<area shape="poly" id="edge23_Node000001_Node000030" title=" " alt="" coords="568,1029,561,971,545,897,532,858,514,820,492,786,464,755,450,744,448,739,468,751,496,782,519,818,537,856,550,896,567,970,573,1029"/>
+<area shape="rect" id="Node000031" href="$group__clkctrl.html#ga1092e4cc42ef8377b282e452351f953f" title="Overwrites the MCLKCFM1CTRLA register value." alt="" coords="256,765,458,792"/>
+<area shape="poly" id="edge24_Node000001_Node000031" title=" " alt="" coords="566,1028,556,980,538,920,508,858,488,830,464,806,449,795,447,790,468,802,492,827,513,855,543,918,561,979,571,1029"/>
+<area shape="rect" id="Node000033" href="$group__clkctrl.html#ga90ec7ab05b8c83ba6367bdecccad7202" title="Overwrites the MCLKCFM1CTRLB register value." alt="" coords="256,816,458,843"/>
+<area shape="poly" id="edge25_Node000001_Node000033" title=" " alt="" coords="562,1028,550,990,530,943,502,896,484,875,464,857,447,846,446,841,468,853,488,871,506,893,535,941,555,988,568,1029"/>
+<area shape="rect" id="Node000034" href="$group__clkctrl.html#ga19badac5f986aa3091faf2b94f58ed28" title="Overwrites the MCLKINTCTRL register value." alt="" coords="269,867,446,893"/>
+<area shape="poly" id="edge26_Node000001_Node000034" title=" " alt="" coords="558,1030,522,968,496,935,464,908,445,896,443,891,468,903,500,931,527,965,563,1030"/>
+<area shape="rect" id="Node000037" href="$group__clkctrl.html#gafcb1e604535697a733c63f4c07697749" title="Overwrites the MCLKINTFLAGS register value." alt="" coords="274,917,440,944"/>
+<area shape="poly" id="edge27_Node000001_Node000037" title=" " alt="" coords="549,1032,513,994,490,975,465,958,440,947,438,942,467,954,493,970,517,990,555,1031"/>
+<area shape="rect" id="Node000052" href="$group__clkctrl.html#ga6fb4b49c638148b5aa9741c3cfac65f2" title="Overwrites the MCLKCTRLB register value." alt="" coords="258,512,456,539"/>
+<area shape="poly" id="edge28_Node000001_Node000052" title=" " alt="" coords="567,1028,557,923,538,780,524,707,507,642,487,588,464,552,452,542,450,537,468,549,492,586,512,640,529,706,543,779,563,923,572,1029"/>
+<area shape="rect" id="Node000053" href="$group__cpuctrl.html#ga072060db2ba6c28b982eb035236d0ffa" title="Clears specific bits in the CTRLA register." alt="" coords="270,1019,444,1045"/>
+<area shape="poly" id="edge30_Node000001_Node000053" title=" " alt="" coords="496,1050,446,1045,444,1040,501,1047"/>
+<area shape="rect" id="Node000061" href="$group__cpuctrl.html#ga3f32dce54116f2d94354960f48e07eee" title="Sets specific bits in the CTRLA register." alt="" coords="276,1069,439,1096"/>
+<area shape="poly" id="edge31_Node000001_Node000061" title=" " alt="" coords="497,1068,441,1075,438,1071,501,1064"/>
+<area shape="rect" id="Node000067" href="$group__cpuctrl.html#gaebf883e85b87f59b699b5d0092d32c1e" title="Overwrites the INTFLAGS register value." alt="" coords="273,1120,442,1147"/>
+<area shape="poly" id="edge32_Node000001_Node000067" title=" " alt="" coords="532,1080,467,1111,429,1121,426,1117,465,1105,535,1076"/>
+<area shape="rect" id="Node000079" href="$group__cpuint.html#ga189c5ade3fd0f1dcf4c91350ccb3c5c7" title="Clears specific bits in the CTRLA register." alt="" coords="277,1171,438,1197"/>
+<area shape="poly" id="edge33_Node000001_Node000079" title=" " alt="" coords="550,1085,517,1124,493,1144,467,1161,440,1172,437,1168,465,1156,490,1140,513,1120,554,1081"/>
+<area shape="rect" id="Node000082" href="$group__cpuint.html#ga1d98ecb2311b8344ddd42d794af7ce63" title="Sets specific bits in the CTRLA register." alt="" coords="282,1221,432,1248"/>
+<area shape="poly" id="edge34_Node000001_Node000082" title=" " alt="" coords="559,1087,527,1150,500,1183,467,1212,435,1227,431,1223,465,1207,496,1180,522,1147,562,1082"/>
+<area shape="rect" id="Node000083" href="$group__errctrl.html#ga299f71cdc72837fb4c4aa71db63668b3" title="Clears specific bits in the CTRLA register." alt="" coords="270,1272,444,1299"/>
+<area shape="poly" id="edge35_Node000001_Node000083" title=" " alt="" coords="566,1084,555,1127,535,1174,506,1222,488,1243,468,1262,447,1274,443,1270,464,1258,484,1240,502,1219,530,1172,550,1125,564,1089"/>
+<area shape="rect" id="Node000124" href="$group__errctrl.html#gafa374e87694f68c3a1ced8cb86d33926" title="Modifies specific bit field(s) in the CTRLA register." alt="" coords="266,1323,448,1349"/>
+<area shape="poly" id="edge36_Node000001_Node000124" title=" " alt="" coords="569,1083,561,1136,543,1197,513,1259,492,1288,468,1313,450,1324,446,1320,464,1309,488,1284,508,1257,538,1195,556,1134,567,1088"/>
+<area shape="rect" id="Node000127" href="$group__errctrl.html#gad93d7ffe898937664141c3e5ba9f1ec7" title="Sets specific bits in the CTRLA register." alt="" coords="276,1373,439,1400"/>
+<area shape="poly" id="edge37_Node000001_Node000127" title=" " alt="" coords="572,1083,567,1144,550,1219,537,1258,519,1297,496,1332,468,1363,441,1379,437,1375,464,1359,492,1329,514,1294,532,1256,545,1218,561,1143,570,1088"/>
+<area shape="rect" id="Node000131" href="$group__nvmctrl.html#gadbc1612dc1931082d8fc75ef4e549cee" title="Modifies specific bit field(s) in the CTRLC register." alt="" coords="265,1424,450,1451"/>
+<area shape="poly" id="edge38_Node000001_Node000131" title=" " alt="" coords="573,1084,571,1153,557,1242,543,1288,525,1334,500,1377,468,1414,452,1425,448,1422,464,1410,495,1374,520,1332,538,1287,552,1240,566,1153,571,1089"/>
+<area shape="rect" id="Node000133" href="$group__nvmctrl.html#ga01103712f735d3f1ca8a9a2f9f2f0fa2" title="Sets specific bits in the CTRLD register." alt="" coords="275,1475,440,1501"/>
+<area shape="poly" id="edge39_Node000001_Node000133" title=" " alt="" coords="569,1084,558,1173,536,1286,506,1394,488,1436,468,1465,442,1481,439,1477,464,1461,483,1433,501,1392,531,1285,553,1172,567,1089"/>
+<area shape="rect" id="Node000134" href="$group__nvmctrl.html#ga5f9f46c21f213fe5215ef418593b52b2" title="Overwrites the INTFLAGSB register value." alt="" coords="268,1525,447,1552"/>
+<area shape="poly" id="edge40_Node000001_Node000134" title=" " alt="" coords="570,1084,560,1183,540,1311,526,1376,509,1434,490,1482,468,1515,449,1529,446,1525,464,1511,485,1480,504,1433,520,1374,534,1310,555,1182,568,1089"/>
+<area shape="rect" id="Node000141" href="$group__ramctrl.html#gaef543f6b3abc79bb31f7688b7fa57a50" title="Overwrites the INTFLAGS register value." alt="" coords="272,1576,442,1603"/>
+<area shape="poly" id="edge41_Node000001_Node000141" title=" " alt="" coords="571,1084,563,1192,543,1336,529,1408,512,1474,492,1529,468,1566,445,1582,441,1578,464,1562,487,1526,507,1473,524,1407,538,1335,557,1192,569,1089"/>
+<area shape="rect" id="Node000146" href="$group__rstctrl.html#gafbe71e98530dcde1f74d77350c046cc6" title="Overwrites the SWRR register value." alt="" coords="254,1627,461,1669"/>
+<area shape="poly" id="edge42_Node000001_Node000146" title=" " alt="" coords="571,1084,564,1201,545,1359,531,1440,514,1514,493,1574,468,1616,455,1628,451,1624,464,1613,488,1572,509,1512,526,1439,540,1359,559,1200,569,1089"/>
+<area shape="rect" id="Node000148" href="$group__slpctrl.html#ga769ce531fa64e65ce3d20969eb1db2d4" title="Overwrites the CTRLB register value." alt="" coords="273,1693,442,1720"/>
+<area shape="poly" id="edge43_Node000001_Node000148" title=" " alt="" coords="572,1084,567,1214,551,1392,537,1484,519,1567,497,1636,483,1663,468,1683,444,1699,441,1695,464,1679,478,1660,492,1634,514,1566,532,1483,545,1392,562,1213,570,1089"/>
+<area shape="rect" id="Node000149" href="$group__slpctrl.html#ga4c7e3fe25d0a81d9e41ecb2a32ee5c43" title="Overwrites the VREGCTRL register value." alt="" coords="264,1744,450,1771"/>
+<area shape="poly" id="edge44_Node000001_Node000149" title=" " alt="" coords="572,1084,569,1223,554,1417,541,1516,522,1608,498,1682,484,1712,468,1734,453,1746,449,1742,464,1730,480,1709,494,1680,517,1606,535,1516,549,1416,564,1222,571,1089"/>
+<area shape="rect" id="Node000152" href="$group__swdt.html#ga6434de7f815510e78eef15bf611774d4" title="Sets specific bits in the CTRLA register." alt="" coords="288,1795,427,1821"/>
+<area shape="poly" id="edge45_Node000001_Node000152" title=" " alt="" coords="573,1084,571,1232,557,1441,544,1549,525,1648,500,1729,485,1760,468,1785,450,1798,429,1807,426,1802,447,1794,464,1781,481,1758,495,1727,520,1646,539,1548,552,1441,566,1232,571,1089"/>
+<area shape="rect" id="Node000154" href="$group__swdt.html#gab011115ce5a40eddca6f6866bad4028b" title="Overwrites the COMMAND register value." alt="" coords="278,1845,436,1872"/>
+<area shape="poly" id="edge46_Node000001_Node000154" title=" " alt="" coords="573,1084,573,1241,560,1465,547,1581,528,1688,502,1775,486,1809,468,1835,454,1847,438,1854,436,1850,451,1842,464,1832,482,1806,497,1773,523,1686,542,1581,555,1465,567,1241,571,1089"/>
+<area shape="rect" id="Node000157" href="$group__swdt.html#gae8dae3687c19093f9494dcd7bd655763" title="Overwrites the CTRLA register value." alt="" coords="283,1896,432,1923"/>
+<area shape="poly" id="edge47_Node000001_Node000157" title=" " alt="" coords="573,1084,574,1250,571,1365,563,1490,551,1614,531,1728,504,1821,487,1858,468,1886,452,1899,434,1907,432,1902,449,1894,464,1882,483,1855,499,1820,526,1727,545,1613,558,1489,565,1365,569,1250,571,1089"/>
+<area shape="rect" id="Node000160" href="$group__swdt.html#ga68d35c240920f7eec82faafdd71a229a" title="Overwrites the CTRLB register value." alt="" coords="283,1947,432,1973"/>
+<area shape="poly" id="edge48_Node000001_Node000160" title=" " alt="" coords="571,1084,561,1271,540,1541,525,1676,508,1796,489,1886,479,1917,468,1936,452,1949,433,1958,431,1953,449,1945,464,1933,474,1915,484,1885,503,1795,520,1676,534,1540,556,1271,569,1089"/>
+<area shape="rect" id="Node000161" href="$group__swdt.html#ga47a2584f34b184b7b8635e26f39e29c9" title="Overwrites the INTCTRL register value." alt="" coords="280,1997,435,2024"/>
+<area shape="poly" id="edge49_Node000001_Node000161" title=" " alt="" coords="571,1084,562,1280,541,1566,527,1710,510,1837,490,1934,480,1967,468,1987,453,1999,436,2007,435,2002,451,1995,464,1984,475,1964,485,1932,505,1836,521,1710,536,1566,557,1280,570,1089"/>
+<area shape="rect" id="Node000163" href="$group__swdt.html#ga183660a2ee171024040cfc7e3d1e00de" title="Overwrites the INTFLAGS register value." alt="" coords="285,2048,430,2075"/>
+<area shape="poly" id="edge50_Node000001_Node000163" title=" " alt="" coords="572,1084,563,1290,543,1592,528,1744,511,1879,491,1981,480,2016,468,2038,451,2051,431,2060,430,2055,449,2047,464,2034,475,2014,486,1980,506,1878,523,1744,537,1591,558,1290,570,1089"/>
+<area shape="rect" id="Node000165" href="$group__wdt.html#gae11e8ad7275c4fff5f8aee51267e9cac" title="Overwrites the CTRLA register value." alt="" coords="287,2099,428,2125"/>
+<area shape="poly" id="edge51_Node000001_Node000165" title=" " alt="" coords="572,1084,564,1299,544,1617,530,1778,513,1921,492,2029,481,2065,468,2088,450,2103,428,2111,427,2106,447,2098,464,2085,476,2063,487,2027,508,1920,525,1778,539,1617,559,1299,570,1089"/>
+<area shape="rect" id="Node000005" href="$group__clock__manager.html#gac0d063cef4101d5f0300aa265abc63ef" title="Performs error injection diagnostic to detect faults in the Clock Frequency Measure 0 (CFM0) monitor." alt="" coords="30,107,176,133"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="238,122,178,122,174,118,242,118"/>
+<area shape="rect" id="Node000011" href="$group__clock__manager.html#ga5f602f6a69f97263f948f9ae3d17270b" title="Performs error injection diagnostic to detect faults in the Clock Frequency Measure 1 (CFM1) monitor." alt="" coords="30,157,176,184"/>
+<area shape="poly" id="edge6_Node000010_Node000011" title=" " alt="" coords="238,173,178,173,175,169,242,169"/>
+<area shape="rect" id="Node000014" href="$group__clock__manager.html#gaccf94adae033dfb285e7718759544ea1" title="Initializes main clock with internal High Frequency Oscillator (OSCHF) as clock source." alt="" coords="5,309,201,336"/>
+<area shape="poly" id="edge9_Node000013_Node000014" title=" " alt="" coords="270,291,175,311,172,307,273,287"/>
+<area shape="poly" id="edge11_Node000017_Node000014" title=" " alt="" coords="231,324,203,325,199,321,235,321"/>
+<area shape="rect" id="Node000022" href="$group__clock__manager.html#ga1d7c53e68a97d8e3cc76cc45950772c8" title="Starts error injection diagnostic to detect faults in the Clock Failure Detection 0 (CFD0) monitor." alt="" coords="16,563,190,589"/>
+<area shape="poly" id="edge16_Node000021_Node000022" title=" " alt="" coords="245,578,192,578,189,574,249,574"/>
+<area shape="rect" id="Node000023" href="$group__clock__manager.html#gac1c0792179588d0960f6696196fc9b6b" title="Starts error injection diagnostic to detect faults in the Clock Failure Detection 1 (CFD1) monitor." alt="" coords="16,512,190,539"/>
+<area shape="poly" id="edge17_Node000021_Node000023" title=" " alt="" coords="270,561,175,542,172,537,274,557"/>
+<area shape="rect" id="Node000025" href="$group__clock__manager.html#gab4c8a469164ff0d48b745bad719fd54e" title="Starts Clock Failure Detect 0 (CFD0) to monitor the configured clock source with the configured refer..." alt="" coords="49,613,157,640"/>
+<area shape="poly" id="edge19_Node000024_Node000025" title=" " alt="" coords="240,629,159,629,156,625,244,625"/>
+<area shape="rect" id="Node000027" href="$group__clock__manager.html#ga6cadd2666905dcae77190b09b090b871" title="Starts Clock Failure Detect 1 (CFD1) to monitor the configured clock source with the configured refer..." alt="" coords="49,968,157,995"/>
+<area shape="poly" id="edge21_Node000026_Node000027" title=" " alt="" coords="240,983,159,983,156,979,244,980"/>
+<area shape="poly" id="edge29_Node000052_Node000014" title=" " alt="" coords="256,507,247,502,199,463,159,416,128,371,112,339,111,334,133,369,163,413,203,459,250,498,261,504"/>
+</map>

@@ -1,0 +1,23 @@
+<map id="MW_DiagClockCfd0Begin" name="MW_DiagClockCfd0Begin">
+<area shape="rect" id="Node000001" title="Starts error injection diagnostic to detect faults in the Clock Failure Detection 0 (CFD0) monitor." alt="" coords="5,132,180,159"/>
+<area shape="rect" id="Node000002" href="$group__shared__middleware__diag.html#ga6f1ac925bac3786a0aa0ae43c81b1a11" title="Restore global interrupts if previously enabled." alt="" coords="258,31,387,57"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="124,129,277,61,275,66,126,134"/>
+<area shape="rect" id="Node000004" href="$group__shared__middleware__diag.html#ga68b838ba045a40ea39b2f516f3c3bda3" title="Backup and disable global interrupts." alt="" coords="255,107,390,133"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="179,133,242,128,237,130,181,138"/>
+<area shape="rect" id="Node000007" href="$group__clkctrl.html#gacdc049796b501ec26438271ae5972744" title="Sets specific bits in the MCLKCTRLC register." alt="" coords="228,157,417,184"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="179,152,214,158,209,159,180,158"/>
+<area shape="rect" id="Node000009" href="$group__shared__middleware__diag.html#ga85c8aa30dd05c181cb258a6a4029630e" title="Check Error Controller state and error channels indicated by the channel mask input." alt="" coords="253,208,392,235"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="128,157,229,193,254,203,249,203,227,199,127,162"/>
+<area shape="rect" id="Node000003" href="$group__cpuctrl.html#ga4902a90a08e11129de26f48f6b8712a2" title="Sets specific bits in the SREG register." alt="" coords="470,5,670,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="387,35,458,29,453,31,388,40"/>
+<area shape="rect" id="Node000005" href="$group__cpuctrl.html#ga3a436dd72247a70b3e31836004ea0e13" title="Clears specific bits in the SREG register." alt="" coords="465,56,675,83"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="389,104,489,85,484,87,391,109"/>
+<area shape="rect" id="Node000006" href="$group__cpuctrl.html#ga08ed4868ad3ba0ebf4955a852c0893fd" title="Reads the SREG register value." alt="" coords="465,107,675,133"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="390,117,452,119,447,121,390,123"/>
+<area shape="rect" id="Node000008" href="$group__ccp__utility.html#gae87c39ed3ac0f3733e3990e460b62859" title="Writes value to a Configuration Change Protected (CCP) 8&#45;bit register." alt="" coords="511,157,629,184"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="417,168,498,170,493,171,418,173"/>
+<area shape="rect" id="Node000010" href="$group__errctrl.html#ga49e47a70a09340726f90f2d64af933a9" title="Reads the ESF register value." alt="" coords="466,208,675,235"/>
+<area shape="poly" id="edge9_Node000009_Node000010" title=" " alt="" coords="392,219,453,221,447,222,393,224"/>
+<area shape="rect" id="Node000011" href="$group__errctrl.html#ga1621b555fcd8d31d8457b4d7f16ed37a" title="Reads the CTRLA register value." alt="" coords="483,259,657,285"/>
+<area shape="poly" id="edge10_Node000009_Node000011" title=" " alt="" coords="392,233,489,255,484,255,391,238"/>
+</map>

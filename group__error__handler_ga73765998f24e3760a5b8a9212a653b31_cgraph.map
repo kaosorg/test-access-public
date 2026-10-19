@@ -1,0 +1,33 @@
+<map id="EH_HandleError" name="EH_HandleError">
+<area shape="rect" id="Node000001" title="Handles error based on configured Error ID criticality if the error flag is set." alt="" coords="5,140,122,167"/>
+<area shape="rect" id="Node000002" href="$group__error__handler.html#gafa3d7008a2cea38c0d7c0fd8f5bf40d3" title="Transitions the system into a Safe State and resets the device." alt="" coords="180,115,324,141"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="121,143,166,138,162,141,123,148"/>
+<area shape="rect" id="Node000015" href="$group__error__handler.html#gadb8e7208478e2cdfd4374154518f31b9" title="Pushes Error ID to the Notification Error Log for later handling." alt="" coords="170,165,334,192"/>
+<area shape="poly" id="edge16_Node000001_Node000015" title=" " alt="" coords="121,159,157,164,152,167,123,164"/>
+<area shape="rect" id="Node000003" href="$group__interrupt__manager.html#ga36290cf4ebae7f5cfc4bddc69aae944f" title="Disables global interrupts on the device." alt="" coords="382,8,570,35"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="270,112,319,79,381,46,405,39,400,41,383,50,322,84,273,116"/>
+<area shape="rect" id="Node000005" href="$group__error__manager.html#gae241ba85bb32c4c6a48527b95fe17af8" title="Enables forced floating (tri&#45;stating) of all I/O pins." alt="" coords="399,60,553,87"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="309,112,406,90,401,92,311,117"/>
+<area shape="rect" id="Node000008" href="$group__reset__manager.html#ga8964c4e3b57b5a6693c2ff3a3e1ee17e" title="Issues a software reset request to reset the device." alt="" coords="412,115,540,141"/>
+<area shape="poly" id="edge7_Node000002_Node000008" title=" " alt="" coords="324,125,399,127,394,129,325,131"/>
+<area shape="rect" id="Node000010" href="$group__error__manager.html#ga16c812d70b1643a0402cc35a70650a78" title="Stops the Heartbeat output signal." alt="" coords="408,169,544,196"/>
+<area shape="poly" id="edge10_Node000002_Node000010" title=" " alt="" coords="310,139,406,165,401,166,310,145"/>
+<area shape="rect" id="Node000012" href="$group__memory__manager.html#ga288fde0388a5c29a2aeaaa4ae961dd66" title="Stores a value in General Purpose Registers (GPR) for perserving data between resets." alt="" coords="396,224,556,251"/>
+<area shape="poly" id="edge13_Node000002_Node000012" title=" " alt="" coords="311,139,335,151,351,165,360,179,369,193,384,206,403,218,397,218,380,210,365,196,356,182,347,169,333,156,311,144"/>
+<area shape="rect" id="Node000004" href="$group__cpuctrl.html#ga3a436dd72247a70b3e31836004ea0e13" title="Clears specific bits in the SREG register." alt="" coords="618,5,829,32"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="570,18,605,19,600,21,571,23"/>
+<area shape="rect" id="Node000006" href="$group__errctrl.html#gad93d7ffe898937664141c3e5ba9f1ec7" title="Sets specific bits in the CTRLA register." alt="" coords="642,56,805,83"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="553,69,629,70,624,72,554,75"/>
+<area shape="rect" id="Node000007" href="$group__ccp__utility.html#gae87c39ed3ac0f3733e3990e460b62859" title="Writes value to a Configuration Change Protected (CCP) 8&#45;bit register." alt="" coords="877,115,995,141"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="785,81,829,92,881,110,876,110,828,97,785,86"/>
+<area shape="rect" id="Node000009" href="$group__rstctrl.html#gafbe71e98530dcde1f74d77350c046cc6" title="Overwrites the SWRR register value." alt="" coords="620,107,827,149"/>
+<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="540,125,607,128,602,128,541,131"/>
+<area shape="poly" id="edge9_Node000009_Node000007" title=" " alt="" coords="828,125,863,128,858,128,828,131"/>
+<area shape="rect" id="Node000011" href="$group__errctrl.html#ga299f71cdc72837fb4c4aa71db63668b3" title="Clears specific bits in the CTRLA register." alt="" coords="636,173,811,200"/>
+<area shape="poly" id="edge11_Node000010_Node000011" title=" " alt="" coords="544,181,624,185,618,185,545,186"/>
+<area shape="poly" id="edge12_Node000011_Node000007" title=" " alt="" coords="784,170,828,159,876,147,881,146,829,164,785,175"/>
+<area shape="rect" id="Node000013" href="$group__gpr.html#ga10a06d967c7d82eaf438307d508bb488" title="Modifies specific bit field(s) in the GPR1 register." alt="" coords="647,224,800,251"/>
+<area shape="poly" id="edge14_Node000012_Node000013" title=" " alt="" coords="557,235,635,237,629,238,557,240"/>
+<area shape="rect" id="Node000014" href="$group__gpr.html#gabbfdce63e7076fdd98d98fa964ed89ad" title="Overwrites the GPR0 register value." alt="" coords="652,275,795,301"/>
+<area shape="poly" id="edge15_Node000012_Node000014" title=" " alt="" coords="545,249,643,271,637,271,545,254"/>
+</map>

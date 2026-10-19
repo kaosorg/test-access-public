@@ -1,0 +1,29 @@
+<map id="EH_InitiateSafeState" name="EH_InitiateSafeState">
+<area shape="rect" id="Node000001" title="Transitions the system into a Safe State and resets the device." alt="" coords="5,115,150,141"/>
+<area shape="rect" id="Node000002" href="$group__interrupt__manager.html#ga36290cf4ebae7f5cfc4bddc69aae944f" title="Disables global interrupts on the device." alt="" coords="198,8,386,35"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="94,112,139,79,196,46,220,38,215,42,199,50,142,84,97,116"/>
+<area shape="rect" id="Node000004" href="$group__error__manager.html#gae241ba85bb32c4c6a48527b95fe17af8" title="Enables forced floating (tri&#45;stating) of all I/O pins." alt="" coords="215,60,369,87"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="132,112,224,89,220,93,134,116"/>
+<area shape="rect" id="Node000007" href="$group__reset__manager.html#ga8964c4e3b57b5a6693c2ff3a3e1ee17e" title="Issues a software reset request to reset the device." alt="" coords="228,115,356,141"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="149,125,214,127,210,129,151,131"/>
+<area shape="rect" id="Node000009" href="$group__error__manager.html#ga16c812d70b1643a0402cc35a70650a78" title="Stops the Heartbeat output signal." alt="" coords="224,169,360,196"/>
+<area shape="poly" id="edge9_Node000001_Node000009" title=" " alt="" coords="133,139,224,164,220,166,133,145"/>
+<area shape="rect" id="Node000011" href="$group__memory__manager.html#ga288fde0388a5c29a2aeaaa4ae961dd66" title="Stores a value in General Purpose Registers (GPR) for perserving data between resets." alt="" coords="212,224,372,251"/>
+<area shape="poly" id="edge12_Node000001_Node000011" title=" " alt="" coords="96,139,142,172,199,206,226,218,220,219,196,210,139,177,96,145"/>
+<area shape="rect" id="Node000003" href="$group__cpuctrl.html#ga3a436dd72247a70b3e31836004ea0e13" title="Clears specific bits in the SREG register." alt="" coords="434,5,644,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="386,18,421,19,416,21,387,23"/>
+<area shape="rect" id="Node000005" href="$group__errctrl.html#gad93d7ffe898937664141c3e5ba9f1ec7" title="Sets specific bits in the CTRLA register." alt="" coords="458,56,621,83"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="369,69,444,70,439,72,370,75"/>
+<area shape="rect" id="Node000006" href="$group__ccp__utility.html#gae87c39ed3ac0f3733e3990e460b62859" title="Writes value to a Configuration Change Protected (CCP) 8&#45;bit register." alt="" coords="692,115,811,141"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="600,81,645,92,697,109,691,110,644,97,601,86"/>
+<area shape="rect" id="Node000008" href="$group__rstctrl.html#gafbe71e98530dcde1f74d77350c046cc6" title="Overwrites the SWRR register value." alt="" coords="436,107,643,149"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="356,125,423,127,417,129,357,131"/>
+<area shape="poly" id="edge8_Node000008_Node000006" title=" " alt="" coords="643,125,679,128,674,128,644,131"/>
+<area shape="rect" id="Node000010" href="$group__errctrl.html#ga299f71cdc72837fb4c4aa71db63668b3" title="Clears specific bits in the CTRLA register." alt="" coords="452,173,626,200"/>
+<area shape="poly" id="edge10_Node000009_Node000010" title=" " alt="" coords="360,181,439,184,434,186,360,186"/>
+<area shape="poly" id="edge11_Node000010_Node000006" title=" " alt="" coords="600,170,644,159,691,147,697,146,645,164,601,175"/>
+<area shape="rect" id="Node000012" href="$group__gpr.html#ga10a06d967c7d82eaf438307d508bb488" title="Modifies specific bit field(s) in the GPR1 register." alt="" coords="463,224,615,251"/>
+<area shape="poly" id="edge13_Node000011_Node000012" title=" " alt="" coords="372,235,450,237,445,238,373,240"/>
+<area shape="rect" id="Node000013" href="$group__gpr.html#gabbfdce63e7076fdd98d98fa964ed89ad" title="Overwrites the GPR0 register value." alt="" coords="468,275,611,301"/>
+<area shape="poly" id="edge14_Node000011_Node000013" title=" " alt="" coords="361,249,458,271,453,271,360,254"/>
+</map>

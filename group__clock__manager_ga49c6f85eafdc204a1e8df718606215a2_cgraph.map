@@ -1,0 +1,19 @@
+<map id="MW_DiagClockCfd0End" name="MW_DiagClockCfd0End">
+<area shape="rect" id="Node000001" title="Completes error injection diagnostic to detect faults in the CFD0 monitor." alt="" coords="5,119,170,145"/>
+<area shape="rect" id="Node000002" href="$group__shared__middleware__diag.html#ga6f1ac925bac3786a0aa0ae43c81b1a11" title="Restore global interrupts if previously enabled." alt="" coords="257,17,386,44"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="119,116,275,48,274,53,122,121"/>
+<area shape="rect" id="Node000004" href="$group__shared__middleware__diag.html#ga68b838ba045a40ea39b2f516f3c3bda3" title="Backup and disable global interrupts." alt="" coords="255,93,389,120"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="169,121,241,114,236,117,170,126"/>
+<area shape="rect" id="Node000007" href="$group__clkctrl.html#gafcb1e604535697a733c63f4c07697749" title="Overwrites the MCLKINTFLAGS register value." alt="" coords="239,144,405,171"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="170,138,226,146,221,147,170,144"/>
+<area shape="rect" id="Node000009" href="$group__errctrl.html#gaf7bdfc8342d456c358a49b9cf63f2d12" title="Overwrites the ESF register value." alt="" coords="218,195,426,221"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="121,143,219,180,246,190,241,190,217,185,120,149"/>
+<area shape="rect" id="Node000003" href="$group__cpuctrl.html#ga4902a90a08e11129de26f48f6b8712a2" title="Sets specific bits in the SREG register." alt="" coords="480,5,679,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="386,25,466,23,461,25,387,30"/>
+<area shape="rect" id="Node000005" href="$group__cpuctrl.html#ga3a436dd72247a70b3e31836004ea0e13" title="Clears specific bits in the SREG register." alt="" coords="474,56,684,83"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="389,94,470,85,465,86,390,100"/>
+<area shape="rect" id="Node000006" href="$group__cpuctrl.html#ga08ed4868ad3ba0ebf4955a852c0893fd" title="Reads the SREG register value." alt="" coords="474,107,684,133"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="389,107,461,113,456,114,390,113"/>
+<area shape="rect" id="Node000008" href="$group__ccp__utility.html#gae87c39ed3ac0f3733e3990e460b62859" title="Writes value to a Configuration Change Protected (CCP) 8&#45;bit register." alt="" coords="520,157,638,184"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="405,159,507,167,502,167,406,164"/>
+</map>

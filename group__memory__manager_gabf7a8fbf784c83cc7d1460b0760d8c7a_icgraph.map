@@ -1,0 +1,11 @@
+<map id="MW_GetClearNvmFlashEcc2Error" name="MW_GetClearNvmFlashEcc2Error">
+<area shape="rect" id="Node000001" title="Reads and clears the flag indicating a ECC multi&#45;bit error in Flash." alt="" coords="662,43,885,69"/>
+<area shape="rect" id="Node000002" href="$group__shared__tasks.html#ga15f60447438b4b10b3927edc5ac3e668" title="Private function, only exposed for unit testing and should not be called directly." alt="" coords="436,5,614,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="644,41,615,40,615,35,650,41"/>
+<area shape="rect" id="Node000003" href="$group__interrupt__tasks.html#gac2360150e5b92001943a8cb083210ae4" title="Handles NVM interrupts by reporting the Error ID of any detected faults." alt="" coords="448,72,602,99"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="649,71,603,79,602,74,644,71"/>
+<area shape="rect" id="Node000004" href="$group__interrupts.html#ga96e97fa333a281b8642ba544591b2e19" title="Executes the task responsible for handling a NVM Controller (NVMCTRL) error interrupt." alt="" coords="258,72,388,99"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="431,85,389,88,389,83,436,85"/>
+<area shape="rect" id="Node000005" href="$group__main.html#ga4e30a04544aea7f7464575d4301674a2" title="Runs the Interrupts Task Manager to handle a NVM Controller (NVMCTRL) error interrupt." alt="" coords="5,72,210,99"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="239,85,210,88,210,83,244,85"/>
+</map>

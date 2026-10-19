@@ -1,0 +1,11 @@
+<map id="Task Layer" name="Task Layer">
+<area shape="rect" id="Node000002" href="$group__error__handler.html" title="Contains API prototypes for the Error Handler." alt="" coords="151,5,250,32"/>
+<area shape="rect" id="Node000004" href="$group__interrupt__tasks.html" title="Contains API prototypes for Interrupt Tasks." alt="" coords="147,56,254,83"/>
+<area shape="rect" id="Node000005" href="$group__pre__startup__tasks.html" title="Contains API prototypes Pre&#45;startup Tasks." alt="" coords="139,107,262,133"/>
+<area shape="rect" id="Node000006" href="$group__scheduler__tasks.html" title="Contains API prototypes for Scheduler Tasks." alt="" coords="142,157,259,184"/>
+<area shape="rect" id="Node000007" href="$group__shared__tasks.html" title="Contains API prototypes for Tasks shared between several Task Managers." alt="" coords="150,208,250,235"/>
+<area shape="rect" id="Node000008" href="$group__startup__tasks.html" title="Contains API prototypes for Startup Tasks." alt="" coords="150,259,251,285"/>
+<area shape="rect" id="Node000009" href="$group__task__defines.html" title="Defines types and macro constants used by Tasks." alt="" coords="151,309,250,336"/>
+<area shape="rect" id="Node000001" title="Contains Tasks that implement high&#45;level logic, decision&#45;making and error handling." alt="" coords="5,183,91,209"/>
+<area shape="rect" id="Node000003" href="$group__tasks__config.html" title="Defines and declares configurations for Tasks." alt="" coords="151,360,250,387"/>
+</map>

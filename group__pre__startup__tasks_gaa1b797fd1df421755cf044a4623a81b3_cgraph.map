@@ -1,0 +1,11 @@
+<map id="T_DetermineResetReason" name="T_DetermineResetReason">
+<area shape="rect" id="Node000001" title="Determines the reason for the last device reset and stores it for later handling." alt="" coords="5,31,182,57"/>
+<area shape="rect" id="Node000002" href="$group__reset__manager.html#ga56ebf076652d75a321f4ff07fd1c3964" title="Reads and clears the reset flag registers." alt="" coords="230,5,414,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="182,32,217,30,211,31,183,37"/>
+<area shape="rect" id="Node000003" href="$group__memory__manager.html#ga288fde0388a5c29a2aeaaa4ae961dd66" title="Stores a value in General Purpose Registers (GPR) for perserving data between resets." alt="" coords="242,56,402,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="182,51,229,58,224,59,182,56"/>
+<area shape="rect" id="Node000004" href="$group__gpr.html#ga10a06d967c7d82eaf438307d508bb488" title="Modifies specific bit field(s) in the GPR1 register." alt="" coords="462,31,614,57"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="402,57,449,54,444,55,402,63"/>
+<area shape="rect" id="Node000005" href="$group__gpr.html#gabbfdce63e7076fdd98d98fa964ed89ad" title="Overwrites the GPR0 register value." alt="" coords="466,81,610,108"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="402,76,453,84,448,84,402,81"/>
+</map>

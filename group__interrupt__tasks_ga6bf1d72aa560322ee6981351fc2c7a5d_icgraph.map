@@ -1,0 +1,7 @@
+<map id="T_HandleClockInterrupt" name="T_HandleClockInterrupt">
+<area shape="rect" id="Node000001" title="Handles Clock interrupts by reporting the Error ID of any detected faults and clearing CFM done flags..." alt="" coords="411,5,570,32"/>
+<area shape="rect" id="Node000002" href="$group__interrupts.html#gaadd39b4e2eec8ae583e6332d94ac7fbd" title="Executes the task responsible for handling a Clock Controller (CLKCTRL) interrupt." alt="" coords="227,5,363,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="393,19,364,21,363,16,398,19"/>
+<area shape="rect" id="Node000003" href="$group__main.html#gae02a1cd46f285ee1127d965bfb76c5ff" title="Runs the Interrupts Task Manager to handle a Clock Controller (CLKCTRL) interrupt." alt="" coords="5,5,179,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="208,19,179,21,179,16,214,19"/>
+</map>

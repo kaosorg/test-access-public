@@ -1,0 +1,35 @@
+<map id="CLKCTRL_WriteIntFlags" name="CLKCTRL_WriteIntFlags">
+<area shape="rect" id="Node000001" title="Overwrites the MCLKINTFLAGS register value." alt="" coords="912,157,1078,184"/>
+<area shape="rect" id="Node000002" href="$group__clock__manager.html#gae2abe746abef960f9c6eb3412449bf5e" title="Clears the Clock Frequency Measure Done (CFMDn) flags indicating that a clock frequency measurement i..." alt="" coords="658,107,864,133"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="912,154,826,137,826,131,918,153"/>
+<area shape="rect" id="Node000006" href="$group__clock__manager.html#ga49c6f85eafdc204a1e8df718606215a2" title="Completes error injection diagnostic to detect faults in the CFD0 monitor." alt="" coords="679,259,843,285"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="964,192,917,223,865,249,830,261,829,255,863,244,915,218,959,194"/>
+<area shape="rect" id="Node000007" href="$group__clock__manager.html#ga22b91c5b0dd88b61fa195da4e82a81f4" title="Completes error injection diagnostic to detect faults in the CFD1 monitor." alt="" coords="679,309,843,336"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="977,195,929,250,899,277,865,300,838,311,837,306,862,295,895,273,926,246,972,198"/>
+<area shape="rect" id="Node000008" href="$group__clock__manager.html#ga25eebf47e75b8945bce67366ae1dccf7" title="Reads and clears the flag indicating a clock failure detected by CFD0." alt="" coords="664,5,858,32"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="972,144,926,95,895,69,862,46,837,35,837,30,865,42,899,64,929,91,977,146"/>
+<area shape="rect" id="Node000010" href="$group__clock__manager.html#gafc1759040dbb5599b121b36e7abd4b3c" title="Reads and clears the flag indicating a clock failure detected by CFD1." alt="" coords="664,56,858,83"/>
+<area shape="poly" id="edge10_Node000001_Node000010" title=" " alt="" coords="959,148,915,123,863,97,830,86,830,81,865,92,917,118,964,149"/>
+<area shape="rect" id="Node000012" href="$group__clock__manager.html#gafd7a19b02167e10225f88155ae7c6638" title="Reads and clears the flag indicating a clock frequency error measured by CFM0." alt="" coords="662,157,860,184"/>
+<area shape="poly" id="edge13_Node000001_Node000012" title=" " alt="" coords="893,171,861,173,860,168,899,170"/>
+<area shape="rect" id="Node000014" href="$group__clock__manager.html#gaa35595fe763929636825b4a1c845a672" title="Reads and clears the flag indicating a clock frequency error measured by CFM1." alt="" coords="662,208,860,235"/>
+<area shape="poly" id="edge16_Node000001_Node000014" title=" " alt="" coords="918,187,826,210,825,205,912,188"/>
+<area shape="rect" id="Node000003" href="$group__interrupt__tasks.html#ga6bf1d72aa560322ee6981351fc2c7a5d" title="Handles Clock interrupts by reporting the Error ID of any detected faults and clearing CFM done flags..." alt="" coords="431,107,590,133"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="640,121,591,123,590,117,646,119"/>
+<area shape="rect" id="Node000004" href="$group__interrupts.html#gaadd39b4e2eec8ae583e6332d94ac7fbd" title="Executes the task responsible for handling a Clock Controller (CLKCTRL) interrupt." alt="" coords="227,107,363,133"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="413,121,364,123,363,117,418,119"/>
+<area shape="rect" id="Node000005" href="$group__main.html#gae02a1cd46f285ee1127d965bfb76c5ff" title="Runs the Interrupts Task Manager to handle a Clock Controller (CLKCTRL) interrupt." alt="" coords="5,107,179,133"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="209,121,180,122,178,118,213,119"/>
+<area shape="poly" id="edge9_Node000008_Node000003" title=" " alt="" coords="672,37,660,46,645,58,637,71,627,84,612,97,586,109,584,104,609,92,623,81,632,68,641,54,657,42,667,39"/>
+<area shape="rect" id="Node000009" href="$group__shared__tasks.html#ga5589ac6e077c6724e985c35bd2fe76ef" title="Private function, only exposed for unit testing and should not be called directly." alt="" coords="413,5,608,32"/>
+<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="645,19,609,21,608,16,651,18"/>
+<area shape="poly" id="edge12_Node000010_Node000003" title=" " alt="" coords="674,87,581,109,579,103,679,86"/>
+<area shape="rect" id="Node000011" href="$group__shared__tasks.html#gaa76de776541e6f6f8a635b1462c28846" title="Private function, only exposed for unit testing and should not be called directly." alt="" coords="413,56,608,83"/>
+<area shape="poly" id="edge11_Node000010_Node000011" title=" " alt="" coords="645,70,609,72,608,67,651,69"/>
+<area shape="poly" id="edge15_Node000012_Node000003" title=" " alt="" coords="674,154,580,137,580,131,679,153"/>
+<area shape="rect" id="Node000013" href="$group__shared__tasks.html#gaa0293b3d33676b57ecb92fe06c4edd19" title="Private function, only exposed for unit testing and should not be called directly." alt="" coords="411,157,610,184"/>
+<area shape="poly" id="edge14_Node000012_Node000013" title=" " alt="" coords="643,171,611,173,611,168,649,170"/>
+<area shape="poly" id="edge18_Node000014_Node000003" title=" " alt="" coords="667,201,657,198,641,186,632,172,623,159,609,148,585,137,585,131,612,143,627,156,637,169,645,182,660,194,672,202"/>
+<area shape="rect" id="Node000015" href="$group__shared__tasks.html#gadd7f8c916cf7fe26a012cd22b752a34e" title="Private function, only exposed for unit testing and should not be called directly." alt="" coords="411,208,610,235"/>
+<area shape="poly" id="edge17_Node000014_Node000015" title=" " alt="" coords="643,222,611,224,611,219,649,221"/>
+</map>

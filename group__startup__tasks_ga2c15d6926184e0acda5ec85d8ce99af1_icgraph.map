@@ -1,0 +1,7 @@
+<map id="T_HandlePreStartupErrors" name="T_HandlePreStartupErrors">
+<area shape="rect" id="Node000001" title="Retrieves and validates stored Pre&#45;startup error flags from persistent memory and reports them to the..." alt="" coords="240,5,414,32"/>
+<area shape="rect" id="Node000002" href="$group__startup.html#gaafa77cc706561398012e37761145306f" title="Manages and synchronizes safety system and application startup Tasks." alt="" coords="103,5,192,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="222,19,193,21,192,16,227,19"/>
+<area shape="rect" id="Node000003" href="$group__main.html#ga840291bc02cba5474a4cb46a9b9566fe" title="Runs the Startup, Scheduler and optionally Shutdown Task Managers." alt="" coords="5,5,55,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="85,20,55,21,55,16,90,18"/>
+</map>

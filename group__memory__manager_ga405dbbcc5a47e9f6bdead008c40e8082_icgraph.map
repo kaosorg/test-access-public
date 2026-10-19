@@ -1,0 +1,11 @@
+<map id="MW_GetClearRamParityError" name="MW_GetClearRamParityError">
+<area shape="rect" id="Node000001" title="Reads and clears the flag indicating a bus parity error detected in the RAM controller." alt="" coords="634,43,829,69"/>
+<area shape="rect" id="Node000002" href="$group__shared__tasks.html#ga750e10737bfee1caa46c3d79c872de66" title="Private function, only exposed for unit testing and should not be called directly." alt="" coords="409,5,586,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="616,42,587,40,587,35,621,42"/>
+<area shape="rect" id="Node000003" href="$group__interrupt__tasks.html#gaf4e6160e44dcc18f321b19ccd160e5d8" title="Handles RAM interrupts by reporting the Error ID of any detected faults." alt="" coords="421,72,574,99"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="622,70,575,78,575,73,616,70"/>
+<area shape="rect" id="Node000004" href="$group__interrupts.html#gac69afebb3b0c5bcac0bb573c03fa7923" title="Executes the task responsible for handling a RAM Controller (RAMCTRL) error interrupt." alt="" coords="231,72,361,99"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="402,85,361,88,361,83,408,85"/>
+<area shape="rect" id="Node000005" href="$group__main.html#gab4167838dad5f27447692b6d2133cc6a" title="Runs the Interrupts Task Manager to handle a RAM Controller (RAMCTRL) error interrupt." alt="" coords="5,72,183,99"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="213,85,183,88,183,83,218,85"/>
+</map>

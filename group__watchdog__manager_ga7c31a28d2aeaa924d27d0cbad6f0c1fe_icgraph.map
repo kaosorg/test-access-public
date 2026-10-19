@@ -1,0 +1,11 @@
+<map id="MW_EnableSwdt" name="MW_EnableSwdt">
+<area shape="rect" id="Node000001" title="Enables the Synchronous Watchdog Timer with the provided configurations." alt="" coords="578,5,700,32"/>
+<area shape="rect" id="Node000002" href="$group__startup__tasks.html#ga76a9474fdd36764d43bdb854d1bfcfd1" title="Private function, only exposed for unit testing and should not be called directly." alt="" coords="425,5,530,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="559,19,530,21,530,16,565,19"/>
+<area shape="rect" id="Node000003" href="$group__startup__tasks.html#gac902915cd75f58629df86b87887dbd64" title="Initializes the Safety System according to Assumptions of Use and user configurations." alt="" coords="240,5,377,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="407,19,378,21,378,16,413,19"/>
+<area shape="rect" id="Node000004" href="$group__startup.html#gaafa77cc706561398012e37761145306f" title="Manages and synchronizes safety system and application startup Tasks." alt="" coords="103,5,192,32"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="222,19,192,21,192,16,227,19"/>
+<area shape="rect" id="Node000005" href="$group__main.html#ga840291bc02cba5474a4cb46a9b9566fe" title="Runs the Startup, Scheduler and optionally Shutdown Task Managers." alt="" coords="5,5,55,32"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="85,20,55,21,55,16,90,18"/>
+</map>

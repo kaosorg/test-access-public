@@ -1,0 +1,7 @@
+<map id="MW_StartHeartbeat" name="MW_StartHeartbeat">
+<area shape="rect" id="Node000001" title="Starts the Heartbeat output signal." alt="" coords="5,5,143,32"/>
+<area shape="rect" id="Node000002" href="$group__errctrl.html#gad93d7ffe898937664141c3e5ba9f1ec7" title="Sets specific bits in the CTRLA register." alt="" coords="191,5,354,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="143,16,178,19,172,19,143,21"/>
+<area shape="rect" id="Node000003" href="$group__ccp__utility.html#gae87c39ed3ac0f3733e3990e460b62859" title="Writes value to a Configuration Change Protected (CCP) 8&#45;bit register." alt="" coords="402,5,520,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="354,16,389,19,384,19,354,21"/>
+</map>

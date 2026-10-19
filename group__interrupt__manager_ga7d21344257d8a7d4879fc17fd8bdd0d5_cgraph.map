@@ -1,0 +1,14 @@
+<map id="MW_SetIntPriority" name="MW_SetIntPriority">
+<area shape="rect" id="Node000001" title="Configures interrupt scheduling and priority scheme." alt="" coords="5,81,134,108"/>
+<area shape="rect" id="Node000002" href="$group__cpuint.html#ga189c5ade3fd0f1dcf4c91350ccb3c5c7" title="Clears specific bits in the CTRLA register." alt="" coords="187,5,348,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="97,79,181,42,204,36,199,38,183,46,99,83"/>
+<area shape="rect" id="Node000004" href="$group__cpuint.html#ga1d98ecb2311b8344ddd42d794af7ce63" title="Sets specific bits in the CTRLA register." alt="" coords="193,56,343,83"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="133,84,179,80,175,82,135,89"/>
+<area shape="rect" id="Node000005" href="$group__cpuint.html#ga5665fcc08643bae0a620391b91946221" title="Overwrites the LVL0PRI register value." alt="" coords="182,107,354,133"/>
+<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="134,100,169,106,164,108,134,105"/>
+<area shape="rect" id="Node000006" href="$group__cpuint.html#gaf6cf9375cbafb0228e6f827e8bb616fa" title="Overwrites the LVL1VEC register value." alt="" coords="182,157,354,184"/>
+<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="99,106,183,143,204,152,199,152,181,148,98,111"/>
+<area shape="rect" id="Node000003" href="$group__ccp__utility.html#gae87c39ed3ac0f3733e3990e460b62859" title="Writes value to a Configuration Change Protected (CCP) 8&#45;bit register." alt="" coords="402,31,520,57"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="349,27,390,34,384,35,349,32"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="343,57,389,53,384,54,344,62"/>
+</map>
